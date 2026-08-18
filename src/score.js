@@ -5,6 +5,7 @@ const config = JSON.parse(await fs.readFile(new URL('../config/sources.json', im
 const { fixtureHorizon, weights, differentialOwnershipCeiling, templateOwnershipFloor } = config.scoring;
 
 const bootstrap = await load('raw/bootstrap.json');
+const fixtureList = await load('raw/fixtures.json', []);
 const summaries = await load('raw/summaries.json', {});
 const manager = await load('raw/manager.json', {});
 const meta = await load('raw/meta.json', {});
@@ -127,6 +128,10 @@ for (const p of players) {
 const squadIds = new Set((manager?.picks?.picks ?? []).map(p => p.element));
 for (const p of players) p.owned = squadIds.has(p.id);
 
+// Double/blank gameweeks only exist once postponements and cup replays reshuffle the
+// calendar, so this is mostly empty pre-season and sharpens from roughly GW25 onward.
+const chipWindows = scanChipWindows(fixtureList, bootstrap.teams, bootstrap.events, meta.nextGw ?? meta.currentGw);
+
 const ranked = [...players].sort((a, b) => b.dataScore - a.dataScore);
 const board = {
   builtAt: new Date().toISOString(),
@@ -137,6 +142,7 @@ const board = {
   bank: manager?.entry?.last_deadline_bank != null ? manager.entry.last_deadline_bank / 10 : null,
   videosProcessed: opinionFile.videosProcessed ?? 0,
   hasExpertData: (opinionFile.opinions ?? []).length > 0,
+  chipWindows,
   players: ranked,
   lists: {
     differentials: ranked.filter(p => p.quadrant === 'differential' && p.ownership < differentialOwnershipCeiling && !p.flagged).slice(0, 12),
@@ -153,9 +159,47 @@ await save('board.json', board);
 log(`Scored ${players.length} players`);
 log(`  differentials: ${board.lists.differentials.length} | template: ${board.lists.template.length} | hype traps: ${board.lists.hypeTraps.length}`);
 if (!board.hasExpertData) log('  No expert data yet — quadrants are stats-only until transcripts are processed.');
+log(chipWindows.length
+  ? `  chip windows: ${chipWindows.map(w => `GW${w.gw} (${w.doubles.length ? w.doubles.length + ' double' : ''}${w.doubles.length && w.blanks.length ? ', ' : ''}${w.blanks.length ? w.blanks.length + ' blank' : ''})`).join(', ')}`
+  : '  chip windows: none scheduled yet');
 
 function percentile(arr, p) {
   const sorted = [...arr].filter(Number.isFinite).sort((a, b) => a - b);
   if (!sorted.length) return 0;
   return sorted[Math.floor(sorted.length * p)];
+}
+
+// Scans the full-season fixture list for gameweeks where a team plays twice (double,
+// worth stacking with Bench Boost/Triple Captain) or not at all (blank, the reason to
+// hold a Free Hit). Postponed fixtures carry event:null until the FA rearranges them,
+// so this fills in only as the calendar actually becomes uneven.
+function scanChipWindows(fixtures, teams, events, fromGw) {
+  const teamById = Object.fromEntries(teams.map(t => [t.id, t.short_name]));
+  const eventsWithFixtures = new Set();
+  const countByEventTeam = new Map();
+  for (const f of fixtures) {
+    if (!f.event) continue;
+    eventsWithFixtures.add(f.event);
+    for (const teamId of [f.team_h, f.team_a]) {
+      const key = `${f.event}:${teamId}`;
+      countByEventTeam.set(key, (countByEventTeam.get(key) ?? 0) + 1);
+    }
+  }
+
+  const windows = [];
+  for (const gw of eventsWithFixtures) {
+    if (fromGw && gw < fromGw) continue;
+    const doubles = [];
+    const blanks = [];
+    for (const team of teams) {
+      const count = countByEventTeam.get(`${gw}:${team.id}`) ?? 0;
+      if (count >= 2) doubles.push(teamById[team.id]);
+      else if (count === 0) blanks.push(teamById[team.id]);
+    }
+    if (doubles.length || blanks.length) {
+      const ev = events.find(e => e.id === gw);
+      windows.push({ gw, deadline: ev?.deadline_time ?? null, doubles, blanks });
+    }
+  }
+  return windows.sort((a, b) => a.gw - b.gw);
 }
