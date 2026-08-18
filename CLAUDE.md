@@ -9,11 +9,12 @@ up with. The scoring layer exists to find that gap, not to average the two signa
 
 ## Architecture
 
-Five sequential Node scripts, each reading the previous one's output from disk. No database, no
+Six sequential Node scripts, each reading the previous one's output from disk. No database, no
 framework, no dependencies. ES modules, Node 20+.
 
 ```
 fetch-fpl.js         FPL API      → data/raw/{bootstrap,fixtures,summaries,manager,meta}.json
+fetch-understat.js   GitHub mirror→ data/raw/understat.json
 fetch-transcripts.js yt-dlp       → data/raw/transcripts.json + data/notebooklm/*.md
 extract-opinions.js  Claude API   → data/raw/opinions.json
 score.js             merge        → data/board.json
@@ -25,23 +26,21 @@ while iterating on weights or layout. Don't re-fetch to test a scoring change.
 
 `npm run quick` skips the transcript and API-cost steps. `npm run all` does everything.
 
-## Important: this code has never run against the live APIs
+## Live-API status
 
-It was written in a sandbox with no network access to `fantasy.premierleague.com` or YouTube, and
-validated against mock fixtures shaped like the real responses. Field names came from public API
-documentation, not from observed payloads.
-
-**First task in a new session: run `npm run fpl` and check the real response shapes.** Likely
-divergences, in rough order of probability:
+Confirmed working against the real FPL API as of the 2026-27 pre-season: `npm run fpl` through
+`npm run score` ran cleanly on the owner's machine with no parsing errors — none of the divergences
+below actually materialized, but they're kept here as the checklist that was validated, in case a
+future API change reintroduces one of them:
 
 - `element-summary` field names inside `fixtures[]` (`difficulty`, `event`, `is_home`, `team_a`, `team_h`)
 - `bootstrap.events` flags — during pre-season no event has `is_current`, which `score.js` handles
-  but is worth confirming
 - `chance_of_playing_next_round` may be `null` rather than absent for available players
 - `entry/{id}/event/{gw}/picks/` 404s until a gameweek has been entered; `fplGet` returns null on 404
-- Whether the API now requires more than a browser User-Agent
+- The API works with just a browser User-Agent, no extra auth
 
-Fix the parsing, don't fix the mock.
+If `npm run fpl` or `npm run score` ever errors again, fix the parsing against the real response,
+don't patch around it.
 
 ## Scoring model
 
@@ -50,9 +49,15 @@ Fix the parsing, don't fix the mock.
 
 - `expectedPoints` — FPL's own `ep_next`
 - `fixtures` — mean of `(5 - difficulty)` over the next N gameweeks
-- `threat` — ICT index plus prior-season points per 90. **This is a proxy for xG and the weakest
-  part of the model.** Adding Understat as a second source is the highest-value improvement
-  available; its data sits in hex-escaped JSON in the page source.
+- `threat` — ICT index plus a real underlying-output component: `fetch-understat.js` pulls
+  `understat_player.csv` from the `vaastav/Fantasy-Premier-League` GitHub mirror (it already
+  scrapes and republishes understat.com's hex-escaped JSON, so this project doesn't have to) and
+  `score.js` matches rows to FPL ids through the same name index the opinion matcher uses. Above
+  ~450 minutes of Understat sample, `threat` uses real npxG+xA per 90; below that (young players,
+  summer signings from outside the PL), it falls back to the old points-per-90 proxy. Each player's
+  `underlyingSource` field in `board.json` says which one was used. The mirror's most recent
+  populated `understat/` folder is one season behind the current one — check `data/{season}` on the
+  mirror each pre-season and bump `SEASON` in `fetch-understat.js` if a newer one exists.
 - `value` — `ep_next` per £m
 - `minutes` — from `status` and `chance_of_playing_next_round`
 
@@ -61,7 +66,11 @@ requiring 2+ channels covering the player). `aheadOfCurve` flags loud expert cov
 ownership — that's where price rises start, so it's the most time-sensitive list on the board.
 
 Pre-season scoring is soft: with no gameweeks played there's no current-season history, so it leans
-on `ep_next` and last season. It sharpens from around GW3.
+on `ep_next`, last season's points, and Understat's prior-season underlying numbers. It sharpens
+from around GW3 as `ict_index` (0 for everyone pre-season) starts accumulating.
+
+`score.js` also scans the full fixture list for double/blank gameweeks (`board.chipWindows`) —
+empty until postponements reshuffle the calendar, usually from around GW25.
 
 ## Name matching
 
@@ -96,7 +105,6 @@ so `aws s3 cp dist/index.html s3://…` plus an invalidation is a valid substitu
 
 ## Ideas not yet built
 
-- Understat integration for real xG/xGI (biggest win)
 - Whisper fallback for channels without auto-captions
 - Transfer optimiser: given the squad, bank and free transfers, suggest moves over a 5-GW horizon
 - Mini-league differential view — what rivals own that the owner doesn't

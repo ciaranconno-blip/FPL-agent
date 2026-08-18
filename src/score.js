@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { load, save, log, zScores } from './lib/util.js';
+import { load, save, log, zScores, buildNameIndex, resolvePlayer } from './lib/util.js';
 
 const config = JSON.parse(await fs.readFile(new URL('../config/sources.json', import.meta.url), 'utf8'));
 const { fixtureHorizon, weights, differentialOwnershipCeiling, templateOwnershipFloor } = config.scoring;
@@ -10,10 +10,24 @@ const summaries = await load('raw/summaries.json', {});
 const manager = await load('raw/manager.json', {});
 const meta = await load('raw/meta.json', {});
 const opinionFile = await load('raw/opinions.json', { opinions: [] });
+const understatFile = await load('raw/understat.json', { season: null, players: [] });
 if (!bootstrap) { console.error('Run `npm run fpl` first.'); process.exit(1); }
 
 const teamById = Object.fromEntries(bootstrap.teams.map(t => [t.id, t]));
 const typeById = Object.fromEntries(bootstrap.element_types.map(t => [t.id, t]));
+
+// Understat rows come with a club name, not an FPL id, so resolve them through the same
+// name index the pundit-opinion matcher uses. Matches by name go stale as players change
+// clubs mid-transfer-window, but the underlying output (xG/xA) is a player trait, not a
+// club one, so a stale team_title on the match doesn't make the number wrong.
+const elementsForMatching = bootstrap.elements.map(el =>
+  ({ ...el, team_name: teamById[el.team]?.name }));
+const understatNameIndex = buildNameIndex(elementsForMatching, bootstrap.teams);
+const understatByPlayer = new Map();
+for (const row of understatFile.players) {
+  const id = resolvePlayer(understatNameIndex, elementsForMatching, row.player_name, row.team_title);
+  if (id) understatByPlayer.set(id, row);
+}
 
 // Group expert opinion by player. Recency and channel weight both count.
 const STANCE = { buy: 1, watch: 0.35, hold: 0.15, sell: -0.8, avoid: -1 };
@@ -45,7 +59,16 @@ const players = ids.map(id => {
     ? (el.chance_of_playing_next_round ?? 100) / 100
     : el.status === 'd' ? 0.5 : 0;
 
-  const threat = (Number(el.ict_index) || 0) + priorPpg * 4;
+  // Real underlying output (npxG+xA per 90) beats the points-based proxy whenever Understat
+  // has enough of a sample — points are noisy with penalties/deflections, xG isn't. Below
+  // half a season of minutes the sample's too thin to trust, so fall back to priorPpg.
+  const understatMatch = understatByPlayer.get(id);
+  const understatMinutes = Number(understatMatch?.time) || 0;
+  const xgi90 = understatMinutes >= 450
+    ? ((Number(understatMatch.npxG) || 0) + (Number(understatMatch.xA) || 0)) / (understatMinutes / 90)
+    : null;
+
+  const threat = (Number(el.ict_index) || 0) + (xgi90 ?? priorPpg) * 4;
   const value = Number(el.ep_next) / (el.now_cost / 10);
 
   const opinions = byPlayer.get(id) ?? [];
@@ -77,6 +100,7 @@ const players = ids.map(id => {
       difficulty: f.difficulty
     })),
     blanks,
+    underlyingSource: xgi90 != null ? 'understat' : 'points-proxy',
     _raw: { fixtureEase, threat, value, minutesRisk, expertRaw },
     captainCalls,
     channelsCovering,
@@ -142,6 +166,7 @@ const board = {
   bank: manager?.entry?.last_deadline_bank != null ? manager.entry.last_deadline_bank / 10 : null,
   videosProcessed: opinionFile.videosProcessed ?? 0,
   hasExpertData: (opinionFile.opinions ?? []).length > 0,
+  understatSeason: understatFile.season,
   chipWindows,
   players: ranked,
   lists: {
@@ -159,6 +184,9 @@ await save('board.json', board);
 log(`Scored ${players.length} players`);
 log(`  differentials: ${board.lists.differentials.length} | template: ${board.lists.template.length} | hype traps: ${board.lists.hypeTraps.length}`);
 if (!board.hasExpertData) log('  No expert data yet — quadrants are stats-only until transcripts are processed.');
+log(understatByPlayer.size
+  ? `  understat: matched ${understatByPlayer.size}/${understatFile.players.length} players (${understatFile.season} season)`
+  : '  understat: no data — run `npm run understat` first');
 log(chipWindows.length
   ? `  chip windows: ${chipWindows.map(w => `GW${w.gw} (${w.doubles.length ? w.doubles.length + ' double' : ''}${w.doubles.length && w.blanks.length ? ', ' : ''}${w.blanks.length ? w.blanks.length + ' blank' : ''})`).join(', ')}`
   : '  chip windows: none scheduled yet');

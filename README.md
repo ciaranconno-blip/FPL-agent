@@ -28,6 +28,7 @@ Individual steps:
 | Command | What it does | Writes |
 |---|---|---|
 | `npm run fpl` | Pulls bootstrap, fixtures, ~300 player histories, your squad | `data/raw/` |
+| `npm run understat` | Pulls real xG/xA from the `vaastav/Fantasy-Premier-League` GitHub mirror | `data/raw/understat.json` |
 | `npm run transcripts` | Pulls subtitles from the 11 channels in `config/sources.json` | `data/raw/transcripts.json`, `data/notebooklm/` |
 | `npm run opinions` | Claude turns transcripts into structured per-player stances | `data/raw/opinions.json` |
 | `npm run score` | Merges both into scores, quadrants, recommendation lists | `data/board.json` |
@@ -88,9 +89,10 @@ CloudFront — the output is one static file, so `aws s3 cp dist/index.html s3:/
 
 ## Known gaps
 
-- **No xG.** The FPL API gives points, form, ICT, minutes and fixture difficulty — not expected
-  goals. The `threat` component currently proxies it with ICT plus prior-season points per 90.
-  Adding Understat as a second source is the biggest single upgrade available.
+- **Understat is one season behind.** `vaastav/Fantasy-Premier-League`'s `understat/` folder for
+  the current season only fills in once matches have been played, so `fetch-understat.js` points at
+  last season's data by default — real underlying output, just not this season's yet. Bump `SEASON`
+  in that file once the mirror publishes a folder for the current one.
 - **Name matching.** `src/lib/util.js` builds aliases from web names and surnames. Anything it
   can't resolve lands in `unmatchedNames` in `opinions.json` — check it after the first real run
   and add hard-coded overrides for the stubborn ones.
