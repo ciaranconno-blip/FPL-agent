@@ -71,6 +71,16 @@ don't patch around it.
   `underlyingSource` field in `board.json` says which one was used. The mirror's most recent
   populated `understat/` folder is one season behind the current one — check `data/{season}` on the
   mirror each pre-season and bump `SEASON` in `fetch-understat.js` if a newer one exists.
+
+  This prior-season baseline is now blended with the current season as it happens: `fetch-fpl.js`
+  already pulls each player's current-season gameweek-by-gameweek history (`summary.history`) —
+  `score.js` used to ignore it, now it computes a short-form xG/xA rate from the last
+  `scoring.formWindowGws` gameweeks (config/sources.json, default 6) once there's 180+ minutes of
+  current-season sample, and blends it with the long-form (prior-season) rate at a weight that
+  ramps from 0 to a 70% cap as current-season minutes accumulate — never fully replacing the
+  larger long-form sample on a hot or cold run of a few games. This is the actual mechanism
+  behind "pre-season scoring is soft, sharpens by GW3" below; before this it was just ICT index
+  (0 for everyone pre-season) doing the sharpening on its own.
 - `value` — `ep_next` per £m
 - `minutes` — from `status` and `chance_of_playing_next_round`
 
@@ -123,10 +133,6 @@ so `aws s3 cp dist/index.html s3://…` plus an invalidation is a valid substitu
   formation constraints, captain doubling, bench weighting) alongside the points-prediction
   model `predict.js` is based on — the LP structure is fully portable even though its data
   source (an external `MODEL`/`PREDICT` workbook) isn't ours; still to build.
-- Rolling season-spanning form: the source model blends "long form" (full season) and "short
-  form" (recent gameweeks) via a persistent per-gameweek databank, so predictions stay sharp
-  across the GW1 boundary instead of resetting soft each preseason. `predict.js` currently only
-  uses prior-season snapshots, not a rolling window — still to build.
 - Squad-rotation data from FBref (starts/subs/unused-subs per player) — the source model's
   appearance-probability calc uses this; `predict.js` approximates it from `history_past`
   minutes/starts instead, since fpl-agent doesn't scrape FBref.

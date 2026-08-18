@@ -70,27 +70,50 @@ const players = ids.map(id => {
     ? (el.chance_of_playing_next_round ?? 100) / 100
     : el.status === 'd' ? 0.5 : 0;
 
-  // Real underlying output (npxG+xA per 90) beats the points-based proxy whenever Understat
+  // Real underlying output (npxG/xA per 90) beats the points-based proxy whenever Understat
   // has enough of a sample — points are noisy with penalties/deflections, xG isn't. Below
-  // half a season of minutes the sample's too thin to trust, so fall back to priorPpg.
+  // half a season of minutes the sample's too thin to trust, so fall back to null (handled below).
   const understatMatch = understatByPlayer.get(id);
   const understatMinutes = Number(understatMatch?.time) || 0;
-  const xgi90 = understatMinutes >= 450
-    ? ((Number(understatMatch.npxG) || 0) + (Number(understatMatch.xA) || 0)) / (understatMinutes / 90)
-    : null;
+  const longFormXG90 = understatMinutes >= 450 ? Number(understatMatch.npxG) / (understatMinutes / 90) : null;
+  const longFormXA90 = understatMinutes >= 450 ? Number(understatMatch.xA) / (understatMinutes / 90) : null;
+
+  // "Sharpens from GW3" made real: fetch-fpl.js already pulls each player's current-season
+  // gameweek-by-gameweek history, but nothing used it until now. Blend it in as a recency
+  // signal on top of the long-form (prior-season) baseline above, weight ramping smoothly from
+  // 0 pre-season to a 70% cap once there's a real season's worth of current-season minutes —
+  // never fully replacing the long-form sample, since a hot/cold run of 3 games shouldn't.
+  const recentHistory = (summary.history ?? []).slice(-config.scoring.formWindowGws);
+  const recentMinutes = recentHistory.reduce((a, h) => a + (Number(h.minutes) || 0), 0);
+  const shortFormSample = recentMinutes >= 180;
+  const shortFormXG90 = shortFormSample
+    ? recentHistory.reduce((a, h) => a + (Number(h.expected_goals) || 0), 0) / (recentMinutes / 90) : null;
+  const shortFormXA90 = shortFormSample
+    ? recentHistory.reduce((a, h) => a + (Number(h.expected_assists) || 0), 0) / (recentMinutes / 90) : null;
+  const formWeight = shortFormSample ? Math.min(0.7, recentMinutes / 1800) : 0;
+
+  const blend = (longForm, shortForm, fallback) => {
+    if (shortForm != null && longForm != null) return (1 - formWeight) * longForm + formWeight * shortForm;
+    if (shortForm != null) return shortForm; // no long-form sample (e.g. summer PL arrival) — trust the season so far
+    if (longForm != null) return longForm;
+    return fallback;
+  };
+  const xG90 = blend(longFormXG90, shortFormXG90, null);
+  const xA90 = blend(longFormXA90, shortFormXA90, null);
+  const xgi90 = xG90 != null && xA90 != null ? xG90 + xA90 : null;
 
   const threat = (Number(el.ict_index) || 0) + (xgi90 ?? priorPpg) * 4;
   const value = Number(el.ep_next) / (el.now_cost / 10);
 
-  // Real fixture-adjusted prediction for the next match, from the same underlying data as
-  // `threat` (Understat npxG/xA) plus real opponent form — see src/lib/predict.js. Falls back
-  // to FPL's own ep_next when there isn't enough data to trust the model (young players, no
-  // fixture, an unmatched team) rather than asserting a confident number from nothing.
+  // Real fixture-adjusted prediction for the next match, from the same blended xG/xA above plus
+  // real opponent form — see src/lib/predict.js. Falls back to FPL's own ep_next when there
+  // isn't enough data to trust the model (no fixture, unmatched team) rather than asserting a
+  // confident number from nothing.
   const posKey = typeById[el.element_type].singular_name_short;
   const nextFixture = upcoming[0];
   const ownForm = teamForm[team.short_name];
   let predictedPoints = 0;
-  if (nextFixture && ownForm && understatMinutes >= 450) {
+  if (nextFixture && ownForm && xG90 != null) {
     const opponentForm = teamForm[teamById[nextFixture.is_home ? nextFixture.team_a : nextFixture.team_h]?.short_name];
     if (opponentForm) {
       const dc90 = Number(el.defensive_contribution_per_90) || 0;
@@ -101,9 +124,7 @@ const players = ids.map(id => {
       const startProb = Math.min(0.99, minutesRisk * startRate);
       const appearanceProb = Math.min(0.99, minutesRisk * Math.min(1, startRate + 0.2));
       predictedPoints = predictFixturePoints(
-        { pos: posKey, xG90: xgi90 != null ? Number(understatMatch.npxG) / (understatMinutes / 90) : 0,
-          xA90: xgi90 != null ? Number(understatMatch.xA) / (understatMinutes / 90) : 0,
-          dc90, bonusPer90, startProb, appearanceProb },
+        { pos: posKey, xG90, xA90: xA90 ?? 0, dc90, bonusPer90, startProb, appearanceProb },
         { isHome: nextFixture.is_home, opponentGoalsAgainstPer90: opponentForm.goalsAgainstPer90,
           opponentGoalsForPer90: opponentForm.goalsForPer90, ownTeamGoalsAgainstPer90: ownForm.goalsAgainstPer90 },
         leagueAvg
@@ -143,7 +164,9 @@ const players = ids.map(id => {
       difficulty: f.difficulty
     })),
     blanks,
-    underlyingSource: xgi90 != null ? 'understat' : 'points-proxy',
+    underlyingSource: shortFormSample && longFormXG90 != null ? 'understat+form'
+      : shortFormSample ? 'current-form'
+      : xgi90 != null ? 'understat' : 'points-proxy',
     _raw: { fixtureEase, threat, value, minutesRisk, expertRaw, expectedPointsValue },
     captainCalls,
     channelsCovering,

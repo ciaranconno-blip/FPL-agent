@@ -19,6 +19,7 @@
   },
   "scoring": {
     "fixtureHorizon": 5,
+    "formWindowGws": 6,
     "weights": {
       "expectedPoints": 0.30,
       "fixtures": 0.20,
