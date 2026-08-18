@@ -33,6 +33,7 @@ Individual steps:
 | `npm run opinions` | Claude turns transcripts into structured per-player stances | `data/raw/opinions.json` |
 | `npm run score` | Merges both into scores, quadrants, recommendation lists | `data/board.json` |
 | `npm run dashboard` | Renders the self-contained HTML | `dist/index.html` |
+| `npm run optimise` | Picks the best 15-man squad within budget from `board.json` | `data/optimal-squad.json` |
 
 Every step reads from disk, so you can re-run scoring without re-fetching anything.
 

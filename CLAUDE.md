@@ -95,6 +95,26 @@ from around GW3 as `ict_index` (0 for everyone pre-season) starts accumulating.
 `score.js` also scans the full fixture list for double/blank gameweeks (`board.chipWindows`) —
 empty until postponements reshuffle the calendar, usually from around GW25.
 
+## Squad optimiser
+
+`npm run optimise` (`src/optimise-squad.js`) picks the best possible 15-man squad within a
+£100.0m budget from `board.json`'s `predictedPoints`, ported from the same shared model's
+Solver-based picker. No LP dependency exists in this no-dependencies codebase, so it's built from
+exact DP instead (`src/lib/knapsack.js`): a 0/1 knapsack per position (2 GKP/5 DEF/5 MID/3 FWD)
+merged into one whole-squad budget allocation — genuinely optimal for budget+position-count, not
+a heuristic. The max-3-players-per-club rule isn't in that DP's state space (it would blow the
+table sizes up for little gain, since violations are rare), so it's fixed up afterward: a repair
+pass swaps out over-represented clubs' players for the single best-affordable replacement that
+loses the fewest points, then a general local-search pass keeps making any further points-
+improving same-position swap until none remain. Verified against a brute-force check on an
+adversarial test case (one club deliberately holding the best player at every position) — lands
+on the exact true optimum once the local-search pass runs, was off by ~1% without it.
+
+Then picks the highest-scoring valid starting XI by brute-force enumeration over the handful of
+legal formations (1 GK, 3–5 DEF, 2–5 MID, 1–3 FWD summing to 10), captain/vice-captain as the top
+two scorers in that XI. Picks a squad from scratch within budget — doesn't yet know about an
+existing squad, bank, or free transfers (see "ideas not yet built" below).
+
 ## Name matching
 
 The weak joint in the whole system. `src/lib/util.js` builds aliases from `web_name`, full name,
@@ -129,10 +149,10 @@ so `aws s3 cp dist/index.html s3://…` plus an invalidation is a valid substitu
 ## Ideas not yet built
 
 - Whisper fallback for channels without auto-captions
-- Squad optimiser: a viewer shared a real Excel-Solver-based squad picker (budget/position/
-  formation constraints, captain doubling, bench weighting) alongside the points-prediction
-  model `predict.js` is based on — the LP structure is fully portable even though its data
-  source (an external `MODEL`/`PREDICT` workbook) isn't ours; still to build.
+- Transfer suggestions from an existing squad: `npm run optimise` (below) picks the best possible
+  15 from scratch within budget, but doesn't yet know about an existing squad, bank, or free
+  transfers, so it can't suggest moves over a horizon the way a real transfer planner would.
+  Needs post-deadline picks data (`entry/{id}/event/{gw}/picks/`) to know what's actually owned.
 - Squad-rotation data from FBref (starts/subs/unused-subs per player) — the source model's
   appearance-probability calc uses this; `predict.js` approximates it from `history_past`
   minutes/starts instead, since fpl-agent doesn't scrape FBref.

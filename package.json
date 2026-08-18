@@ -11,6 +11,7 @@
     "opinions": "node src/extract-opinions.js",
     "score": "node src/score.js",
     "dashboard": "node src/build-dashboard.js",
+    "optimise": "node src/optimise-squad.js",
     "all": "npm run fpl && npm run understat && npm run transcripts && npm run opinions && npm run score && npm run dashboard",
     "quick": "npm run fpl && npm run understat && npm run score && npm run dashboard"
   },
