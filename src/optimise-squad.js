@@ -48,6 +48,13 @@ for (let i = 1; i < order.length; i++) {
   splits.push(splitAt);
 }
 
+if (chain.at(-1)[BUDGET_TENTHS] === -Infinity) {
+  const cheapest = pos => [...byPos[pos]].sort((a, b) => a.cost - b.cost).slice(0, SQUAD_COUNTS[pos]).reduce((a, p) => a + p.cost, 0);
+  const minCost = order.reduce((a, pos) => a + cheapest(pos), 0) / 10;
+  console.error(`No 15-man squad fits within £${BUDGET_TENTHS / 10}m — even the cheapest legal combination costs £${minCost.toFixed(1)}m. Check board.json's prices look real.`);
+  process.exit(1);
+}
+
 let remainingBudget = BUDGET_TENTHS;
 const groupBudgets = {};
 for (let i = order.length - 1; i >= 1; i--) {
