@@ -47,7 +47,20 @@ don't patch around it.
 `score.js` z-scores five components across the shortlist, then blends them by the weights in
 `config/sources.json` (they should sum to 1):
 
-- `expectedPoints` — FPL's own `ep_next`
+- `expectedPoints` — a real fixture-adjusted points prediction (`src/lib/predict.js`), not FPL's
+  opaque `ep_next`. Ported from a viewer-shared FPL prediction spreadsheet: goal/assist points
+  from Understat npxG/xA scaled by how leaky the next opponent's defence is, clean-sheet and
+  2+-conceded probability from a Poisson distribution on the team's own goals-against rate,
+  defensive-contribution points from a Poisson threshold test (9+ for a DEF, 11+ for anyone
+  else). Opponent/own-team goals-for/against come from real match results (`fetch-understat.js`
+  also pulls `fixtures.csv`/`teams.csv` from the same mirror). Needs a next fixture, a team-form
+  match on both sides, and 450+ Understat minutes for the player — falls back to `ep_next` when
+  any of those are missing (young players, promoted-team fixtures with no prior-season data,
+  blank gameweeks) rather than asserting a number from nothing. Each player's `pointsSource`
+  field in `board.json` says which one was used; `predictedPoints` is always present alongside
+  the raw `epNext` for comparison. The position-scoring constants (goal/CS/DC points per
+  position) are real current FPL rules, verified against the source spreadsheet's CONTROL sheet
+  — if FPL changes scoring rules, update `POSITION_POINTS` in `predict.js` to match.
 - `fixtures` — mean of `(5 - difficulty)` over the next N gameweeks
 - `threat` — ICT index plus a real underlying-output component: `fetch-understat.js` pulls
   `understat_player.csv` from the `vaastav/Fantasy-Premier-League` GitHub mirror (it already
@@ -106,6 +119,16 @@ so `aws s3 cp dist/index.html s3://…` plus an invalidation is a valid substitu
 ## Ideas not yet built
 
 - Whisper fallback for channels without auto-captions
-- Transfer optimiser: given the squad, bank and free transfers, suggest moves over a 5-GW horizon
+- Squad optimiser: a viewer shared a real Excel-Solver-based squad picker (budget/position/
+  formation constraints, captain doubling, bench weighting) alongside the points-prediction
+  model `predict.js` is based on — the LP structure is fully portable even though its data
+  source (an external `MODEL`/`PREDICT` workbook) isn't ours; still to build.
+- Rolling season-spanning form: the source model blends "long form" (full season) and "short
+  form" (recent gameweeks) via a persistent per-gameweek databank, so predictions stay sharp
+  across the GW1 boundary instead of resetting soft each preseason. `predict.js` currently only
+  uses prior-season snapshots, not a rolling window — still to build.
+- Squad-rotation data from FBref (starts/subs/unused-subs per player) — the source model's
+  appearance-probability calc uses this; `predict.js` approximates it from `history_past`
+  minutes/starts instead, since fpl-agent doesn't scrape FBref.
 - Mini-league differential view — what rivals own that the owner doesn't
 - Price-change prediction from `transfers_in_event` velocity

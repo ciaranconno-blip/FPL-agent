@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { load, save, log, zScores, buildNameIndex, resolvePlayer } from './lib/util.js';
+import { predictFixturePoints } from './lib/predict.js';
 
 const config = JSON.parse(await fs.readFile(new URL('../config/sources.json', import.meta.url), 'utf8'));
 const { fixtureHorizon, weights, differentialOwnershipCeiling, templateOwnershipFloor } = config.scoring;
@@ -28,6 +29,16 @@ for (const row of understatFile.players) {
   const id = resolvePlayer(understatNameIndex, elementsForMatching, row.player_name, row.team_title);
   if (id) understatByPlayer.set(id, row);
 }
+
+// League-average goal rates, used to turn a fixture's opponent into a strength multiplier
+// (leakier-than-average defence inflates goal/assist chances, sharper-than-average attack
+// deflates clean-sheet odds). Real team data from the vaastav mirror's last-season results.
+const teamForm = understatFile.teams ?? {};
+const leagueAvg = {
+  goalsForPer90: average(Object.values(teamForm).map(t => t.goalsForPer90)),
+  goalsAgainstPer90: average(Object.values(teamForm).map(t => t.goalsAgainstPer90))
+};
+function average(arr) { return arr.length ? arr.reduce((a, b) => a + b, 0) / arr.length : 0; }
 
 // Group expert opinion by player. Recency and channel weight both count.
 const STANCE = { buy: 1, watch: 0.35, hold: 0.15, sell: -0.8, avoid: -1 };
@@ -71,6 +82,36 @@ const players = ids.map(id => {
   const threat = (Number(el.ict_index) || 0) + (xgi90 ?? priorPpg) * 4;
   const value = Number(el.ep_next) / (el.now_cost / 10);
 
+  // Real fixture-adjusted prediction for the next match, from the same underlying data as
+  // `threat` (Understat npxG/xA) plus real opponent form — see src/lib/predict.js. Falls back
+  // to FPL's own ep_next when there isn't enough data to trust the model (young players, no
+  // fixture, an unmatched team) rather than asserting a confident number from nothing.
+  const posKey = typeById[el.element_type].singular_name_short;
+  const nextFixture = upcoming[0];
+  const ownForm = teamForm[team.short_name];
+  let predictedPoints = 0;
+  if (nextFixture && ownForm && understatMinutes >= 450) {
+    const opponentForm = teamForm[teamById[nextFixture.is_home ? nextFixture.team_a : nextFixture.team_h]?.short_name];
+    if (opponentForm) {
+      const dc90 = Number(el.defensive_contribution_per_90) || 0;
+      const bonusPer90 = lastSeason && lastSeason.minutes > 900
+        ? (Number(lastSeason.bonus) || 0) / (lastSeason.minutes / 90) : 0;
+      const priorStarts = Number(lastSeason?.starts) || (lastSeason?.minutes > 0 ? lastSeason.minutes / 90 : 0);
+      const startRate = Math.min(1, priorStarts / 38);
+      const startProb = Math.min(0.99, minutesRisk * startRate);
+      const appearanceProb = Math.min(0.99, minutesRisk * Math.min(1, startRate + 0.2));
+      predictedPoints = predictFixturePoints(
+        { pos: posKey, xG90: xgi90 != null ? Number(understatMatch.npxG) / (understatMinutes / 90) : 0,
+          xA90: xgi90 != null ? Number(understatMatch.xA) / (understatMinutes / 90) : 0,
+          dc90, bonusPer90, startProb, appearanceProb },
+        { isHome: nextFixture.is_home, opponentGoalsAgainstPer90: opponentForm.goalsAgainstPer90,
+          opponentGoalsForPer90: opponentForm.goalsForPer90, ownTeamGoalsAgainstPer90: ownForm.goalsAgainstPer90 },
+        leagueAvg
+      );
+    }
+  }
+  const expectedPointsValue = predictedPoints > 0 ? predictedPoints : Number(el.ep_next);
+
   const opinions = byPlayer.get(id) ?? [];
   const expertRaw = opinions.reduce(
     (a, o) => a + (STANCE[o.stance] ?? 0) * o.confidence * o.channelWeight, 0);
@@ -87,6 +128,8 @@ const players = ids.map(id => {
     price: el.now_cost / 10,
     ownership: Number(el.selected_by_percent),
     epNext: Number(el.ep_next),
+    predictedPoints: Number(expectedPointsValue.toFixed(2)),
+    pointsSource: predictedPoints > 0 ? 'model' : 'ep_next',
     form: Number(el.form),
     totalPoints: el.total_points,
     status: el.status,
@@ -101,7 +144,7 @@ const players = ids.map(id => {
     })),
     blanks,
     underlyingSource: xgi90 != null ? 'understat' : 'points-proxy',
-    _raw: { fixtureEase, threat, value, minutesRisk, expertRaw },
+    _raw: { fixtureEase, threat, value, minutesRisk, expertRaw, expectedPointsValue },
     captainCalls,
     channelsCovering,
     opinions: opinions.map(o => ({
@@ -112,7 +155,7 @@ const players = ids.map(id => {
 });
 
 // Normalise every component across the shortlist, then blend.
-const zEp = zScores(players.map(p => p.epNext));
+const zEp = zScores(players.map(p => p._raw.expectedPointsValue));
 const zFix = zScores(players.map(p => p._raw.fixtureEase));
 const zThreat = zScores(players.map(p => p._raw.threat));
 const zValue = zScores(players.map(p => p._raw.value));
@@ -175,7 +218,7 @@ const board = {
     hypeTraps: ranked.filter(p => p.quadrant === 'hype-trap').slice(0, 8),
     aheadOfCurve: ranked.filter(p => p.aheadOfCurve && !p.flagged).slice(0, 10),
     captaincy: [...players].sort((a, b) =>
-      (b.captainCalls - a.captainCalls) || (b.epNext - a.epNext)).slice(0, 6),
+      (b.captainCalls - a.captainCalls) || (b.predictedPoints - a.predictedPoints)).slice(0, 6),
     squadRisks: ranked.filter(p => p.owned && (p.flagged || p.dataScore < 0))
   }
 };
@@ -187,6 +230,7 @@ if (!board.hasExpertData) log('  No expert data yet — quadrants are stats-only
 log(understatByPlayer.size
   ? `  understat: matched ${understatByPlayer.size}/${understatFile.players.length} players (${understatFile.season} season)`
   : '  understat: no data — run `npm run understat` first');
+log(`  predicted points: ${players.filter(p => p.pointsSource === 'model').length}/${players.length} players from the fixture-adjusted model, rest from FPL's ep_next`);
 log(chipWindows.length
   ? `  chip windows: ${chipWindows.map(w => `GW${w.gw} (${w.doubles.length ? w.doubles.length + ' double' : ''}${w.doubles.length && w.blanks.length ? ', ' : ''}${w.blanks.length ? w.blanks.length + ' blank' : ''})`).join(', ')}`
   : '  chip windows: none scheduled yet');
