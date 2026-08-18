@@ -1,0 +1,6 @@
+node_modules/
+data/raw/
+data/tmp-subs/
+.env
+.DS_Store
+data/notebooklm/

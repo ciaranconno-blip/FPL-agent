@@ -1,0 +1,17 @@
+{
+  "name": "fpl-agent",
+  "version": "1.0.0",
+  "description": "Blends FPL API data with FPL YouTube expert consensus into a weekly decision dashboard",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fpl": "node src/fetch-fpl.js",
+    "transcripts": "node src/fetch-transcripts.js",
+    "opinions": "node src/extract-opinions.js",
+    "score": "node src/score.js",
+    "dashboard": "node src/build-dashboard.js",
+    "all": "npm run fpl && npm run transcripts && npm run opinions && npm run score && npm run dashboard",
+    "quick": "npm run fpl && npm run score && npm run dashboard"
+  },
+  "dependencies": {}
+}

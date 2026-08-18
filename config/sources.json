@@ -1,0 +1,36 @@
+{
+  "managerId": 5725107,
+  "channels": [
+    { "handle": "FPLRaptor",          "url": "https://www.youtube.com/@FPLRaptor",          "weight": 1.0 },
+    { "handle": "FPLHarry",           "url": "https://www.youtube.com/@FPLHarry",           "weight": 1.0 },
+    { "handle": "FantasyFootballHub", "url": "https://www.youtube.com/@FantasyFootballHub", "weight": 1.2 },
+    { "handle": "GoldenGoalFF",       "url": "https://www.youtube.com/@GoldenGoalFF",       "weight": 1.0 },
+    { "handle": "FPLMate",            "url": "https://www.youtube.com/@FPLMate",            "weight": 1.0 },
+    { "handle": "LetsTalkFPL",        "url": "https://www.youtube.com/@LetsTalkFPL",        "weight": 1.2 },
+    { "handle": "FPLFocal",           "url": "https://www.youtube.com/@FPLFocal",           "weight": 1.2 },
+    { "handle": "PlanetFPL",          "url": "https://www.youtube.com/@PlanetFPL",          "weight": 1.0 },
+    { "handle": "UCtIPFexB6PLKNNl0XH3SKKw", "url": "https://www.youtube.com/channel/UCtIPFexB6PLKNNl0XH3SKKw", "weight": 1.0 },
+    { "handle": "FPLFran",            "url": "https://www.youtube.com/@FPLFran",            "weight": 1.0 },
+    { "handle": "FPLTom",             "url": "https://www.youtube.com/@FPLTom",             "weight": 1.0 }
+  ],
+  "transcripts": {
+    "videosPerChannel": 4,
+    "maxAgeDays": 8
+  },
+  "scoring": {
+    "fixtureHorizon": 5,
+    "weights": {
+      "expectedPoints": 0.30,
+      "fixtures": 0.20,
+      "threat": 0.20,
+      "value": 0.15,
+      "minutes": 0.15
+    },
+    "differentialOwnershipCeiling": 12,
+    "templateOwnershipFloor": 25
+  },
+  "claude": {
+    "model": "claude-sonnet-5",
+    "maxCharsPerChunk": 24000
+  }
+}

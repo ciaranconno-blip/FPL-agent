@@ -1,0 +1,65 @@
+name: Refresh FPL board
+
+on:
+  schedule:
+    # Thursday 07:00 UTC — press conferences have started
+    - cron: '0 7 * * 4'
+    # Friday 07:00 UTC — team news firming up
+    - cron: '0 7 * * 5'
+    # Saturday 09:00 UTC — final sweep before a standard 11:00 deadline
+    - cron: '0 9 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install yt-dlp
+        run: pipx install yt-dlp
+
+      - name: Pull FPL data
+        run: npm run fpl
+
+      - name: Pull transcripts
+        run: npm run transcripts
+        continue-on-error: true
+
+      - name: Extract expert opinions
+        run: npm run opinions
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Score and build
+        run: npm run score && npm run dashboard
+
+      - name: Commit board
+        run: |
+          git config user.name "fpl-agent"
+          git config user.email "actions@github.com"
+          git add data/board.json dist/index.html
+          git diff --staged --quiet || git commit -m "Refresh board $(date -u +%Y-%m-%dT%H:%M)"
+          git push
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4
