@@ -15,7 +15,7 @@ export const POSITION_POINTS = {
   FWD: { goal: 4, cs: 0, twoPlusGC: 0, dc: 2 }
 };
 
-const DC_THRESHOLD = { DEF: 9, default: 11 }; // DC points need 10+ for a DEF, 12+ for anyone else
+const DC_THRESHOLD = { DEF: 10, default: 12 }; // DC points need 10+ for a DEF, 12+ for anyone else
 const ASSIST_BOOST = 1.4; // CONTROL!B65 = 0.4, applied as (1 + 0.4)
 const HOME_MULT = 1.05;
 const AWAY_MULT = 0.95;

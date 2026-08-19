@@ -146,8 +146,10 @@ stubborn — pundits use nicknames and shortened forms the index won't guess.
 ## Automation
 
 `.github/workflows/refresh.yml` runs Thursday, Friday and Saturday mornings, then publishes `dist/`
-to GitHub Pages. Needs `ANTHROPIC_API_KEY` as a repo secret. The transcript and opinion steps are
-`continue-on-error` so a YouTube hiccup still produces a stats-only board.
+to GitHub Pages. Needs `ANTHROPIC_API_KEY` as a repo secret. The Understat, transcript and opinion
+steps are all `continue-on-error` so a mirror or YouTube hiccup still produces a board (Understat
+falls back to the points-per-90 proxy, transcripts/opinions fall back to a stats-only board) rather
+than failing the whole run.
 
 Alternative deploy target: the owner already runs `ciaranconnolly.ie` on S3 + CloudFront + Route 53,
 so `aws s3 cp dist/index.html s3://…` plus an invalidation is a valid substitute for Pages.

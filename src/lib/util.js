@@ -53,8 +53,8 @@ export async function load(relPath, fallback = null) {
 }
 
 // Strips accents and punctuation so "Gabriel Fernando de Jesus" and "Jesus" can meet.
-// \u00df isn't a combining accent, so NFD leaves it alone \u2014 without this it just gets deleted by
-// the a-z filter below ("Gro\u00df" -> "gro" instead of "gross"), silently breaking a real player.
+// ß isn't a combining accent, so NFD leaves it alone — without this it just gets deleted by
+// the a-z filter below ("Groß" -> "gro" instead of "gross"), silently breaking a real player.
 export function normalise(name) {
   return String(name)
     .replace(/\u00df/g, 'ss')
@@ -68,9 +68,9 @@ export function normalise(name) {
 
 // Auto-captions mangle spoken names phonetically in ways accent-stripping and substring
 // matching can't fix ("Harland" for Haaland, "Vertz" for Wirtz). Found from a real transcript
-// run's unmatchedNames \u2014 see CLAUDE.md's name-matching section. Add to this as new stubborn
+// run's unmatchedNames — see CLAUDE.md's name-matching section. Add to this as new stubborn
 // ones turn up; don't guess at ones that could plausibly mean more than one real player (e.g.
-// "Bruno" alone is genuinely ambiguous between Bruno Fernandes and Bruno Guimar\u00e3es \u2014 left out
+// "Bruno" alone is genuinely ambiguous between Bruno Fernandes and Bruno Guimarães — left out
 // on purpose rather than risk misattributing an opinion to the wrong one).
 const MANUAL_ALIASES = {
   'harland': 'haaland',

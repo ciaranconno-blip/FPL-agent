@@ -119,7 +119,8 @@ const players = ids.map(id => {
       const dc90 = Number(el.defensive_contribution_per_90) || 0;
       const bonusPer90 = lastSeason && lastSeason.minutes > 900
         ? (Number(lastSeason.bonus) || 0) / (lastSeason.minutes / 90) : 0;
-      const priorStarts = Number(lastSeason?.starts) || (lastSeason?.minutes > 0 ? lastSeason.minutes / 90 : 0);
+      const priorStarts = lastSeason?.starts != null
+        ? Number(lastSeason.starts) : (lastSeason?.minutes > 0 ? lastSeason.minutes / 90 : 0);
       const startRate = Math.min(1, priorStarts / 38);
       const startProb = Math.min(0.99, minutesRisk * startRate);
       const appearanceProb = Math.min(0.99, minutesRisk * Math.min(1, startRate + 0.2));

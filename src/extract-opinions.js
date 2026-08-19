@@ -99,7 +99,7 @@ for (const t of transcripts) {
         elementId: id,
         stance: op.stance,
         captain: Boolean(op.captain),
-        confidence: Math.max(0, Math.min(1, Number(op.confidence) || 0.3)),
+        confidence: Math.max(0, Math.min(1, Number.isFinite(Number(op.confidence)) ? Number(op.confidence) : 0.3)),
         reason: op.reason ?? '',
         risk: op.risk ?? null,
         channel: t.channel,

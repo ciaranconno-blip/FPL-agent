@@ -31,6 +31,10 @@ jobs:
       - name: Pull FPL data
         run: npm run fpl
 
+      - name: Pull Understat data
+        run: npm run understat
+        continue-on-error: true
+
       - name: Pull transcripts
         run: npm run transcripts
         continue-on-error: true
