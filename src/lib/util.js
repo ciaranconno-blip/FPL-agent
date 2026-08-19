@@ -91,6 +91,14 @@ const MANUAL_ALIASES = {
   'david raya': 'raya'
 };
 
+// "Bruno" alone is genuinely ambiguous (Bruno Fernandes at Man Utd, Bruno Guimarães at
+// Newcastle), but per the owner: pundits mean Fernandes the overwhelming majority of the time,
+// so that's the default — a Newcastle-context hint on the opinion still overrides it, since a
+// video actually about Guimarães shouldn't get silently reattributed to the wrong player.
+const BRUNO_DEFAULT = 'bruno fernandes';
+const BRUNO_ALTERNATIVE = 'bruno guimaraes';
+const BRUNO_ALTERNATIVE_HINTS = ['newcastle', 'nufc', 'magpies'];
+
 // Builds every reasonable alias for each player, pointing back to the FPL element id.
 export function buildNameIndex(elements, teams) {
   const teamById = Object.fromEntries(teams.map(t => [t.id, t]));
@@ -117,7 +125,11 @@ export function buildNameIndex(elements, teams) {
 // Resolves a spoken name to one element id. Ambiguous surnames need a team hint.
 export function resolvePlayer(nameIndex, elements, spokenName, teamHint) {
   const normalised = normalise(spokenName);
-  const key = normalise(MANUAL_ALIASES[normalised] ?? normalised);
+  const hint = teamHint ? normalise(teamHint) : '';
+  let key = normalise(MANUAL_ALIASES[normalised] ?? normalised);
+  if (normalised === 'bruno') {
+    key = normalise(BRUNO_ALTERNATIVE_HINTS.some(h => hint.includes(h)) ? BRUNO_ALTERNATIVE : BRUNO_DEFAULT);
+  }
   const direct = nameIndex.get(key);
   if (direct && direct.size === 1) return [...direct][0];
   if (direct && direct.size > 1 && teamHint) {
