@@ -131,9 +131,13 @@ stubborn — pundits use nicknames and shortened forms the index won't guess.
   caption de-duplication, source-cap reasoning). Match that bar or write nothing.
 - The dashboard is one self-contained HTML file with the board JSON inlined. No build step, no
   bundler. Fonts come from Google Fonts; everything else is inline.
-- Dashboard design is deliberate: broadcast-data aesthetic, Archivo plus IBM Plex Mono, tabular
-  numerals, hairline rules. The 2×2 scatter is the signature element and the thesis of the tool —
-  keep it prominent. Don't restyle toward a generic dashboard template.
+- Dashboard design is deliberate: FPL-official-inspired dark theme (deep purple ground, green/cyan
+  glow accents), Unbounded for display type, Plus Jakarta Sans for body/UI, IBM Plex Mono for all
+  tabular data — tabular numerals throughout. Glossy white player cards on the pitch panel with a
+  position-colour top stripe (gold GKP, cyan DEF, green MID, pink FWD) and gold/cyan captain/vice
+  badges. The 2×2 scatter is the signature element and the thesis of the tool — keep it prominent.
+  Single dark world by design (matches the real FPL app, which is itself dark-purple branded) —
+  it does not need to also support a light theme.
 - The dashboard opens with two panels ahead of the scatter: **My squad** (a pitch view of
   `board.mySquad` — captain/vice badges, per-player predicted points, a risk tint when
   flagged/negative dataScore, bench below) and **Chip windows** (`board.chipWindows`, empty
