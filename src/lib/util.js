@@ -53,8 +53,11 @@ export async function load(relPath, fallback = null) {
 }
 
 // Strips accents and punctuation so "Gabriel Fernando de Jesus" and "Jesus" can meet.
+// \u00df isn't a combining accent, so NFD leaves it alone \u2014 without this it just gets deleted by
+// the a-z filter below ("Gro\u00df" -> "gro" instead of "gross"), silently breaking a real player.
 export function normalise(name) {
   return String(name)
+    .replace(/\u00df/g, 'ss')
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
@@ -62,6 +65,31 @@ export function normalise(name) {
     .replace(/\s+/g, ' ')
     .trim();
 }
+
+// Auto-captions mangle spoken names phonetically in ways accent-stripping and substring
+// matching can't fix ("Harland" for Haaland, "Vertz" for Wirtz). Found from a real transcript
+// run's unmatchedNames \u2014 see CLAUDE.md's name-matching section. Add to this as new stubborn
+// ones turn up; don't guess at ones that could plausibly mean more than one real player (e.g.
+// "Bruno" alone is genuinely ambiguous between Bruno Fernandes and Bruno Guimar\u00e3es \u2014 left out
+// on purpose rather than risk misattributing an opinion to the wrong one).
+const MANUAL_ALIASES = {
+  'harland': 'haaland',
+  'erling harland': 'haaland',
+  'kinski': 'kinsky',
+  'semeno': 'semenyo',
+  'florian vertz': 'wirtz',
+  'vertz': 'wirtz',
+  'jao pedro': 'joao pedro',
+  'xiao pedro': 'joao pedro',
+  'lefay': 'le fee',
+  'califury': 'calafiori',
+  'zolis': 'tzolis',
+  'dop': 'diop',
+  'moscara': 'mosquera',
+  'meguire': 'maguire',
+  'bumo': 'mbeumo',
+  'david raya': 'raya'
+};
 
 // Builds every reasonable alias for each player, pointing back to the FPL element id.
 export function buildNameIndex(elements, teams) {
@@ -88,7 +116,8 @@ export function buildNameIndex(elements, teams) {
 
 // Resolves a spoken name to one element id. Ambiguous surnames need a team hint.
 export function resolvePlayer(nameIndex, elements, spokenName, teamHint) {
-  const key = normalise(spokenName);
+  const normalised = normalise(spokenName);
+  const key = normalise(MANUAL_ALIASES[normalised] ?? normalised);
   const direct = nameIndex.get(key);
   if (direct && direct.size === 1) return [...direct][0];
   if (direct && direct.size > 1 && teamHint) {
