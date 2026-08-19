@@ -214,9 +214,36 @@ for (const p of players) {
   p.flagged = p.status !== 'a' || (p.news && p.news.length > 0);
 }
 
-// The manager's own squad, if a gameweek has been entered.
-const squadIds = new Set((manager?.picks?.picks ?? []).map(p => p.element));
-for (const p of players) p.owned = squadIds.has(p.id);
+// The manager's own squad. The real picks endpoint 404s until a gameweek deadline has passed,
+// so config/my-squad.json is a manual stand-in for the weeks before that — same name index the
+// opinion/Understat matchers use, so "Kinsky" resolves the same way everywhere in this pipeline.
+const apiPicks = manager?.picks?.picks ?? null;
+let manualSquad = null;
+try {
+  const raw = await fs.readFile(new URL('../config/my-squad.json', import.meta.url), 'utf8');
+  const cfg = JSON.parse(raw);
+  const resolve = name => resolvePlayer(understatNameIndex, elementsForMatching, name, null);
+  manualSquad = {
+    captain: resolve(cfg.captain),
+    viceCaptain: resolve(cfg.viceCaptain),
+    startingXI: new Set(cfg.startingXI.map(resolve).filter(Boolean)),
+    bench: new Set(cfg.bench.map(resolve).filter(Boolean))
+  };
+} catch { /* no manual squad configured — fine, just falls back to "none" below */ }
+
+const squadSource = apiPicks ? 'api' : manualSquad ? 'manual' : 'none';
+const squadIds = apiPicks
+  ? new Set(apiPicks.map(p => p.element))
+  : manualSquad ? new Set([...manualSquad.startingXI, ...manualSquad.bench]) : new Set();
+
+for (const p of players) {
+  p.owned = squadIds.has(p.id);
+  p.isCaptain = apiPicks ? apiPicks.some(x => x.element === p.id && x.is_captain) : manualSquad?.captain === p.id;
+  p.isViceCaptain = apiPicks ? apiPicks.some(x => x.element === p.id && x.is_vice_captain) : manualSquad?.viceCaptain === p.id;
+  p.inStartingXI = apiPicks
+    ? (apiPicks.find(x => x.element === p.id)?.position ?? 99) <= 11
+    : manualSquad?.startingXI.has(p.id) ?? false;
+}
 
 // Double/blank gameweeks only exist once postponements and cup replays reshuffle the
 // calendar, so this is mostly empty pre-season and sharpens from roughly GW25 onward.
@@ -233,8 +260,18 @@ const board = {
   videosProcessed: opinionFile.videosProcessed ?? 0,
   hasExpertData: (opinionFile.opinions ?? []).length > 0,
   understatSeason: understatFile.season,
+  squadSource,
   chipWindows,
   players: ranked,
+  mySquad: squadSource === 'none' ? null : {
+    source: squadSource,
+    startingXI: ranked.filter(p => p.owned && p.inStartingXI),
+    bench: ranked.filter(p => p.owned && !p.inStartingXI),
+    captain: ranked.find(p => p.isCaptain) ?? null,
+    viceCaptain: ranked.find(p => p.isViceCaptain) ?? null,
+    totalPredictedPoints: Number(ranked.filter(p => p.owned && p.inStartingXI)
+      .reduce((a, p) => a + p.predictedPoints * (p.isCaptain ? 2 : 1), 0).toFixed(2))
+  },
   lists: {
     differentials: ranked.filter(p => p.quadrant === 'differential' && p.ownership < differentialOwnershipCeiling && !p.flagged).slice(0, 12),
     template: ranked.filter(p => p.quadrant === 'template').slice(0, 12),
@@ -254,6 +291,9 @@ log(understatByPlayer.size
   ? `  understat: matched ${understatByPlayer.size}/${understatFile.players.length} players (${understatFile.season} season)`
   : '  understat: no data — run `npm run understat` first');
 log(`  predicted points: ${players.filter(p => p.pointsSource === 'model').length}/${players.length} players from the fixture-adjusted model, rest from FPL's ep_next`);
+log(squadSource === 'api' ? '  squad: from real post-deadline picks'
+  : squadSource === 'manual' ? `  squad: from config/my-squad.json (${squadIds.size}/15 resolved)`
+  : '  squad: none — no API picks and no config/my-squad.json');
 log(chipWindows.length
   ? `  chip windows: ${chipWindows.map(w => `GW${w.gw} (${w.doubles.length ? w.doubles.length + ' double' : ''}${w.doubles.length && w.blanks.length ? ', ' : ''}${w.blanks.length ? w.blanks.length + ' blank' : ''})`).join(', ')}`
   : '  chip windows: none scheduled yet');

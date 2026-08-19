@@ -1,0 +1,8 @@
+{
+  "note": "Manual fallback for entry/{id}/event/{gw}/picks/, which 404s until a gameweek deadline has passed. Keep this in sync with your actual team each week you make transfers — score.js only falls back to it when the real API picks aren't available yet.",
+  "formation": "4-4-2",
+  "captain": "Haaland",
+  "viceCaptain": "Kinsky",
+  "startingXI": ["Kinsky", "Calafiori", "Mosquera", "Maguire", "N.Williams", "B.Fernandes", "Mbeumo", "Szoboszlai", "E.Le Fée", "Haaland", "Calvert-Lewin"],
+  "bench": ["Verbruggen", "Mitchell", "Sangaré", "Welbeck"]
+}
