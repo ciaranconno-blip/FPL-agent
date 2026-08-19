@@ -134,6 +134,12 @@ stubborn — pundits use nicknames and shortened forms the index won't guess.
 - Dashboard design is deliberate: broadcast-data aesthetic, Archivo plus IBM Plex Mono, tabular
   numerals, hairline rules. The 2×2 scatter is the signature element and the thesis of the tool —
   keep it prominent. Don't restyle toward a generic dashboard template.
+- The dashboard opens with two panels ahead of the scatter: **My squad** (a pitch view of
+  `board.mySquad` — captain/vice badges, per-player predicted points, a risk tint when
+  flagged/negative dataScore, bench below) and **Chip windows** (`board.chipWindows`, empty
+  pre-season with an explanatory note rather than a blank panel). Both degrade to a plain
+  explanatory message rather than breaking when the data isn't there yet (no squad configured,
+  no windows scheduled) — keep that pattern for any future panel in the same vein.
 - `data/raw/` and `data/notebooklm/` are gitignored and regenerable. `data/board.json` and
   `dist/index.html` are committed so the Actions workflow can publish them.
 

@@ -13,13 +13,14 @@ const html = `<!DOCTYPE html>
 <title>FPL board — GW${board.meta?.nextGw ?? '?'}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#EFF2F1; --panel:#FFFFFF; --ink:#10161B; --muted:#5C6B70; --rule:#D3DAD8;
   --diff:#0B6E4F; --diff-bg:#E2EFE9; --trap:#A83A20; --trap-bg:#F6E7E2;
-  --tmpl:#3E5C76; --tmpl-bg:#E5EAEF; --warn:#8A6A0B;
+  --tmpl:#3E5C76; --tmpl-bg:#E5EAEF; --warn:#8A6A0B; --warn-bg:#F6EEDC;
   --fd1:#1B8A5A; --fd2:#68A83B; --fd3:#B9A227; --fd4:#C4692A; --fd5:#A83A20;
+  --turf1:#0E4430; --turf2:#125237; --turf-line:rgba(255,255,255,.22);
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 15px/1.5 Archivo,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
@@ -34,8 +35,47 @@ h1{margin:0;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:u
 .countdown .lbl,.meta{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .meta{margin-top:6px}
 
-h2{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--rule)}
+h2{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 12px;padding-bottom:8px;border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;gap:10px}
 .panel{background:var(--panel);border:1px solid var(--rule);padding:18px 20px 20px;margin-bottom:22px}
+
+.tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:2px}
+.t-diff{background:var(--diff-bg);color:var(--diff)}
+.t-trap{background:var(--trap-bg);color:var(--trap)}
+.t-tmpl{background:var(--tmpl-bg);color:var(--tmpl)}
+.t-flag{background:var(--warn-bg);color:var(--warn)}
+.t-manual{background:var(--warn-bg);color:var(--warn)}
+.t-api{background:var(--diff-bg);color:var(--diff)}
+
+/* squad pitch */
+.pitch{background:linear-gradient(180deg,var(--turf1),var(--turf2));border-radius:8px;padding:24px 16px 20px;position:relative;overflow:hidden}
+.pitch::before{content:"";position:absolute;inset:12px;border:1.5px solid var(--turf-line);border-radius:4px;pointer-events:none}
+.pitch::after{content:"";position:absolute;left:50%;top:12px;bottom:12px;width:1.5px;background:var(--turf-line);pointer-events:none}
+.prow{display:flex;justify-content:center;gap:14px;margin-bottom:22px;flex-wrap:wrap;position:relative}
+.pcard{background:#fff;color:var(--ink);border-radius:6px;padding:8px 10px 9px;min-width:104px;text-align:center;box-shadow:0 3px 8px rgba(0,0,0,.25);position:relative}
+.pcard .band{position:absolute;top:-8px;right:-8px;width:20px;height:20px;border-radius:50%;font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 2px 5px rgba(0,0,0,.3)}
+.band-c{background:var(--diff)} .band-vc{background:var(--tmpl)}
+.pcard .nm{font-weight:700;font-size:12.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pcard .tm{font-size:10px;color:var(--muted);margin-top:1px}
+.pcard .pt{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;margin-top:4px;color:var(--diff)}
+.pcard.risk .pt{color:var(--trap)}
+.pcard .pt .lbl{font-size:8px;color:var(--muted);font-weight:500;text-transform:uppercase;display:block}
+.bench-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.bcard{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:9px 12px;flex:1;min-width:150px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.bcard .nm{font-weight:600;font-size:13px}
+.bcard .tm{font-size:10.5px;color:var(--muted)}
+.bcard .pt{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--muted)}
+.squad-empty{color:var(--muted);font-size:13px;padding:20px;text-align:center;border:1px dashed var(--rule)}
+.squad-total{display:flex;gap:24px;margin-top:16px;padding-top:14px;border-top:1px solid var(--rule)}
+.squad-total .stat .v{font-family:"IBM Plex Mono",monospace;font-size:20px;font-weight:600}
+.squad-total .stat .l{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+
+/* chip windows */
+.chip-row{display:flex;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--rule)}
+.chip-row:last-child{border-bottom:0}
+.chip-badge{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;background:var(--paper);border:1px solid var(--rule);padding:3px 8px;border-radius:2px;flex:0 0 auto}
+.chip-detail{flex:1;font-size:13px}
+.chip-lbl{font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-right:6px}
+.lbl-double{color:var(--diff)} .lbl-blank{color:var(--trap)}
 
 #scatter{width:100%;height:auto;display:block}
 .axis-note{font-size:12px;color:var(--muted);margin:10px 0 0}
@@ -53,16 +93,11 @@ ul.cards li:last-child{border-bottom:0}
 .reason{font-size:12px;color:var(--muted);margin-top:4px;font-style:italic}
 .stat{font-family:"IBM Plex Mono",monospace;font-size:13px;text-align:right;white-space:nowrap}
 .stat b{display:block;font-weight:600;font-size:15px}
+.src{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 
 .tick{display:inline-flex;gap:2px;margin-top:5px}
 .tick i{width:15px;height:15px;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:8px;line-height:15px;text-align:center;color:#fff;border-radius:2px}
 .d1{background:var(--fd1)}.d2{background:var(--fd2)}.d3{background:var(--fd3)}.d4{background:var(--fd4)}.d5{background:var(--fd5)}
-
-.tag{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:2px}
-.t-diff{background:var(--diff-bg);color:var(--diff)}
-.t-trap{background:var(--trap-bg);color:var(--trap)}
-.t-tmpl{background:var(--tmpl-bg);color:var(--tmpl)}
-.t-flag{background:#F6EEDC;color:var(--warn)}
 
 table{width:100%;border-collapse:collapse;font-size:14px}
 th{text-align:left;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:0 10px 8px 0;border-bottom:1px solid var(--rule);cursor:pointer;user-select:none}
@@ -73,7 +108,7 @@ tbody tr.owned{background:#FBF8E9}
 input,select{font:400 13px Archivo,sans-serif;padding:7px 10px;border:1px solid var(--rule);background:var(--panel);color:var(--ink);border-radius:2px}
 .empty{color:var(--muted);font-size:13px;padding:14px 0}
 footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--rule);font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-@media (max-width:640px){.gw{font-size:34px}.countdown{text-align:left}}
+@media (max-width:640px){.gw{font-size:34px}.countdown{text-align:left}.pcard{min-width:88px}}
 </style>
 </head>
 <body>
@@ -89,6 +124,16 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--rule);font-si
     <div class="lbl">to deadline</div>
   </div>
 </header>
+
+<section class="panel">
+  <h2>My squad <span class="tag" id="squad-source-tag"></span></h2>
+  <div id="squad-body"></div>
+</section>
+
+<section class="panel">
+  <h2>Chip windows</h2>
+  <div id="chip-body"></div>
+</section>
 
 <section class="panel">
   <h2>Ownership against underlying score</h2>
@@ -122,14 +167,14 @@ footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--rule);font-si
   <table>
     <thead><tr>
       <th data-k="name">Player</th><th data-k="position">Pos</th><th data-k="price">£</th>
-      <th data-k="ownership">Own %</th><th data-k="epNext">xPts</th><th data-k="dataScore">Data</th>
+      <th data-k="ownership">Own %</th><th data-k="predictedPoints">xPts</th><th data-k="dataScore">Data</th>
       <th data-k="expertScore">Expert</th><th>Next ${board.players[0]?.fixtures.length ?? 5}</th>
     </tr></thead>
     <tbody id="rows"></tbody>
   </table>
 </section>
 
-<footer>Built ${new Date(board.builtAt).toUTCString()} &middot; FPL API + ${board.videosProcessed} pundit videos</footer>
+<footer>Built ${new Date(board.builtAt).toUTCString()} &middot; FPL API + ${board.videosProcessed} pundit videos &middot; predicted points: ${board.players.filter(p => p.pointsSource === 'model').length}/${board.players.length} from the fixture-adjusted model</footer>
 </div>
 
 <script id="board" type="application/json">${JSON.stringify(board).replace(/</g, '\\u003c')}</script>
@@ -157,10 +202,67 @@ function ticker(fx){
   ).join('') + '</span>';
 }
 
+function squad(){
+  const tagEl = document.getElementById('squad-source-tag');
+  const body = document.getElementById('squad-body');
+  if(!B.mySquad){
+    tagEl.textContent = 'none';
+    tagEl.className = 'tag t-flag';
+    body.innerHTML = '<div class="squad-empty">No squad loaded — add config/my-squad.json (manually, before the deadline) or wait for entry picks to unlock after it passes.</div>';
+    return;
+  }
+  tagEl.textContent = B.mySquad.source === 'api' ? 'from FPL picks' : 'manual — config/my-squad.json';
+  tagEl.className = B.mySquad.source === 'api' ? 'tag t-api' : 'tag t-manual';
+
+  const order = { GKP:0, DEF:1, MID:2, FWD:3 };
+  const byPos = {};
+  for(const p of B.mySquad.startingXI){ (byPos[p.position] ??= []).push(p); }
+  const rowsHtml = Object.keys(byPos).sort((a,b)=>order[a]-order[b]).map(pos =>
+    '<div class="prow">' + byPos[pos].map(p => pcard(p)).join('') + '</div>'
+  ).join('');
+
+  const benchHtml = B.mySquad.bench.map(p =>
+    '<div class="bcard"><div><div class="nm">'+esc(p.name)+'</div><div class="tm">'+esc(p.team)+' '+p.position+'</div></div>'+
+    '<div class="pt num">'+p.predictedPoints.toFixed(2)+'</div></div>'
+  ).join('');
+
+  body.innerHTML =
+    '<div class="pitch">'+rowsHtml+'</div>'+
+    '<div class="bench-row">'+benchHtml+'</div>'+
+    '<div class="squad-total">'+
+      '<div class="stat"><div class="v num">'+B.mySquad.totalPredictedPoints.toFixed(2)+'</div><div class="l">xPts (captain doubled)</div></div>'+
+      (B.mySquad.captain ? '<div class="stat"><div class="v">'+esc(B.mySquad.captain.name)+'</div><div class="l">Captain</div></div>' : '')+
+      (B.mySquad.viceCaptain ? '<div class="stat"><div class="v">'+esc(B.mySquad.viceCaptain.name)+'</div><div class="l">Vice</div></div>' : '')+
+    '</div>';
+}
+
+function pcard(p){
+  const risky = p.flagged || p.dataScore < 0;
+  return '<div class="pcard'+(risky?' risk':'')+'">'+
+    (p.isCaptain ? '<span class="band band-c">C</span>' : p.isViceCaptain ? '<span class="band band-vc">VC</span>' : '')+
+    '<div class="nm">'+esc(p.name)+'</div><div class="tm">'+esc(p.team)+'</div>'+
+    '<div class="pt">'+p.predictedPoints.toFixed(2)+'<span class="lbl">xPts</span></div></div>';
+}
+
+function chipWindows(){
+  const body = document.getElementById('chip-body');
+  if(!B.chipWindows || !B.chipWindows.length){
+    body.innerHTML = '<div class="squad-empty">No double or blank gameweeks scheduled yet — the fixture list only shows these once postponements reshuffle the calendar, usually from around GW25.</div>';
+    return;
+  }
+  body.innerHTML = B.chipWindows.map(w =>
+    '<div class="chip-row"><span class="chip-badge">GW'+w.gw+'</span><span class="chip-detail">'+
+      (w.doubles.length ? '<span class="chip-lbl lbl-double">Double</span>'+w.doubles.map(esc).join(', ')+' ' : '')+
+      (w.blanks.length ? '<span class="chip-lbl lbl-blank">Blank</span>'+w.blanks.map(esc).join(', ') : '')+
+    '</span></div>'
+  ).join('');
+}
+
 function card(p, statLabel, statVal){
   const reason = p.opinions?.[0]?.reason;
   return '<li><div class="who"><div class="nm">'+esc(p.name)+
-    (p.flagged ? ' <span class="tag t-flag">flag</span>' : '')+'</div>'+
+    (p.flagged ? ' <span class="tag t-flag">flag</span>' : '')+
+    (p.owned ? ' <span class="tag t-api">owned</span>' : '')+'</div>'+
     '<div class="sub">'+p.position+' &middot; '+esc(p.team)+' &middot; £'+p.price.toFixed(1)+' &middot; '+p.ownership.toFixed(1)+'% owned'+
     (p.channelsCovering ? ' &middot; '+p.channelsCovering+' channels' : '')+'</div>'+
     ticker(p.fixtures)+
@@ -176,7 +278,7 @@ function fill(id, list, label, val){
 
 fill('l-diff', B.lists.differentials, 'data', p => p.dataScore.toFixed(2));
 fill('l-curve', B.lists.aheadOfCurve, 'expert', p => p.expertScore.toFixed(2));
-fill('l-capt', B.lists.captaincy, 'calls', p => p.captainCalls || p.epNext.toFixed(1));
+fill('l-capt', B.lists.captaincy, 'xPts', p => p.predictedPoints.toFixed(2) + (p.captainCalls ? ' ('+p.captainCalls+' calls)' : ''));
 fill('l-trap', B.lists.hypeTraps, 'data', p => p.dataScore.toFixed(2));
 fill('l-tmpl', B.lists.template, 'own %', p => p.ownership.toFixed(0));
 fill('l-risk', B.lists.squadRisks, 'data', p => p.dataScore.toFixed(2));
@@ -229,7 +331,8 @@ function rows(){
     '<span class="tag t-'+(p.quadrant==='differential'?'diff':p.quadrant==='template'?'tmpl':p.quadrant==='hype-trap'?'trap':'flag')+'">'+p.quadrant+'</span>'+
     '<div class="sub">'+esc(p.teamName)+(p.news?' &middot; '+esc(p.news):'')+'</div></td>'+
     '<td class="num">'+p.position+'</td><td class="num">'+p.price.toFixed(1)+'</td>'+
-    '<td class="num">'+p.ownership.toFixed(1)+'</td><td class="num">'+p.epNext.toFixed(1)+'</td>'+
+    '<td class="num">'+p.ownership.toFixed(1)+'</td>'+
+    '<td class="num">'+p.predictedPoints.toFixed(1)+'<div class="src">'+(p.pointsSource==='model'?'model':'ep_next')+'</div></td>'+
     '<td class="num">'+p.dataScore.toFixed(2)+'</td><td class="num">'+p.expertScore.toFixed(2)+'</td>'+
     '<td>'+ticker(p.fixtures)+'</td></tr>').join('');
 }
@@ -237,7 +340,7 @@ document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{
   const k=th.dataset.k; sortDir = sortKey===k ? -sortDir : -1; sortKey=k; rows();});
 ['q','pos','quad','own'].forEach(id=>document.getElementById(id).oninput=rows);
 
-deadline(); scatter(); rows();
+deadline(); squad(); chipWindows(); scatter(); rows();
 </script>
 </body>
 </html>`;
