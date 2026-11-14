@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-11-13T14:58:53.488Z",
+  "builtAt": "2026-11-14T15:35:33.069Z",
   "meta": {
-    "fetchedAt": "2026-11-13T14:57:45.482Z",
+    "fetchedAt": "2026-11-14T15:34:25.208Z",
     "currentGw": 10,
     "nextGw": 11,
     "deadline": "2026-11-21T11:00:00.000Z",
@@ -25,7 +25,7 @@
       "teamName": "Aston Villa",
       "position": "FWD",
       "price": 7.1,
-      "ownership": 31.2,
+      "ownership": 31.3,
       "epNext": 8.8,
       "predictedPoints": 8.8,
       "pointsSource": "ep_next",
@@ -33,8 +33,8 @@
       "totalPoints": 54,
       "status": "a",
       "news": null,
-      "transfersInEvent": 313666,
-      "transfersOutEvent": 9189,
+      "transfersInEvent": 328227,
+      "transfersOutEvent": 9517,
       "fixtures": [
         {
           "gw": 11,
@@ -91,7 +91,7 @@
       "teamName": "Brighton",
       "position": "DEF",
       "price": 5.3,
-      "ownership": 9.3,
+      "ownership": 9.4,
       "epNext": 7.5,
       "predictedPoints": 7.5,
       "pointsSource": "ep_next",
@@ -99,8 +99,8 @@
       "totalPoints": 70,
       "status": "a",
       "news": null,
-      "transfersInEvent": 157340,
-      "transfersOutEvent": 4313,
+      "transfersInEvent": 164789,
+      "transfersOutEvent": 4541,
       "fixtures": [
         {
           "gw": 11,
@@ -138,7 +138,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.798,
+      "dataScore": 1.797,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -157,7 +157,7 @@
       "teamName": "Spurs",
       "position": "DEF",
       "price": 5.1,
-      "ownership": 14.7,
+      "ownership": 14.8,
       "epNext": 7.5,
       "predictedPoints": 5.17,
       "pointsSource": "model",
@@ -165,8 +165,8 @@
       "totalPoints": 57,
       "status": "a",
       "news": null,
-      "transfersInEvent": 179515,
-      "transfersOutEvent": 6950,
+      "transfersInEvent": 186695,
+      "transfersOutEvent": 7330,
       "fixtures": [
         {
           "gw": 11,
@@ -231,8 +231,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 31151,
-      "transfersOutEvent": 7839,
+      "transfersInEvent": 32797,
+      "transfersOutEvent": 8182,
       "fixtures": [
         {
           "gw": 11,
@@ -289,7 +289,7 @@
       "teamName": "Brighton",
       "position": "DEF",
       "price": 5.5,
-      "ownership": 47.8,
+      "ownership": 47.9,
       "epNext": 5.5,
       "predictedPoints": 5.5,
       "pointsSource": "ep_next",
@@ -297,8 +297,8 @@
       "totalPoints": 75,
       "status": "a",
       "news": null,
-      "transfersInEvent": 153997,
-      "transfersOutEvent": 7976,
+      "transfersInEvent": 160726,
+      "transfersOutEvent": 8552,
       "fixtures": [
         {
           "gw": 11,
@@ -363,8 +363,8 @@
       "totalPoints": 51,
       "status": "a",
       "news": null,
-      "transfersInEvent": 35359,
-      "transfersOutEvent": 5674,
+      "transfersInEvent": 37163,
+      "transfersOutEvent": 5978,
       "fixtures": [
         {
           "gw": 11,
@@ -429,8 +429,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 15048,
-      "transfersOutEvent": 4282,
+      "transfersInEvent": 16303,
+      "transfersOutEvent": 4507,
       "fixtures": [
         {
           "gw": 11,
@@ -495,8 +495,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 18319,
-      "transfersOutEvent": 3358,
+      "transfersInEvent": 19321,
+      "transfersOutEvent": 3548,
       "fixtures": [
         {
           "gw": 11,
@@ -534,7 +534,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.464,
+      "dataScore": 1.465,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -561,8 +561,8 @@
       "totalPoints": 70,
       "status": "a",
       "news": null,
-      "transfersInEvent": 109232,
-      "transfersOutEvent": 12751,
+      "transfersInEvent": 114429,
+      "transfersOutEvent": 13169,
       "fixtures": [
         {
           "gw": 11,
@@ -627,8 +627,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 40600,
-      "transfersOutEvent": 4814,
+      "transfersInEvent": 43733,
+      "transfersOutEvent": 5026,
       "fixtures": [
         {
           "gw": 11,
@@ -693,8 +693,8 @@
       "totalPoints": 56,
       "status": "a",
       "news": null,
-      "transfersInEvent": 34114,
-      "transfersOutEvent": 3882,
+      "transfersInEvent": 35556,
+      "transfersOutEvent": 4179,
       "fixtures": [
         {
           "gw": 11,
@@ -759,8 +759,8 @@
       "totalPoints": 57,
       "status": "a",
       "news": null,
-      "transfersInEvent": 49366,
-      "transfersOutEvent": 14278,
+      "transfersInEvent": 51253,
+      "transfersOutEvent": 15213,
       "fixtures": [
         {
           "gw": 11,
@@ -825,8 +825,8 @@
       "totalPoints": 41,
       "status": "a",
       "news": null,
-      "transfersInEvent": 12382,
-      "transfersOutEvent": 26279,
+      "transfersInEvent": 12990,
+      "transfersOutEvent": 27295,
       "fixtures": [
         {
           "gw": 11,
@@ -891,8 +891,8 @@
       "totalPoints": 45,
       "status": "a",
       "news": null,
-      "transfersInEvent": 9349,
-      "transfersOutEvent": 44003,
+      "transfersInEvent": 9983,
+      "transfersOutEvent": 45948,
       "fixtures": [
         {
           "gw": 11,
@@ -930,7 +930,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.213,
+      "dataScore": 1.214,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -957,8 +957,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 11566,
-      "transfersOutEvent": 452,
+      "transfersInEvent": 12429,
+      "transfersOutEvent": 522,
       "fixtures": [
         {
           "gw": 11,
@@ -1023,8 +1023,8 @@
       "totalPoints": 70,
       "status": "a",
       "news": null,
-      "transfersInEvent": 17735,
-      "transfersOutEvent": 44158,
+      "transfersInEvent": 18636,
+      "transfersOutEvent": 45666,
       "fixtures": [
         {
           "gw": 11,
@@ -1062,7 +1062,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.196,
+      "dataScore": 1.197,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1089,8 +1089,8 @@
       "totalPoints": 38,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4518,
-      "transfersOutEvent": 8702,
+      "transfersInEvent": 4744,
+      "transfersOutEvent": 9060,
       "fixtures": [
         {
           "gw": 11,
@@ -1155,8 +1155,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4713,
-      "transfersOutEvent": 1260,
+      "transfersInEvent": 4925,
+      "transfersOutEvent": 1310,
       "fixtures": [
         {
           "gw": 11,
@@ -1213,7 +1213,7 @@
       "teamName": "Bournemouth",
       "position": "MID",
       "price": 6.7,
-      "ownership": 31.4,
+      "ownership": 31.5,
       "epNext": 6.5,
       "predictedPoints": 4.69,
       "pointsSource": "model",
@@ -1221,8 +1221,8 @@
       "totalPoints": 58,
       "status": "a",
       "news": null,
-      "transfersInEvent": 129940,
-      "transfersOutEvent": 26564,
+      "transfersInEvent": 136505,
+      "transfersOutEvent": 27710,
       "fixtures": [
         {
           "gw": 11,
@@ -1260,7 +1260,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.173,
+      "dataScore": 1.174,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1279,7 +1279,7 @@
       "teamName": "Bournemouth",
       "position": "FWD",
       "price": 6.5,
-      "ownership": 23.8,
+      "ownership": 23.9,
       "epNext": 9,
       "predictedPoints": 4,
       "pointsSource": "model",
@@ -1287,8 +1287,8 @@
       "totalPoints": 61,
       "status": "a",
       "news": null,
-      "transfersInEvent": 215864,
-      "transfersOutEvent": 15662,
+      "transfersInEvent": 225950,
+      "transfersOutEvent": 16352,
       "fixtures": [
         {
           "gw": 11,
@@ -1345,7 +1345,7 @@
       "teamName": "Everton",
       "position": "FWD",
       "price": 5.7,
-      "ownership": 10.7,
+      "ownership": 10.8,
       "epNext": 7.2,
       "predictedPoints": 3.19,
       "pointsSource": "model",
@@ -1353,8 +1353,8 @@
       "totalPoints": 55,
       "status": "a",
       "news": null,
-      "transfersInEvent": 211118,
-      "transfersOutEvent": 11817,
+      "transfersInEvent": 215808,
+      "transfersOutEvent": 12583,
       "fixtures": [
         {
           "gw": 11,
@@ -1419,8 +1419,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1958,
-      "transfersOutEvent": 1010,
+      "transfersInEvent": 2053,
+      "transfersOutEvent": 1065,
       "fixtures": [
         {
           "gw": 11,
@@ -1485,8 +1485,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 53207,
-      "transfersOutEvent": 5187,
+      "transfersInEvent": 56789,
+      "transfersOutEvent": 5488,
       "fixtures": [
         {
           "gw": 11,
@@ -1524,7 +1524,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.084,
+      "dataScore": 1.085,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1551,8 +1551,8 @@
       "totalPoints": 47,
       "status": "a",
       "news": null,
-      "transfersInEvent": 20993,
-      "transfersOutEvent": 70976,
+      "transfersInEvent": 21893,
+      "transfersOutEvent": 73576,
       "fixtures": [
         {
           "gw": 11,
@@ -1609,7 +1609,7 @@
       "teamName": "Aston Villa",
       "position": "MID",
       "price": 6.2,
-      "ownership": 8.6,
+      "ownership": 8.5,
       "epNext": 3.9,
       "predictedPoints": 3.9,
       "pointsSource": "ep_next",
@@ -1617,8 +1617,8 @@
       "totalPoints": 40,
       "status": "d",
       "news": "Calf injury - 75% chance of playing",
-      "transfersInEvent": 67971,
-      "transfersOutEvent": 15328,
+      "transfersInEvent": 68712,
+      "transfersOutEvent": 18062,
       "fixtures": [
         {
           "gw": 11,
@@ -1656,7 +1656,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.007,
+      "dataScore": 1.008,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1683,8 +1683,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4814,
-      "transfersOutEvent": 1340,
+      "transfersInEvent": 5076,
+      "transfersOutEvent": 1411,
       "fixtures": [
         {
           "gw": 11,
@@ -1722,7 +1722,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.986,
+      "dataScore": 0.987,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1749,8 +1749,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1703,
-      "transfersOutEvent": 1295,
+      "transfersInEvent": 1818,
+      "transfersOutEvent": 1342,
       "fixtures": [
         {
           "gw": 11,
@@ -1788,7 +1788,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.969,
+      "dataScore": 0.97,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1807,7 +1807,7 @@
       "teamName": "Man Utd",
       "position": "MID",
       "price": 7.9,
-      "ownership": 19.1,
+      "ownership": 19,
       "epNext": 3.2,
       "predictedPoints": 3.51,
       "pointsSource": "model",
@@ -1815,8 +1815,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7037,
-      "transfersOutEvent": 81454,
+      "transfersInEvent": 7505,
+      "transfersOutEvent": 85130,
       "fixtures": [
         {
           "gw": 11,
@@ -1881,8 +1881,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 15552,
-      "transfersOutEvent": 11733,
+      "transfersInEvent": 16187,
+      "transfersOutEvent": 12465,
       "fixtures": [
         {
           "gw": 11,
@@ -1920,7 +1920,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.927,
+      "dataScore": 0.928,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -1947,8 +1947,8 @@
       "totalPoints": 54,
       "status": "a",
       "news": null,
-      "transfersInEvent": 21298,
-      "transfersOutEvent": 4984,
+      "transfersInEvent": 22391,
+      "transfersOutEvent": 5288,
       "fixtures": [
         {
           "gw": 11,
@@ -2005,7 +2005,7 @@
       "teamName": "Arsenal",
       "position": "DEF",
       "price": 8.1,
-      "ownership": 26.1,
+      "ownership": 26.2,
       "epNext": 9.8,
       "predictedPoints": 4.57,
       "pointsSource": "model",
@@ -2013,8 +2013,8 @@
       "totalPoints": 66,
       "status": "a",
       "news": null,
-      "transfersInEvent": 83806,
-      "transfersOutEvent": 8844,
+      "transfersInEvent": 87527,
+      "transfersOutEvent": 9404,
       "fixtures": [
         {
           "gw": 11,
@@ -2071,7 +2071,7 @@
       "teamName": "Arsenal",
       "position": "DEF",
       "price": 4.8,
-      "ownership": 24.6,
+      "ownership": 24.7,
       "epNext": 10.2,
       "predictedPoints": 3.51,
       "pointsSource": "model",
@@ -2079,8 +2079,8 @@
       "totalPoints": 57,
       "status": "a",
       "news": null,
-      "transfersInEvent": 140995,
-      "transfersOutEvent": 12684,
+      "transfersInEvent": 147086,
+      "transfersOutEvent": 13316,
       "fixtures": [
         {
           "gw": 11,
@@ -2145,8 +2145,8 @@
       "totalPoints": 41,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4596,
-      "transfersOutEvent": 1953,
+      "transfersInEvent": 4817,
+      "transfersOutEvent": 2057,
       "fixtures": [
         {
           "gw": 11,
@@ -2211,8 +2211,8 @@
       "totalPoints": 40,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3691,
-      "transfersOutEvent": 7046,
+      "transfersInEvent": 3874,
+      "transfersOutEvent": 7359,
       "fixtures": [
         {
           "gw": 11,
@@ -2277,8 +2277,8 @@
       "totalPoints": 40,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7967,
-      "transfersOutEvent": 17407,
+      "transfersInEvent": 8302,
+      "transfersOutEvent": 18136,
       "fixtures": [
         {
           "gw": 11,
@@ -2316,7 +2316,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.823,
+      "dataScore": 0.824,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2343,8 +2343,8 @@
       "totalPoints": 50,
       "status": "a",
       "news": null,
-      "transfersInEvent": 57398,
-      "transfersOutEvent": 8727,
+      "transfersInEvent": 58736,
+      "transfersOutEvent": 9315,
       "fixtures": [
         {
           "gw": 11,
@@ -2382,7 +2382,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.815,
+      "dataScore": 0.816,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2409,8 +2409,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6738,
-      "transfersOutEvent": 7083,
+      "transfersInEvent": 7103,
+      "transfersOutEvent": 7368,
       "fixtures": [
         {
           "gw": 11,
@@ -2448,7 +2448,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.812,
+      "dataScore": 0.813,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2475,8 +2475,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 15542,
-      "transfersOutEvent": 6820,
+      "transfersInEvent": 16262,
+      "transfersOutEvent": 7092,
       "fixtures": [
         {
           "gw": 11,
@@ -2541,8 +2541,8 @@
       "totalPoints": 38,
       "status": "a",
       "news": null,
-      "transfersInEvent": 12843,
-      "transfersOutEvent": 3400,
+      "transfersInEvent": 13508,
+      "transfersOutEvent": 3564,
       "fixtures": [
         {
           "gw": 11,
@@ -2607,8 +2607,8 @@
       "totalPoints": 51,
       "status": "a",
       "news": null,
-      "transfersInEvent": 9161,
-      "transfersOutEvent": 2723,
+      "transfersInEvent": 9533,
+      "transfersOutEvent": 2893,
       "fixtures": [
         {
           "gw": 11,
@@ -2646,7 +2646,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.778,
+      "dataScore": 0.779,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2673,8 +2673,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3072,
-      "transfersOutEvent": 6327,
+      "transfersInEvent": 3208,
+      "transfersOutEvent": 6573,
       "fixtures": [
         {
           "gw": 11,
@@ -2712,7 +2712,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.77,
+      "dataScore": 0.771,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2739,8 +2739,8 @@
       "totalPoints": 50,
       "status": "a",
       "news": null,
-      "transfersInEvent": 38444,
-      "transfersOutEvent": 21139,
+      "transfersInEvent": 39857,
+      "transfersOutEvent": 22138,
       "fixtures": [
         {
           "gw": 11,
@@ -2778,7 +2778,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.744,
+      "dataScore": 0.745,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2805,8 +2805,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 12908,
-      "transfersOutEvent": 5023,
+      "transfersInEvent": 13607,
+      "transfersOutEvent": 5234,
       "fixtures": [
         {
           "gw": 11,
@@ -2844,7 +2844,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.738,
+      "dataScore": 0.739,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2862,7 +2862,7 @@
       "team": "SUN",
       "teamName": "Sunderland",
       "position": "GKP",
-      "price": 4.9,
+      "price": 4.8,
       "ownership": 1.9,
       "epNext": 5.2,
       "predictedPoints": 5.2,
@@ -2871,8 +2871,8 @@
       "totalPoints": 33,
       "status": "a",
       "news": null,
-      "transfersInEvent": 928,
-      "transfersOutEvent": 2999,
+      "transfersInEvent": 981,
+      "transfersOutEvent": 3130,
       "fixtures": [
         {
           "gw": 11,
@@ -2910,7 +2910,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.728,
+      "dataScore": 0.738,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -2937,8 +2937,8 @@
       "totalPoints": 52,
       "status": "a",
       "news": null,
-      "transfersInEvent": 65618,
-      "transfersOutEvent": 29073,
+      "transfersInEvent": 69053,
+      "transfersOutEvent": 30206,
       "fixtures": [
         {
           "gw": 11,
@@ -2976,7 +2976,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.726,
+      "dataScore": 0.727,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3003,8 +3003,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2349,
-      "transfersOutEvent": 13132,
+      "transfersInEvent": 2581,
+      "transfersOutEvent": 13353,
       "fixtures": [
         {
           "gw": 11,
@@ -3042,7 +3042,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.724,
+      "dataScore": 0.725,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3069,8 +3069,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6477,
-      "transfersOutEvent": 2140,
+      "transfersInEvent": 6719,
+      "transfersOutEvent": 2272,
       "fixtures": [
         {
           "gw": 11,
@@ -3135,8 +3135,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4609,
-      "transfersOutEvent": 3152,
+      "transfersInEvent": 4944,
+      "transfersOutEvent": 3315,
       "fixtures": [
         {
           "gw": 11,
@@ -3201,8 +3201,8 @@
       "totalPoints": 33,
       "status": "a",
       "news": null,
-      "transfersInEvent": 8315,
-      "transfersOutEvent": 3828,
+      "transfersInEvent": 8705,
+      "transfersOutEvent": 4008,
       "fixtures": [
         {
           "gw": 11,
@@ -3240,7 +3240,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.693,
+      "dataScore": 0.694,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3267,8 +3267,8 @@
       "totalPoints": 45,
       "status": "a",
       "news": null,
-      "transfersInEvent": 11679,
-      "transfersOutEvent": 12924,
+      "transfersInEvent": 12177,
+      "transfersOutEvent": 13670,
       "fixtures": [
         {
           "gw": 11,
@@ -3306,7 +3306,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.646,
+      "dataScore": 0.647,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3333,8 +3333,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 551,
-      "transfersOutEvent": 954,
+      "transfersInEvent": 603,
+      "transfersOutEvent": 998,
       "fixtures": [
         {
           "gw": 11,
@@ -3399,8 +3399,8 @@
       "totalPoints": 47,
       "status": "a",
       "news": null,
-      "transfersInEvent": 32281,
-      "transfersOutEvent": 44350,
+      "transfersInEvent": 33735,
+      "transfersOutEvent": 46548,
       "fixtures": [
         {
           "gw": 11,
@@ -3438,7 +3438,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.614,
+      "dataScore": 0.615,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3465,8 +3465,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 572,
-      "transfersOutEvent": 220,
+      "transfersInEvent": 620,
+      "transfersOutEvent": 231,
       "fixtures": [
         {
           "gw": 11,
@@ -3531,8 +3531,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": null,
-      "transfersInEvent": 8624,
-      "transfersOutEvent": 3428,
+      "transfersInEvent": 8997,
+      "transfersOutEvent": 3605,
       "fixtures": [
         {
           "gw": 11,
@@ -3570,7 +3570,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.609,
+      "dataScore": 0.61,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3597,8 +3597,8 @@
       "totalPoints": 58,
       "status": "a",
       "news": null,
-      "transfersInEvent": 33789,
-      "transfersOutEvent": 13587,
+      "transfersInEvent": 35344,
+      "transfersOutEvent": 14260,
       "fixtures": [
         {
           "gw": 11,
@@ -3636,73 +3636,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.592,
-      "expertScore": 0,
-      "quadrant": "differential",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
-      "id": 415,
-      "name": "Dorgu",
-      "fullName": "Patrick Dorgu",
-      "team": "MUN",
-      "teamName": "Man Utd",
-      "position": "MID",
-      "price": 5.7,
-      "ownership": 0.3,
-      "epNext": 2.8,
-      "predictedPoints": 2.8,
-      "pointsSource": "ep_next",
-      "form": 2.8,
-      "totalPoints": 21,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 1685,
-      "transfersOutEvent": 412,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "LIV",
-          "home": false,
-          "difficulty": 4
-        },
-        {
-          "gw": 12,
-          "opponent": "BRE",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 13,
-          "opponent": "NEW",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 14,
-          "opponent": "COV",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 15,
-          "opponent": "CRY",
-          "home": false,
-          "difficulty": 2
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "points-proxy",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.587,
+      "dataScore": 0.593,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3729,8 +3663,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 9306,
-      "transfersOutEvent": 72792,
+      "transfersInEvent": 9781,
+      "transfersOutEvent": 75455,
       "fixtures": [
         {
           "gw": 11,
@@ -3768,7 +3702,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.587,
+      "dataScore": 0.588,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3795,8 +3729,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2890,
-      "transfersOutEvent": 42660,
+      "transfersInEvent": 3027,
+      "transfersOutEvent": 44260,
       "fixtures": [
         {
           "gw": 11,
@@ -3834,7 +3768,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.58,
+      "dataScore": 0.581,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3861,8 +3795,8 @@
       "totalPoints": 61,
       "status": "a",
       "news": null,
-      "transfersInEvent": 122656,
-      "transfersOutEvent": 20408,
+      "transfersInEvent": 127889,
+      "transfersOutEvent": 21368,
       "fixtures": [
         {
           "gw": 11,
@@ -3900,7 +3834,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.556,
+      "dataScore": 0.557,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3927,8 +3861,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 475,
-      "transfersOutEvent": 187,
+      "transfersInEvent": 501,
+      "transfersOutEvent": 198,
       "fixtures": [
         {
           "gw": 11,
@@ -3966,7 +3900,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.543,
+      "dataScore": 0.544,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -3993,8 +3927,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 9256,
-      "transfersOutEvent": 19770,
+      "transfersInEvent": 9669,
+      "transfersOutEvent": 20812,
       "fixtures": [
         {
           "gw": 11,
@@ -4032,7 +3966,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.538,
+      "dataScore": 0.539,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4059,8 +3993,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": null,
-      "transfersInEvent": 915,
-      "transfersOutEvent": 866,
+      "transfersInEvent": 968,
+      "transfersOutEvent": 910,
       "fixtures": [
         {
           "gw": 11,
@@ -4117,7 +4051,7 @@
       "teamName": "Bournemouth",
       "position": "DEF",
       "price": 5.6,
-      "ownership": 3,
+      "ownership": 3.1,
       "epNext": 7,
       "predictedPoints": 3.12,
       "pointsSource": "model",
@@ -4125,8 +4059,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 28480,
-      "transfersOutEvent": 5274,
+      "transfersInEvent": 30021,
+      "transfersOutEvent": 5567,
       "fixtures": [
         {
           "gw": 11,
@@ -4191,8 +4125,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1989,
-      "transfersOutEvent": 10168,
+      "transfersInEvent": 2101,
+      "transfersOutEvent": 10649,
       "fixtures": [
         {
           "gw": 11,
@@ -4230,7 +4164,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.519,
+      "dataScore": 0.52,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4257,8 +4191,8 @@
       "totalPoints": 50,
       "status": "a",
       "news": null,
-      "transfersInEvent": 36485,
-      "transfersOutEvent": 19913,
+      "transfersInEvent": 38107,
+      "transfersOutEvent": 20894,
       "fixtures": [
         {
           "gw": 11,
@@ -4296,7 +4230,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.508,
+      "dataScore": 0.509,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4323,8 +4257,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1130,
-      "transfersOutEvent": 2937,
+      "transfersInEvent": 1204,
+      "transfersOutEvent": 3066,
       "fixtures": [
         {
           "gw": 11,
@@ -4362,7 +4296,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.5,
+      "dataScore": 0.501,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4389,8 +4323,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 780,
-      "transfersOutEvent": 2937,
+      "transfersInEvent": 836,
+      "transfersOutEvent": 3096,
       "fixtures": [
         {
           "gw": 11,
@@ -4455,8 +4389,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 11579,
-      "transfersOutEvent": 118986,
+      "transfersInEvent": 12221,
+      "transfersOutEvent": 123280,
       "fixtures": [
         {
           "gw": 11,
@@ -4521,8 +4455,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1190,
-      "transfersOutEvent": 5494,
+      "transfersInEvent": 1242,
+      "transfersOutEvent": 5818,
       "fixtures": [
         {
           "gw": 11,
@@ -4560,7 +4494,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.465,
+      "dataScore": 0.466,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4587,8 +4521,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1049,
-      "transfersOutEvent": 154,
+      "transfersInEvent": 1115,
+      "transfersOutEvent": 162,
       "fixtures": [
         {
           "gw": 11,
@@ -4626,7 +4560,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.463,
+      "dataScore": 0.464,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4653,8 +4587,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 352,
-      "transfersOutEvent": 63,
+      "transfersInEvent": 374,
+      "transfersOutEvent": 65,
       "fixtures": [
         {
           "gw": 11,
@@ -4692,7 +4626,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.456,
+      "dataScore": 0.457,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4719,8 +4653,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": null,
-      "transfersInEvent": 127,
-      "transfersOutEvent": 458,
+      "transfersInEvent": 130,
+      "transfersOutEvent": 486,
       "fixtures": [
         {
           "gw": 11,
@@ -4758,7 +4692,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.445,
+      "dataScore": 0.446,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4785,8 +4719,8 @@
       "totalPoints": 54,
       "status": "a",
       "news": null,
-      "transfersInEvent": 58387,
-      "transfersOutEvent": 39405,
+      "transfersInEvent": 61085,
+      "transfersOutEvent": 41151,
       "fixtures": [
         {
           "gw": 11,
@@ -4824,7 +4758,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.443,
+      "dataScore": 0.444,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4851,8 +4785,8 @@
       "totalPoints": 37,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6093,
-      "transfersOutEvent": 16611,
+      "transfersInEvent": 6413,
+      "transfersOutEvent": 17268,
       "fixtures": [
         {
           "gw": 11,
@@ -4917,8 +4851,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 347,
-      "transfersOutEvent": 190,
+      "transfersInEvent": 377,
+      "transfersOutEvent": 198,
       "fixtures": [
         {
           "gw": 11,
@@ -4956,7 +4890,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.401,
+      "dataScore": 0.402,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -4983,8 +4917,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 539,
-      "transfersOutEvent": 1508,
+      "transfersInEvent": 565,
+      "transfersOutEvent": 1562,
       "fixtures": [
         {
           "gw": 11,
@@ -5022,7 +4956,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.4,
+      "dataScore": 0.401,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5049,8 +4983,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1308,
-      "transfersOutEvent": 3036,
+      "transfersInEvent": 1372,
+      "transfersOutEvent": 3188,
       "fixtures": [
         {
           "gw": 11,
@@ -5088,7 +5022,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.398,
+      "dataScore": 0.399,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5115,8 +5049,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7017,
-      "transfersOutEvent": 18701,
+      "transfersInEvent": 7347,
+      "transfersOutEvent": 19562,
       "fixtures": [
         {
           "gw": 11,
@@ -5154,7 +5088,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.394,
+      "dataScore": 0.395,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5181,8 +5115,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3073,
-      "transfersOutEvent": 10182,
+      "transfersInEvent": 3268,
+      "transfersOutEvent": 10627,
       "fixtures": [
         {
           "gw": 11,
@@ -5247,8 +5181,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 204,
-      "transfersOutEvent": 1111,
+      "transfersInEvent": 208,
+      "transfersOutEvent": 1162,
       "fixtures": [
         {
           "gw": 11,
@@ -5286,7 +5220,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.37,
+      "dataScore": 0.371,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5313,8 +5247,8 @@
       "totalPoints": 38,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5032,
-      "transfersOutEvent": 4158,
+      "transfersInEvent": 5242,
+      "transfersOutEvent": 4352,
       "fixtures": [
         {
           "gw": 11,
@@ -5352,7 +5286,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.366,
+      "dataScore": 0.367,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5379,8 +5313,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3209,
-      "transfersOutEvent": 13037,
+      "transfersInEvent": 3362,
+      "transfersOutEvent": 13568,
       "fixtures": [
         {
           "gw": 11,
@@ -5418,7 +5352,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.361,
+      "dataScore": 0.362,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5445,8 +5379,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2131,
-      "transfersOutEvent": 2168,
+      "transfersInEvent": 2222,
+      "transfersOutEvent": 2262,
       "fixtures": [
         {
           "gw": 11,
@@ -5484,7 +5418,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.35,
+      "dataScore": 0.351,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5511,8 +5445,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6782,
-      "transfersOutEvent": 11059,
+      "transfersInEvent": 7127,
+      "transfersOutEvent": 11566,
       "fixtures": [
         {
           "gw": 11,
@@ -5550,7 +5484,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.347,
+      "dataScore": 0.348,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5577,8 +5511,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 296,
-      "transfersOutEvent": 261,
+      "transfersInEvent": 321,
+      "transfersOutEvent": 273,
       "fixtures": [
         {
           "gw": 11,
@@ -5616,7 +5550,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.346,
+      "dataScore": 0.347,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5643,8 +5577,8 @@
       "totalPoints": 49,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4899,
-      "transfersOutEvent": 15272,
+      "transfersInEvent": 5129,
+      "transfersOutEvent": 15966,
       "fixtures": [
         {
           "gw": 11,
@@ -5682,7 +5616,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.326,
+      "dataScore": 0.327,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5709,8 +5643,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": null,
-      "transfersInEvent": 498,
-      "transfersOutEvent": 3752,
+      "transfersInEvent": 542,
+      "transfersOutEvent": 3942,
       "fixtures": [
         {
           "gw": 11,
@@ -5748,7 +5682,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.313,
+      "dataScore": 0.314,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5775,8 +5709,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 918,
-      "transfersOutEvent": 312,
+      "transfersInEvent": 976,
+      "transfersOutEvent": 325,
       "fixtures": [
         {
           "gw": 11,
@@ -5814,7 +5748,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.308,
+      "dataScore": 0.309,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5841,8 +5775,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1148,
-      "transfersOutEvent": 3558,
+      "transfersInEvent": 1238,
+      "transfersOutEvent": 3643,
       "fixtures": [
         {
           "gw": 11,
@@ -5880,7 +5814,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.306,
+      "dataScore": 0.307,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5907,8 +5841,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 709,
-      "transfersOutEvent": 548,
+      "transfersInEvent": 731,
+      "transfersOutEvent": 580,
       "fixtures": [
         {
           "gw": 11,
@@ -5946,7 +5880,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.305,
+      "dataScore": 0.306,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -5973,8 +5907,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2089,
-      "transfersOutEvent": 12374,
+      "transfersInEvent": 2207,
+      "transfersOutEvent": 12839,
       "fixtures": [
         {
           "gw": 11,
@@ -6012,7 +5946,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.297,
+      "dataScore": 0.298,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6039,8 +5973,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": null,
-      "transfersInEvent": 662,
-      "transfersOutEvent": 266,
+      "transfersInEvent": 695,
+      "transfersOutEvent": 276,
       "fixtures": [
         {
           "gw": 11,
@@ -6078,7 +6012,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.293,
+      "dataScore": 0.294,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6105,8 +6039,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6684,
-      "transfersOutEvent": 2743,
+      "transfersInEvent": 6927,
+      "transfersOutEvent": 2905,
       "fixtures": [
         {
           "gw": 11,
@@ -6144,7 +6078,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.29,
+      "dataScore": 0.291,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6171,8 +6105,8 @@
       "totalPoints": 56,
       "status": "a",
       "news": null,
-      "transfersInEvent": 25084,
-      "transfersOutEvent": 48894,
+      "transfersInEvent": 26196,
+      "transfersOutEvent": 50982,
       "fixtures": [
         {
           "gw": 11,
@@ -6210,7 +6144,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.287,
+      "dataScore": 0.288,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6237,8 +6171,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3679,
-      "transfersOutEvent": 7588,
+      "transfersInEvent": 3824,
+      "transfersOutEvent": 7936,
       "fixtures": [
         {
           "gw": 11,
@@ -6295,7 +6229,7 @@
       "teamName": "Brentford",
       "position": "MID",
       "price": 6.1,
-      "ownership": 12.9,
+      "ownership": 12.8,
       "epNext": 1.5,
       "predictedPoints": 3.91,
       "pointsSource": "model",
@@ -6303,8 +6237,8 @@
       "totalPoints": 46,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7628,
-      "transfersOutEvent": 61643,
+      "transfersInEvent": 8090,
+      "transfersOutEvent": 63985,
       "fixtures": [
         {
           "gw": 11,
@@ -6342,7 +6276,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.277,
+      "dataScore": 0.278,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6369,8 +6303,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7051,
-      "transfersOutEvent": 15241,
+      "transfersInEvent": 7749,
+      "transfersOutEvent": 15917,
       "fixtures": [
         {
           "gw": 11,
@@ -6408,7 +6342,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.277,
+      "dataScore": 0.278,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6435,8 +6369,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 636,
-      "transfersOutEvent": 615,
+      "transfersInEvent": 665,
+      "transfersOutEvent": 638,
       "fixtures": [
         {
           "gw": 11,
@@ -6474,7 +6408,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.274,
+      "dataScore": 0.275,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6501,8 +6435,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4901,
-      "transfersOutEvent": 987,
+      "transfersInEvent": 5065,
+      "transfersOutEvent": 1059,
       "fixtures": [
         {
           "gw": 11,
@@ -6540,7 +6474,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.269,
+      "dataScore": 0.27,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6567,8 +6501,8 @@
       "totalPoints": 17,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1173,
-      "transfersOutEvent": 8767,
+      "transfersInEvent": 1232,
+      "transfersOutEvent": 9120,
       "fixtures": [
         {
           "gw": 11,
@@ -6633,8 +6567,8 @@
       "totalPoints": 35,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3344,
-      "transfersOutEvent": 3347,
+      "transfersInEvent": 3518,
+      "transfersOutEvent": 3510,
       "fixtures": [
         {
           "gw": 11,
@@ -6672,7 +6606,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.267,
+      "dataScore": 0.268,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6699,8 +6633,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 619,
-      "transfersOutEvent": 1036,
+      "transfersInEvent": 658,
+      "transfersOutEvent": 1078,
       "fixtures": [
         {
           "gw": 11,
@@ -6738,7 +6672,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.266,
+      "dataScore": 0.267,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6765,8 +6699,8 @@
       "totalPoints": 40,
       "status": "a",
       "news": null,
-      "transfersInEvent": 22395,
-      "transfersOutEvent": 9522,
+      "transfersInEvent": 23463,
+      "transfersOutEvent": 10046,
       "fixtures": [
         {
           "gw": 11,
@@ -6831,8 +6765,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 492,
-      "transfersOutEvent": 736,
+      "transfersInEvent": 535,
+      "transfersOutEvent": 766,
       "fixtures": [
         {
           "gw": 11,
@@ -6870,7 +6804,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.261,
+      "dataScore": 0.262,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6897,8 +6831,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1759,
-      "transfersOutEvent": 6241,
+      "transfersInEvent": 1892,
+      "transfersOutEvent": 6482,
       "fixtures": [
         {
           "gw": 11,
@@ -6936,7 +6870,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.253,
+      "dataScore": 0.254,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -6963,8 +6897,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 629,
-      "transfersOutEvent": 1133,
+      "transfersInEvent": 665,
+      "transfersOutEvent": 1193,
       "fixtures": [
         {
           "gw": 11,
@@ -7002,9 +6936,9 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.252,
+      "dataScore": 0.253,
       "expertScore": 0,
-      "quadrant": "ignore",
+      "quadrant": "differential",
       "aheadOfCurve": false,
       "isTemplate": false,
       "flagged": null,
@@ -7021,7 +6955,7 @@
       "teamName": "Arsenal",
       "position": "GKP",
       "price": 6.2,
-      "ownership": 47.5,
+      "ownership": 47.6,
       "epNext": 6.8,
       "predictedPoints": 3.11,
       "pointsSource": "model",
@@ -7029,8 +6963,8 @@
       "totalPoints": 60,
       "status": "a",
       "news": null,
-      "transfersInEvent": 47681,
-      "transfersOutEvent": 12223,
+      "transfersInEvent": 49771,
+      "transfersOutEvent": 12918,
       "fixtures": [
         {
           "gw": 11,
@@ -7068,7 +7002,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.248,
+      "dataScore": 0.249,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7078,6 +7012,72 @@
       "isCaptain": false,
       "isViceCaptain": false,
       "inStartingXI": true
+    },
+    {
+      "id": 415,
+      "name": "Dorgu",
+      "fullName": "Patrick Dorgu",
+      "team": "MUN",
+      "teamName": "Man Utd",
+      "position": "MID",
+      "price": 5.7,
+      "ownership": 0.3,
+      "epNext": 2.1,
+      "predictedPoints": 2.1,
+      "pointsSource": "ep_next",
+      "form": 2.8,
+      "totalPoints": 21,
+      "status": "d",
+      "news": "Hamstring injury - 75% chance of playing",
+      "transfersInEvent": 1745,
+      "transfersOutEvent": 451,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "LIV",
+          "home": false,
+          "difficulty": 4
+        },
+        {
+          "gw": 12,
+          "opponent": "BRE",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 13,
+          "opponent": "NEW",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 14,
+          "opponent": "COV",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 15,
+          "opponent": "CRY",
+          "home": false,
+          "difficulty": 2
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "points-proxy",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.249,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": true,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
     },
     {
       "id": 264,
@@ -7095,8 +7095,8 @@
       "totalPoints": 35,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1583,
-      "transfersOutEvent": 2402,
+      "transfersInEvent": 1662,
+      "transfersOutEvent": 2530,
       "fixtures": [
         {
           "gw": 11,
@@ -7146,6 +7146,72 @@
       "inStartingXI": false
     },
     {
+      "id": 239,
+      "name": "Garner",
+      "fullName": "James Garner",
+      "team": "EVE",
+      "teamName": "Everton",
+      "position": "MID",
+      "price": 6,
+      "ownership": 0.2,
+      "epNext": 2.5,
+      "predictedPoints": 3.9,
+      "pointsSource": "model",
+      "form": 2.5,
+      "totalPoints": 25,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 876,
+      "transfersOutEvent": 1198,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "BRE",
+          "home": false,
+          "difficulty": 4
+        },
+        {
+          "gw": 12,
+          "opponent": "LIV",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 13,
+          "opponent": "AVL",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 14,
+          "opponent": "FUL",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 15,
+          "opponent": "BHA",
+          "home": false,
+          "difficulty": 4
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "understat+form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.243,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
       "id": 258,
       "name": "Castagne",
       "fullName": "Timothy Castagne",
@@ -7161,8 +7227,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2698,
-      "transfersOutEvent": 2133,
+      "transfersInEvent": 2902,
+      "transfersOutEvent": 2238,
       "fixtures": [
         {
           "gw": 11,
@@ -7212,72 +7278,6 @@
       "inStartingXI": false
     },
     {
-      "id": 239,
-      "name": "Garner",
-      "fullName": "James Garner",
-      "team": "EVE",
-      "teamName": "Everton",
-      "position": "MID",
-      "price": 6,
-      "ownership": 0.2,
-      "epNext": 2.5,
-      "predictedPoints": 3.9,
-      "pointsSource": "model",
-      "form": 2.5,
-      "totalPoints": 25,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 836,
-      "transfersOutEvent": 1154,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "BRE",
-          "home": false,
-          "difficulty": 4
-        },
-        {
-          "gw": 12,
-          "opponent": "LIV",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 13,
-          "opponent": "AVL",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 14,
-          "opponent": "FUL",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 15,
-          "opponent": "BHA",
-          "home": false,
-          "difficulty": 4
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "understat+form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.242,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
       "id": 536,
       "name": "Reinildo",
       "fullName": "Reinildo Mandava",
@@ -7293,8 +7293,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 200,
-      "transfersOutEvent": 291,
+      "transfersInEvent": 213,
+      "transfersOutEvent": 304,
       "fixtures": [
         {
           "gw": 11,
@@ -7332,7 +7332,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.239,
+      "dataScore": 0.24,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7359,8 +7359,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6871,
-      "transfersOutEvent": 13848,
+      "transfersInEvent": 7287,
+      "transfersOutEvent": 14282,
       "fixtures": [
         {
           "gw": 11,
@@ -7398,7 +7398,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.236,
+      "dataScore": 0.237,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7425,8 +7425,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 958,
-      "transfersOutEvent": 351,
+      "transfersInEvent": 1001,
+      "transfersOutEvent": 376,
       "fixtures": [
         {
           "gw": 11,
@@ -7464,7 +7464,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.225,
+      "dataScore": 0.226,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7491,8 +7491,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1268,
-      "transfersOutEvent": 5464,
+      "transfersInEvent": 1337,
+      "transfersOutEvent": 5664,
       "fixtures": [
         {
           "gw": 11,
@@ -7530,7 +7530,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.225,
+      "dataScore": 0.226,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7557,8 +7557,8 @@
       "totalPoints": 36,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1164,
-      "transfersOutEvent": 2215,
+      "transfersInEvent": 1223,
+      "transfersOutEvent": 2305,
       "fixtures": [
         {
           "gw": 11,
@@ -7596,7 +7596,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.221,
+      "dataScore": 0.222,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7623,8 +7623,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5504,
-      "transfersOutEvent": 5677,
+      "transfersInEvent": 5802,
+      "transfersOutEvent": 5945,
       "fixtures": [
         {
           "gw": 11,
@@ -7689,8 +7689,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1729,
-      "transfersOutEvent": 12067,
+      "transfersInEvent": 1838,
+      "transfersOutEvent": 12546,
       "fixtures": [
         {
           "gw": 11,
@@ -7728,7 +7728,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.214,
+      "dataScore": 0.215,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7755,8 +7755,8 @@
       "totalPoints": 57,
       "status": "a",
       "news": null,
-      "transfersInEvent": 60527,
-      "transfersOutEvent": 26017,
+      "transfersInEvent": 62939,
+      "transfersOutEvent": 27646,
       "fixtures": [
         {
           "gw": 11,
@@ -7821,8 +7821,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1225,
-      "transfersOutEvent": 22045,
+      "transfersInEvent": 1313,
+      "transfersOutEvent": 22722,
       "fixtures": [
         {
           "gw": 11,
@@ -7860,7 +7860,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.206,
+      "dataScore": 0.207,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -7887,8 +7887,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5003,
-      "transfersOutEvent": 2923,
+      "transfersInEvent": 5303,
+      "transfersOutEvent": 3107,
       "fixtures": [
         {
           "gw": 11,
@@ -7938,72 +7938,6 @@
       "inStartingXI": false
     },
     {
-      "id": 86,
-      "name": "Lewis-Potter",
-      "fullName": "Keane Lewis-Potter",
-      "team": "BRE",
-      "teamName": "Brentford",
-      "position": "MID",
-      "price": 5.5,
-      "ownership": 1.8,
-      "epNext": 3.8,
-      "predictedPoints": 2.29,
-      "pointsSource": "model",
-      "form": 3.8,
-      "totalPoints": 39,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 1337,
-      "transfersOutEvent": 6636,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "EVE",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 12,
-          "opponent": "MUN",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 13,
-          "opponent": "ARS",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 14,
-          "opponent": "MCI",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 15,
-          "opponent": "FUL",
-          "home": false,
-          "difficulty": 3
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "understat+form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.192,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
       "id": 277,
       "name": "Egan",
       "fullName": "John Egan",
@@ -8019,8 +7953,8 @@
       "totalPoints": 38,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3112,
-      "transfersOutEvent": 17217,
+      "transfersInEvent": 3269,
+      "transfersOutEvent": 17907,
       "fixtures": [
         {
           "gw": 11,
@@ -8058,7 +7992,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.192,
+      "dataScore": 0.193,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8068,6 +8002,72 @@
       "isCaptain": false,
       "isViceCaptain": false,
       "inStartingXI": true
+    },
+    {
+      "id": 86,
+      "name": "Lewis-Potter",
+      "fullName": "Keane Lewis-Potter",
+      "team": "BRE",
+      "teamName": "Brentford",
+      "position": "MID",
+      "price": 5.5,
+      "ownership": 1.8,
+      "epNext": 3.8,
+      "predictedPoints": 2.29,
+      "pointsSource": "model",
+      "form": 3.8,
+      "totalPoints": 39,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 1407,
+      "transfersOutEvent": 6934,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "EVE",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 12,
+          "opponent": "MUN",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 13,
+          "opponent": "ARS",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 14,
+          "opponent": "MCI",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 15,
+          "opponent": "FUL",
+          "home": false,
+          "difficulty": 3
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "understat+form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.192,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
     },
     {
       "id": 313,
@@ -8085,8 +8085,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 232,
-      "transfersOutEvent": 199,
+      "transfersInEvent": 244,
+      "transfersOutEvent": 209,
       "fixtures": [
         {
           "gw": 11,
@@ -8124,7 +8124,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.191,
+      "dataScore": 0.192,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8151,8 +8151,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 380,
-      "transfersOutEvent": 73,
+      "transfersInEvent": 395,
+      "transfersOutEvent": 79,
       "fixtures": [
         {
           "gw": 11,
@@ -8190,73 +8190,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.188,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
-      "id": 257,
-      "name": "Bassey",
-      "fullName": "Calvin Bassey",
-      "team": "FUL",
-      "teamName": "Fulham",
-      "position": "DEF",
-      "price": 4.5,
-      "ownership": 1.3,
-      "epNext": 4.8,
-      "predictedPoints": 2.31,
-      "pointsSource": "model",
-      "form": 4.8,
-      "totalPoints": 36,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 1133,
-      "transfersOutEvent": 3637,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "MCI",
-          "home": false,
-          "difficulty": 5
-        },
-        {
-          "gw": 12,
-          "opponent": "BOU",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 13,
-          "opponent": "TOT",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 14,
-          "opponent": "EVE",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 15,
-          "opponent": "BRE",
-          "home": true,
-          "difficulty": 3
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "understat+form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.183,
+      "dataScore": 0.189,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8283,8 +8217,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 148,
-      "transfersOutEvent": 745,
+      "transfersInEvent": 163,
+      "transfersOutEvent": 768,
       "fixtures": [
         {
           "gw": 11,
@@ -8322,7 +8256,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.183,
+      "dataScore": 0.184,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8334,89 +8268,23 @@
       "inStartingXI": false
     },
     {
-      "id": 526,
-      "name": "Solanke",
-      "fullName": "Dominic Solanke-Mitchell",
-      "team": "TOT",
-      "teamName": "Spurs",
-      "position": "FWD",
-      "price": 5.8,
-      "ownership": 1.4,
-      "epNext": 2,
-      "predictedPoints": 1.63,
-      "pointsSource": "model",
-      "form": 2,
-      "totalPoints": 22,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 1965,
-      "transfersOutEvent": 8082,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "IPS",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 12,
-          "opponent": "SUN",
-          "home": false,
-          "difficulty": 3
-        },
-        {
-          "gw": 13,
-          "opponent": "FUL",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 14,
-          "opponent": "ARS",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 15,
-          "opponent": "HUL",
-          "home": false,
-          "difficulty": 2
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "current-form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.18,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
-      "id": 254,
-      "name": "Robinson",
-      "fullName": "Antonee Robinson",
+      "id": 257,
+      "name": "Bassey",
+      "fullName": "Calvin Bassey",
       "team": "FUL",
       "teamName": "Fulham",
       "position": "DEF",
-      "price": 4.4,
+      "price": 4.5,
       "ownership": 1.3,
-      "epNext": 5,
-      "predictedPoints": 1.68,
+      "epNext": 4.8,
+      "predictedPoints": 2.31,
       "pointsSource": "model",
-      "form": 5,
-      "totalPoints": 32,
+      "form": 4.8,
+      "totalPoints": 36,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1351,
-      "transfersOutEvent": 2907,
+      "transfersInEvent": 1209,
+      "transfersOutEvent": 3808,
       "fixtures": [
         {
           "gw": 11,
@@ -8454,7 +8322,139 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.179,
+      "dataScore": 0.183,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
+      "id": 526,
+      "name": "Solanke",
+      "fullName": "Dominic Solanke-Mitchell",
+      "team": "TOT",
+      "teamName": "Spurs",
+      "position": "FWD",
+      "price": 5.8,
+      "ownership": 1.4,
+      "epNext": 2,
+      "predictedPoints": 1.63,
+      "pointsSource": "model",
+      "form": 2,
+      "totalPoints": 22,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 2069,
+      "transfersOutEvent": 8370,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "IPS",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 12,
+          "opponent": "SUN",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 13,
+          "opponent": "FUL",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 14,
+          "opponent": "ARS",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 15,
+          "opponent": "HUL",
+          "home": false,
+          "difficulty": 2
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "current-form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.181,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
+      "id": 254,
+      "name": "Robinson",
+      "fullName": "Antonee Robinson",
+      "team": "FUL",
+      "teamName": "Fulham",
+      "position": "DEF",
+      "price": 4.4,
+      "ownership": 1.3,
+      "epNext": 5,
+      "predictedPoints": 1.68,
+      "pointsSource": "model",
+      "form": 5,
+      "totalPoints": 32,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 1421,
+      "transfersOutEvent": 3039,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "MCI",
+          "home": false,
+          "difficulty": 5
+        },
+        {
+          "gw": 12,
+          "opponent": "BOU",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 13,
+          "opponent": "TOT",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 14,
+          "opponent": "EVE",
+          "home": false,
+          "difficulty": 3
+        },
+        {
+          "gw": 15,
+          "opponent": "BRE",
+          "home": true,
+          "difficulty": 3
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "understat+form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.18,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8481,8 +8481,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6931,
-      "transfersOutEvent": 6488,
+      "transfersInEvent": 7236,
+      "transfersOutEvent": 6739,
       "fixtures": [
         {
           "gw": 11,
@@ -8547,8 +8547,8 @@
       "totalPoints": 43,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 14469,
-      "transfersOutEvent": 33845,
+      "transfersInEvent": 14633,
+      "transfersOutEvent": 37971,
       "fixtures": [
         {
           "gw": 11,
@@ -8586,7 +8586,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.169,
+      "dataScore": 0.17,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8613,8 +8613,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": null,
-      "transfersInEvent": 384,
-      "transfersOutEvent": 690,
+      "transfersInEvent": 400,
+      "transfersOutEvent": 715,
       "fixtures": [
         {
           "gw": 11,
@@ -8652,7 +8652,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.165,
+      "dataScore": 0.166,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8679,8 +8679,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 479,
-      "transfersOutEvent": 238,
+      "transfersInEvent": 504,
+      "transfersOutEvent": 247,
       "fixtures": [
         {
           "gw": 11,
@@ -8718,7 +8718,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.159,
+      "dataScore": 0.16,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8745,8 +8745,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 699,
-      "transfersOutEvent": 711,
+      "transfersInEvent": 741,
+      "transfersOutEvent": 747,
       "fixtures": [
         {
           "gw": 11,
@@ -8784,7 +8784,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.155,
+      "dataScore": 0.156,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8811,8 +8811,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1996,
-      "transfersOutEvent": 3137,
+      "transfersInEvent": 2089,
+      "transfersOutEvent": 3311,
       "fixtures": [
         {
           "gw": 11,
@@ -8850,7 +8850,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.147,
+      "dataScore": 0.148,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8877,8 +8877,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 240,
-      "transfersOutEvent": 5487,
+      "transfersInEvent": 254,
+      "transfersOutEvent": 5702,
       "fixtures": [
         {
           "gw": 11,
@@ -8916,7 +8916,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.133,
+      "dataScore": 0.134,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -8943,8 +8943,8 @@
       "totalPoints": 33,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1904,
-      "transfersOutEvent": 10561,
+      "transfersInEvent": 1983,
+      "transfersOutEvent": 11031,
       "fixtures": [
         {
           "gw": 11,
@@ -8982,7 +8982,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.127,
+      "dataScore": 0.129,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9009,8 +9009,8 @@
       "totalPoints": 35,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2318,
-      "transfersOutEvent": 8151,
+      "transfersInEvent": 2459,
+      "transfersOutEvent": 8491,
       "fixtures": [
         {
           "gw": 11,
@@ -9048,7 +9048,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.123,
+      "dataScore": 0.124,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9075,8 +9075,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 741,
-      "transfersOutEvent": 1923,
+      "transfersInEvent": 783,
+      "transfersOutEvent": 1992,
       "fixtures": [
         {
           "gw": 11,
@@ -9114,7 +9114,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.123,
+      "dataScore": 0.124,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9141,8 +9141,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 449,
-      "transfersOutEvent": 1314,
+      "transfersInEvent": 471,
+      "transfersOutEvent": 1380,
       "fixtures": [
         {
           "gw": 11,
@@ -9180,7 +9180,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.119,
+      "dataScore": 0.12,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9207,8 +9207,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 791,
-      "transfersOutEvent": 640,
+      "transfersInEvent": 817,
+      "transfersOutEvent": 672,
       "fixtures": [
         {
           "gw": 11,
@@ -9273,8 +9273,8 @@
       "totalPoints": 20,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2016,
-      "transfersOutEvent": 779,
+      "transfersInEvent": 2164,
+      "transfersOutEvent": 813,
       "fixtures": [
         {
           "gw": 11,
@@ -9312,7 +9312,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.113,
+      "dataScore": 0.114,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9339,8 +9339,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 885,
-      "transfersOutEvent": 1044,
+      "transfersInEvent": 935,
+      "transfersOutEvent": 1079,
       "fixtures": [
         {
           "gw": 11,
@@ -9378,7 +9378,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.106,
+      "dataScore": 0.107,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9405,8 +9405,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 887,
-      "transfersOutEvent": 19475,
+      "transfersInEvent": 930,
+      "transfersOutEvent": 20272,
       "fixtures": [
         {
           "gw": 11,
@@ -9444,7 +9444,73 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.1,
+      "dataScore": 0.101,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
+      "id": 36,
+      "name": "Maatsen",
+      "fullName": "Ian Maatsen",
+      "team": "AVL",
+      "teamName": "Aston Villa",
+      "position": "DEF",
+      "price": 4.4,
+      "ownership": 0.4,
+      "epNext": 1,
+      "predictedPoints": 1,
+      "pointsSource": "ep_next",
+      "form": 1,
+      "totalPoints": 13,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 1710,
+      "transfersOutEvent": 485,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "SUN",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 12,
+          "opponent": "IPS",
+          "home": false,
+          "difficulty": 2
+        },
+        {
+          "gw": 13,
+          "opponent": "EVE",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 14,
+          "opponent": "CRY",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 15,
+          "opponent": "COV",
+          "home": false,
+          "difficulty": 2
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "understat+form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.099,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9471,8 +9537,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2253,
-      "transfersOutEvent": 6634,
+      "transfersInEvent": 2388,
+      "transfersOutEvent": 6912,
       "fixtures": [
         {
           "gw": 11,
@@ -9522,72 +9588,6 @@
       "inStartingXI": false
     },
     {
-      "id": 36,
-      "name": "Maatsen",
-      "fullName": "Ian Maatsen",
-      "team": "AVL",
-      "teamName": "Aston Villa",
-      "position": "DEF",
-      "price": 4.4,
-      "ownership": 0.4,
-      "epNext": 1,
-      "predictedPoints": 1,
-      "pointsSource": "ep_next",
-      "form": 1,
-      "totalPoints": 13,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 1630,
-      "transfersOutEvent": 467,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "SUN",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 12,
-          "opponent": "IPS",
-          "home": false,
-          "difficulty": 2
-        },
-        {
-          "gw": 13,
-          "opponent": "EVE",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 14,
-          "opponent": "CRY",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 15,
-          "opponent": "COV",
-          "home": false,
-          "difficulty": 2
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "understat+form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.098,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
       "id": 188,
       "name": "Torp",
       "fullName": "Victor Torp",
@@ -9603,8 +9603,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 69,
-      "transfersOutEvent": 74,
+      "transfersInEvent": 71,
+      "transfersOutEvent": 75,
       "fixtures": [
         {
           "gw": 11,
@@ -9642,7 +9642,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.097,
+      "dataScore": 0.098,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9669,8 +9669,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 160,
-      "transfersOutEvent": 59,
+      "transfersInEvent": 174,
+      "transfersOutEvent": 61,
       "fixtures": [
         {
           "gw": 11,
@@ -9708,7 +9708,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.093,
+      "dataScore": 0.094,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9735,8 +9735,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 302,
-      "transfersOutEvent": 102,
+      "transfersInEvent": 323,
+      "transfersOutEvent": 108,
       "fixtures": [
         {
           "gw": 11,
@@ -9774,7 +9774,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.085,
+      "dataScore": 0.086,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9801,8 +9801,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 347,
-      "transfersOutEvent": 3728,
+      "transfersInEvent": 369,
+      "transfersOutEvent": 3852,
       "fixtures": [
         {
           "gw": 11,
@@ -9840,7 +9840,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.076,
+      "dataScore": 0.077,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9867,8 +9867,8 @@
       "totalPoints": 24,
       "status": "d",
       "news": "Ankle injury - 75% chance of playing",
-      "transfersInEvent": 805,
-      "transfersOutEvent": 6131,
+      "transfersInEvent": 825,
+      "transfersOutEvent": 6354,
       "fixtures": [
         {
           "gw": 11,
@@ -9906,7 +9906,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.072,
+      "dataScore": 0.073,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -9933,8 +9933,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": null,
-      "transfersInEvent": 415,
-      "transfersOutEvent": 262,
+      "transfersInEvent": 433,
+      "transfersOutEvent": 271,
       "fixtures": [
         {
           "gw": 11,
@@ -9999,8 +9999,8 @@
       "totalPoints": 17,
       "status": "a",
       "news": null,
-      "transfersInEvent": 648,
-      "transfersOutEvent": 1116,
+      "transfersInEvent": 702,
+      "transfersOutEvent": 1182,
       "fixtures": [
         {
           "gw": 11,
@@ -10038,7 +10038,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.064,
+      "dataScore": 0.065,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10065,8 +10065,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 424,
-      "transfersOutEvent": 584,
+      "transfersInEvent": 459,
+      "transfersOutEvent": 612,
       "fixtures": [
         {
           "gw": 11,
@@ -10131,8 +10131,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 24474,
-      "transfersOutEvent": 4187,
+      "transfersInEvent": 25339,
+      "transfersOutEvent": 4382,
       "fixtures": [
         {
           "gw": 11,
@@ -10182,6 +10182,72 @@
       "inStartingXI": false
     },
     {
+      "id": 286,
+      "name": "Belloumi",
+      "fullName": "Mohamed Belloumi",
+      "team": "HUL",
+      "teamName": "Hull City",
+      "position": "MID",
+      "price": 5.3,
+      "ownership": 9.5,
+      "epNext": 2.1,
+      "predictedPoints": 2.1,
+      "pointsSource": "ep_next",
+      "form": 2.8,
+      "totalPoints": 48,
+      "status": "d",
+      "news": "Hamstring injury - 75% chance of playing",
+      "transfersInEvent": 10201,
+      "transfersOutEvent": 48461,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "BHA",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 12,
+          "opponent": "CRY",
+          "home": false,
+          "difficulty": 2
+        },
+        {
+          "gw": 13,
+          "opponent": "NFO",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 14,
+          "opponent": "BOU",
+          "home": false,
+          "difficulty": 4
+        },
+        {
+          "gw": 15,
+          "opponent": "TOT",
+          "home": true,
+          "difficulty": 3
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "current-form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": 0.059,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": true,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
       "id": 448,
       "name": "Burn",
       "fullName": "Dan Burn",
@@ -10197,8 +10263,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 894,
-      "transfersOutEvent": 781,
+      "transfersInEvent": 939,
+      "transfersOutEvent": 839,
       "fixtures": [
         {
           "gw": 11,
@@ -10248,72 +10314,6 @@
       "inStartingXI": false
     },
     {
-      "id": 286,
-      "name": "Belloumi",
-      "fullName": "Mohamed Belloumi",
-      "team": "HUL",
-      "teamName": "Hull City",
-      "position": "MID",
-      "price": 5.3,
-      "ownership": 9.6,
-      "epNext": 2.1,
-      "predictedPoints": 2.1,
-      "pointsSource": "ep_next",
-      "form": 2.8,
-      "totalPoints": 48,
-      "status": "d",
-      "news": "Hamstring injury - 75% chance of playing",
-      "transfersInEvent": 10064,
-      "transfersOutEvent": 44986,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "BHA",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 12,
-          "opponent": "CRY",
-          "home": false,
-          "difficulty": 2
-        },
-        {
-          "gw": 13,
-          "opponent": "NFO",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 14,
-          "opponent": "BOU",
-          "home": false,
-          "difficulty": 4
-        },
-        {
-          "gw": 15,
-          "opponent": "TOT",
-          "home": true,
-          "difficulty": 3
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "current-form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": 0.058,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": true,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
       "id": 656,
       "name": "Mfuni",
       "fullName": "Stephen Mfuni",
@@ -10329,8 +10329,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 503,
-      "transfersOutEvent": 479,
+      "transfersInEvent": 526,
+      "transfersOutEvent": 511,
       "fixtures": [
         {
           "gw": 11,
@@ -10368,7 +10368,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.057,
+      "dataScore": 0.058,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10395,8 +10395,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 7996,
-      "transfersOutEvent": 21667,
+      "transfersInEvent": 8391,
+      "transfersOutEvent": 22513,
       "fixtures": [
         {
           "gw": 11,
@@ -10461,8 +10461,8 @@
       "totalPoints": 24,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 2135,
-      "transfersOutEvent": 3242,
+      "transfersInEvent": 2158,
+      "transfersOutEvent": 3408,
       "fixtures": [
         {
           "gw": 11,
@@ -10500,7 +10500,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.023,
+      "dataScore": 0.024,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10527,8 +10527,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1905,
-      "transfersOutEvent": 1789,
+      "transfersInEvent": 2020,
+      "transfersOutEvent": 1867,
       "fixtures": [
         {
           "gw": 11,
@@ -10566,7 +10566,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.021,
+      "dataScore": 0.022,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10593,8 +10593,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 194,
-      "transfersOutEvent": 556,
+      "transfersInEvent": 202,
+      "transfersOutEvent": 591,
       "fixtures": [
         {
           "gw": 11,
@@ -10632,7 +10632,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.012,
+      "dataScore": 0.013,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10659,8 +10659,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 106,
-      "transfersOutEvent": 280,
+      "transfersInEvent": 110,
+      "transfersOutEvent": 291,
       "fixtures": [
         {
           "gw": 11,
@@ -10698,7 +10698,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.008,
+      "dataScore": 0.009,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10725,8 +10725,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1871,
-      "transfersOutEvent": 1387,
+      "transfersInEvent": 2017,
+      "transfersOutEvent": 1463,
       "fixtures": [
         {
           "gw": 11,
@@ -10764,7 +10764,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.007,
+      "dataScore": 0.008,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10791,8 +10791,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 736,
-      "transfersOutEvent": 736,
+      "transfersInEvent": 775,
+      "transfersOutEvent": 767,
       "fixtures": [
         {
           "gw": 11,
@@ -10830,7 +10830,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.001,
+      "dataScore": 0,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10857,8 +10857,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 566,
-      "transfersOutEvent": 5281,
+      "transfersInEvent": 586,
+      "transfersOutEvent": 5437,
       "fixtures": [
         {
           "gw": 11,
@@ -10896,7 +10896,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.006,
+      "dataScore": -0.005,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -10923,8 +10923,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 15417,
-      "transfersOutEvent": 7206,
+      "transfersInEvent": 16140,
+      "transfersOutEvent": 7495,
       "fixtures": [
         {
           "gw": 11,
@@ -10989,8 +10989,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2532,
-      "transfersOutEvent": 1579,
+      "transfersInEvent": 2619,
+      "transfersOutEvent": 1654,
       "fixtures": [
         {
           "gw": 11,
@@ -11028,7 +11028,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.013,
+      "dataScore": -0.012,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11055,8 +11055,8 @@
       "totalPoints": 39,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5476,
-      "transfersOutEvent": 12192,
+      "transfersInEvent": 5722,
+      "transfersOutEvent": 12838,
       "fixtures": [
         {
           "gw": 11,
@@ -11094,7 +11094,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.023,
+      "dataScore": -0.022,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11121,8 +11121,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 585,
-      "transfersOutEvent": 907,
+      "transfersInEvent": 618,
+      "transfersOutEvent": 954,
       "fixtures": [
         {
           "gw": 11,
@@ -11160,7 +11160,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.023,
+      "dataScore": -0.022,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11187,8 +11187,8 @@
       "totalPoints": 40,
       "status": "a",
       "news": null,
-      "transfersInEvent": 22837,
-      "transfersOutEvent": 4257,
+      "transfersInEvent": 23801,
+      "transfersOutEvent": 4531,
       "fixtures": [
         {
           "gw": 11,
@@ -11253,8 +11253,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 61,
-      "transfersOutEvent": 118,
+      "transfersInEvent": 66,
+      "transfersOutEvent": 128,
       "fixtures": [
         {
           "gw": 11,
@@ -11292,7 +11292,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.032,
+      "dataScore": -0.031,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11319,8 +11319,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1437,
-      "transfersOutEvent": 9112,
+      "transfersInEvent": 1517,
+      "transfersOutEvent": 9496,
       "fixtures": [
         {
           "gw": 11,
@@ -11358,7 +11358,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.032,
+      "dataScore": -0.031,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11385,8 +11385,8 @@
       "totalPoints": 33,
       "status": "d",
       "news": "Calf injury - 75% chance of playing",
-      "transfersInEvent": 267,
-      "transfersOutEvent": 16896,
+      "transfersInEvent": 276,
+      "transfersOutEvent": 17767,
       "fixtures": [
         {
           "gw": 11,
@@ -11424,7 +11424,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.038,
+      "dataScore": -0.037,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11451,8 +11451,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 226,
-      "transfersOutEvent": 720,
+      "transfersInEvent": 231,
+      "transfersOutEvent": 756,
       "fixtures": [
         {
           "gw": 11,
@@ -11490,7 +11490,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.042,
+      "dataScore": -0.041,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11517,8 +11517,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1525,
-      "transfersOutEvent": 2772,
+      "transfersInEvent": 1642,
+      "transfersOutEvent": 2831,
       "fixtures": [
         {
           "gw": 11,
@@ -11556,7 +11556,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.044,
+      "dataScore": -0.043,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11583,8 +11583,8 @@
       "totalPoints": 17,
       "status": "a",
       "news": null,
-      "transfersInEvent": 47,
-      "transfersOutEvent": 233,
+      "transfersInEvent": 51,
+      "transfersOutEvent": 245,
       "fixtures": [
         {
           "gw": 11,
@@ -11622,7 +11622,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.046,
+      "dataScore": -0.045,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11649,8 +11649,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 146,
-      "transfersOutEvent": 797,
+      "transfersInEvent": 152,
+      "transfersOutEvent": 832,
       "fixtures": [
         {
           "gw": 11,
@@ -11688,7 +11688,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.047,
+      "dataScore": -0.046,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11715,8 +11715,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 129,
-      "transfersOutEvent": 344,
+      "transfersInEvent": 132,
+      "transfersOutEvent": 357,
       "fixtures": [
         {
           "gw": 11,
@@ -11754,7 +11754,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.059,
+      "dataScore": -0.058,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11766,23 +11766,23 @@
       "inStartingXI": false
     },
     {
-      "id": 70,
-      "name": "Kluivert",
-      "fullName": "Justin Kluivert",
+      "id": 64,
+      "name": "Smith",
+      "fullName": "Adam Smith",
       "team": "BOU",
       "teamName": "Bournemouth",
-      "position": "MID",
-      "price": 5.9,
-      "ownership": 1,
-      "epNext": 4,
-      "predictedPoints": 1.4,
+      "position": "DEF",
+      "price": 4.5,
+      "ownership": 0.2,
+      "epNext": 4.8,
+      "predictedPoints": 1.55,
       "pointsSource": "model",
-      "form": 4,
-      "totalPoints": 31,
+      "form": 4.8,
+      "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4702,
-      "transfersOutEvent": 2198,
+      "transfersInEvent": 1194,
+      "transfersOutEvent": 450,
       "fixtures": [
         {
           "gw": 11,
@@ -11832,23 +11832,23 @@
       "inStartingXI": false
     },
     {
-      "id": 64,
-      "name": "Smith",
-      "fullName": "Adam Smith",
+      "id": 70,
+      "name": "Kluivert",
+      "fullName": "Justin Kluivert",
       "team": "BOU",
       "teamName": "Bournemouth",
-      "position": "DEF",
-      "price": 4.5,
-      "ownership": 0.2,
-      "epNext": 4.8,
-      "predictedPoints": 1.55,
+      "position": "MID",
+      "price": 5.9,
+      "ownership": 1,
+      "epNext": 4,
+      "predictedPoints": 1.4,
       "pointsSource": "model",
-      "form": 4.8,
-      "totalPoints": 23,
+      "form": 4,
+      "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1125,
-      "transfersOutEvent": 430,
+      "transfersInEvent": 4973,
+      "transfersOutEvent": 2312,
       "fixtures": [
         {
           "gw": 11,
@@ -11886,7 +11886,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.062,
+      "dataScore": -0.061,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11913,8 +11913,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 737,
-      "transfersOutEvent": 777,
+      "transfersInEvent": 772,
+      "transfersOutEvent": 818,
       "fixtures": [
         {
           "gw": 11,
@@ -11952,7 +11952,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.064,
+      "dataScore": -0.063,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -11979,8 +11979,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 264,
-      "transfersOutEvent": 227,
+      "transfersInEvent": 286,
+      "transfersOutEvent": 246,
       "fixtures": [
         {
           "gw": 11,
@@ -12018,7 +12018,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.064,
+      "dataScore": -0.063,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12045,8 +12045,8 @@
       "totalPoints": 44,
       "status": "a",
       "news": null,
-      "transfersInEvent": 31566,
-      "transfersOutEvent": 5731,
+      "transfersInEvent": 33187,
+      "transfersOutEvent": 6008,
       "fixtures": [
         {
           "gw": 11,
@@ -12084,7 +12084,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.068,
+      "dataScore": -0.067,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12111,8 +12111,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2526,
-      "transfersOutEvent": 14755,
+      "transfersInEvent": 2677,
+      "transfersOutEvent": 15296,
       "fixtures": [
         {
           "gw": 11,
@@ -12150,7 +12150,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.068,
+      "dataScore": -0.067,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12177,8 +12177,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5372,
-      "transfersOutEvent": 11494,
+      "transfersInEvent": 5663,
+      "transfersOutEvent": 12018,
       "fixtures": [
         {
           "gw": 11,
@@ -12216,7 +12216,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.088,
+      "dataScore": -0.087,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12243,8 +12243,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 766,
-      "transfersOutEvent": 3709,
+      "transfersInEvent": 794,
+      "transfersOutEvent": 3851,
       "fixtures": [
         {
           "gw": 11,
@@ -12282,7 +12282,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.091,
+      "dataScore": -0.09,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12309,8 +12309,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 234,
-      "transfersOutEvent": 2609,
+      "transfersInEvent": 243,
+      "transfersOutEvent": 2734,
       "fixtures": [
         {
           "gw": 11,
@@ -12348,7 +12348,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.096,
+      "dataScore": -0.095,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12375,8 +12375,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3713,
-      "transfersOutEvent": 17585,
+      "transfersInEvent": 3896,
+      "transfersOutEvent": 18447,
       "fixtures": [
         {
           "gw": 11,
@@ -12414,7 +12414,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.101,
+      "dataScore": -0.1,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12441,8 +12441,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 11804,
-      "transfersOutEvent": 2459,
+      "transfersInEvent": 12561,
+      "transfersOutEvent": 2619,
       "fixtures": [
         {
           "gw": 11,
@@ -12480,7 +12480,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.109,
+      "dataScore": -0.108,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12507,8 +12507,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 468,
-      "transfersOutEvent": 1727,
+      "transfersInEvent": 490,
+      "transfersOutEvent": 1834,
       "fixtures": [
         {
           "gw": 11,
@@ -12546,7 +12546,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.11,
+      "dataScore": -0.109,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12573,8 +12573,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1716,
-      "transfersOutEvent": 8908,
+      "transfersInEvent": 1777,
+      "transfersOutEvent": 9301,
       "fixtures": [
         {
           "gw": 11,
@@ -12612,7 +12612,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.117,
+      "dataScore": -0.116,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12639,8 +12639,8 @@
       "totalPoints": 26,
       "status": "a",
       "news": null,
-      "transfersInEvent": 701,
-      "transfersOutEvent": 742,
+      "transfersInEvent": 738,
+      "transfersOutEvent": 781,
       "fixtures": [
         {
           "gw": 11,
@@ -12678,7 +12678,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.123,
+      "dataScore": -0.122,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12705,8 +12705,8 @@
       "totalPoints": 35,
       "status": "a",
       "news": null,
-      "transfersInEvent": 12355,
-      "transfersOutEvent": 26103,
+      "transfersInEvent": 12952,
+      "transfersOutEvent": 27185,
       "fixtures": [
         {
           "gw": 11,
@@ -12744,7 +12744,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.135,
+      "dataScore": -0.133,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12771,8 +12771,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 453,
-      "transfersOutEvent": 4027,
+      "transfersInEvent": 480,
+      "transfersOutEvent": 4182,
       "fixtures": [
         {
           "gw": 11,
@@ -12810,7 +12810,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.135,
+      "dataScore": -0.134,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12837,8 +12837,8 @@
       "totalPoints": 37,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1111,
-      "transfersOutEvent": 3901,
+      "transfersInEvent": 1162,
+      "transfersOutEvent": 4106,
       "fixtures": [
         {
           "gw": 11,
@@ -12876,7 +12876,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.142,
+      "dataScore": -0.141,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12903,8 +12903,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 433,
-      "transfersOutEvent": 844,
+      "transfersInEvent": 452,
+      "transfersOutEvent": 879,
       "fixtures": [
         {
           "gw": 11,
@@ -12942,7 +12942,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.152,
+      "dataScore": -0.151,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -12969,8 +12969,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 313,
-      "transfersOutEvent": 622,
+      "transfersInEvent": 331,
+      "transfersOutEvent": 658,
       "fixtures": [
         {
           "gw": 11,
@@ -13008,7 +13008,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.159,
+      "dataScore": -0.158,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13035,8 +13035,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2041,
-      "transfersOutEvent": 6991,
+      "transfersInEvent": 2141,
+      "transfersOutEvent": 7363,
       "fixtures": [
         {
           "gw": 11,
@@ -13074,7 +13074,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.163,
+      "dataScore": -0.162,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13101,8 +13101,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 581,
-      "transfersOutEvent": 1523,
+      "transfersInEvent": 606,
+      "transfersOutEvent": 1597,
       "fixtures": [
         {
           "gw": 11,
@@ -13140,7 +13140,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.165,
+      "dataScore": -0.164,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13167,8 +13167,8 @@
       "totalPoints": 29,
       "status": "a",
       "news": null,
-      "transfersInEvent": 233,
-      "transfersOutEvent": 2294,
+      "transfersInEvent": 238,
+      "transfersOutEvent": 2394,
       "fixtures": [
         {
           "gw": 11,
@@ -13206,7 +13206,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.169,
+      "dataScore": -0.167,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13233,8 +13233,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1334,
-      "transfersOutEvent": 3485,
+      "transfersInEvent": 1358,
+      "transfersOutEvent": 3628,
       "fixtures": [
         {
           "gw": 11,
@@ -13272,7 +13272,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.17,
+      "dataScore": -0.169,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13299,8 +13299,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 103,
-      "transfersOutEvent": 281,
+      "transfersInEvent": 109,
+      "transfersOutEvent": 294,
       "fixtures": [
         {
           "gw": 11,
@@ -13338,7 +13338,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.172,
+      "dataScore": -0.171,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13365,8 +13365,8 @@
       "totalPoints": 43,
       "status": "a",
       "news": null,
-      "transfersInEvent": 5086,
-      "transfersOutEvent": 3631,
+      "transfersInEvent": 5254,
+      "transfersOutEvent": 3796,
       "fixtures": [
         {
           "gw": 11,
@@ -13404,7 +13404,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.173,
+      "dataScore": -0.172,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13431,8 +13431,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 174,
-      "transfersOutEvent": 678,
+      "transfersInEvent": 188,
+      "transfersOutEvent": 713,
       "fixtures": [
         {
           "gw": 11,
@@ -13470,73 +13470,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.176,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
-      "id": 639,
-      "name": "Andrés",
-      "fullName": "José María Andrés Baixauli",
-      "team": "BHA",
-      "teamName": "Brighton",
-      "position": "MID",
-      "price": 5.5,
-      "ownership": 0.1,
-      "epNext": 1.2,
-      "predictedPoints": 1.2,
-      "pointsSource": "ep_next",
-      "form": 1.2,
-      "totalPoints": 20,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 196,
-      "transfersOutEvent": 457,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "HUL",
-          "home": false,
-          "difficulty": 2
-        },
-        {
-          "gw": 12,
-          "opponent": "NEW",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 13,
-          "opponent": "BOU",
-          "home": false,
-          "difficulty": 4
-        },
-        {
-          "gw": 14,
-          "opponent": "NFO",
-          "home": false,
-          "difficulty": 2
-        },
-        {
-          "gw": 15,
-          "opponent": "EVE",
-          "home": true,
-          "difficulty": 3
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "current-form",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": -0.176,
+      "dataScore": -0.175,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13563,8 +13497,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 801,
-      "transfersOutEvent": 18938,
+      "transfersInEvent": 848,
+      "transfersOutEvent": 19648,
       "fixtures": [
         {
           "gw": 11,
@@ -13602,7 +13536,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.177,
+      "dataScore": -0.176,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13629,8 +13563,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 202,
-      "transfersOutEvent": 1803,
+      "transfersInEvent": 216,
+      "transfersOutEvent": 1873,
       "fixtures": [
         {
           "gw": 11,
@@ -13668,7 +13602,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.18,
+      "dataScore": -0.179,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13695,8 +13629,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1090,
-      "transfersOutEvent": 775,
+      "transfersInEvent": 1155,
+      "transfersOutEvent": 812,
       "fixtures": [
         {
           "gw": 11,
@@ -13734,7 +13668,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.184,
+      "dataScore": -0.183,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13761,8 +13695,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1019,
-      "transfersOutEvent": 4965,
+      "transfersInEvent": 1090,
+      "transfersOutEvent": 5199,
       "fixtures": [
         {
           "gw": 11,
@@ -13800,7 +13734,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.186,
+      "dataScore": -0.185,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13827,8 +13761,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 16287,
-      "transfersOutEvent": 11872,
+      "transfersInEvent": 17090,
+      "transfersOutEvent": 12389,
       "fixtures": [
         {
           "gw": 11,
@@ -13866,7 +13800,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.188,
+      "dataScore": -0.187,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13893,8 +13827,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 445,
-      "transfersOutEvent": 148,
+      "transfersInEvent": 469,
+      "transfersOutEvent": 158,
       "fixtures": [
         {
           "gw": 11,
@@ -13932,7 +13866,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.195,
+      "dataScore": -0.194,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -13959,8 +13893,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1353,
-      "transfersOutEvent": 2629,
+      "transfersInEvent": 1430,
+      "transfersOutEvent": 2709,
       "fixtures": [
         {
           "gw": 11,
@@ -13998,7 +13932,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.198,
+      "dataScore": -0.196,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14025,8 +13959,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 4107,
-      "transfersOutEvent": 5197,
+      "transfersInEvent": 4394,
+      "transfersOutEvent": 5415,
       "fixtures": [
         {
           "gw": 11,
@@ -14064,7 +13998,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.199,
+      "dataScore": -0.198,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14092,7 +14026,7 @@
       "status": "a",
       "news": null,
       "transfersInEvent": 25,
-      "transfersOutEvent": 151,
+      "transfersOutEvent": 156,
       "fixtures": [
         {
           "gw": 11,
@@ -14130,7 +14064,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.199,
+      "dataScore": -0.198,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14158,7 +14092,7 @@
       "status": "a",
       "news": null,
       "transfersInEvent": 9,
-      "transfersOutEvent": 85,
+      "transfersOutEvent": 88,
       "fixtures": [
         {
           "gw": 11,
@@ -14196,7 +14130,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.202,
+      "dataScore": -0.201,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14223,8 +14157,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 30,
-      "transfersOutEvent": 120,
+      "transfersInEvent": 33,
+      "transfersOutEvent": 126,
       "fixtures": [
         {
           "gw": 11,
@@ -14262,7 +14196,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.205,
+      "dataScore": -0.204,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14289,8 +14223,8 @@
       "totalPoints": 13,
       "status": "d",
       "news": "Hamstring injury - 50% chance of playing",
-      "transfersInEvent": 40,
-      "transfersOutEvent": 643,
+      "transfersInEvent": 44,
+      "transfersOutEvent": 677,
       "fixtures": [
         {
           "gw": 11,
@@ -14328,7 +14262,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.208,
+      "dataScore": -0.206,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14355,8 +14289,8 @@
       "totalPoints": 42,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1846,
-      "transfersOutEvent": 34180,
+      "transfersInEvent": 1945,
+      "transfersOutEvent": 35141,
       "fixtures": [
         {
           "gw": 11,
@@ -14394,7 +14328,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.211,
+      "dataScore": -0.21,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14421,8 +14355,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1866,
-      "transfersOutEvent": 61858,
+      "transfersInEvent": 1952,
+      "transfersOutEvent": 64257,
       "fixtures": [
         {
           "gw": 11,
@@ -14460,7 +14394,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.22,
+      "dataScore": -0.219,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14487,7 +14421,7 @@
       "totalPoints": 7,
       "status": "a",
       "news": null,
-      "transfersInEvent": 19,
+      "transfersInEvent": 21,
       "transfersOutEvent": 11,
       "fixtures": [
         {
@@ -14526,7 +14460,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.22,
+      "dataScore": -0.219,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14553,8 +14487,8 @@
       "totalPoints": 32,
       "status": "d",
       "news": "Muscular injury - 75% chance of playing",
-      "transfersInEvent": 6044,
-      "transfersOutEvent": 22872,
+      "transfersInEvent": 6164,
+      "transfersOutEvent": 24299,
       "fixtures": [
         {
           "gw": 11,
@@ -14592,7 +14526,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.221,
+      "dataScore": -0.22,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14619,8 +14553,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 830,
-      "transfersOutEvent": 1689,
+      "transfersInEvent": 880,
+      "transfersOutEvent": 1776,
       "fixtures": [
         {
           "gw": 11,
@@ -14658,7 +14592,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.223,
+      "dataScore": -0.222,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14685,8 +14619,8 @@
       "totalPoints": 34,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1554,
-      "transfersOutEvent": 6277,
+      "transfersInEvent": 1643,
+      "transfersOutEvent": 6576,
       "fixtures": [
         {
           "gw": 11,
@@ -14724,7 +14658,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.228,
+      "dataScore": -0.227,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14751,8 +14685,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 70,
-      "transfersOutEvent": 482,
+      "transfersInEvent": 78,
+      "transfersOutEvent": 508,
       "fixtures": [
         {
           "gw": 11,
@@ -14790,7 +14724,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.23,
+      "dataScore": -0.229,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14817,8 +14751,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1594,
-      "transfersOutEvent": 235,
+      "transfersInEvent": 1662,
+      "transfersOutEvent": 249,
       "fixtures": [
         {
           "gw": 11,
@@ -14883,8 +14817,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1772,
-      "transfersOutEvent": 919,
+      "transfersInEvent": 1845,
+      "transfersOutEvent": 962,
       "fixtures": [
         {
           "gw": 11,
@@ -14922,7 +14856,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.236,
+      "dataScore": -0.235,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -14949,8 +14883,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 48,
-      "transfersOutEvent": 111,
+      "transfersInEvent": 50,
+      "transfersOutEvent": 116,
       "fixtures": [
         {
           "gw": 11,
@@ -14988,7 +14922,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.239,
+      "dataScore": -0.238,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15015,8 +14949,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 340,
-      "transfersOutEvent": 392,
+      "transfersInEvent": 350,
+      "transfersOutEvent": 418,
       "fixtures": [
         {
           "gw": 11,
@@ -15054,7 +14988,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.242,
+      "dataScore": -0.241,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15081,8 +15015,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1595,
-      "transfersOutEvent": 1076,
+      "transfersInEvent": 1685,
+      "transfersOutEvent": 1127,
       "fixtures": [
         {
           "gw": 11,
@@ -15120,7 +15054,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.248,
+      "dataScore": -0.247,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15147,8 +15081,8 @@
       "totalPoints": 27,
       "status": "a",
       "news": null,
-      "transfersInEvent": 628,
-      "transfersOutEvent": 2715,
+      "transfersInEvent": 661,
+      "transfersOutEvent": 2818,
       "fixtures": [
         {
           "gw": 11,
@@ -15186,7 +15120,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.252,
+      "dataScore": -0.251,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15213,8 +15147,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1085,
-      "transfersOutEvent": 2273,
+      "transfersInEvent": 1142,
+      "transfersOutEvent": 2407,
       "fixtures": [
         {
           "gw": 11,
@@ -15252,7 +15186,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.254,
+      "dataScore": -0.253,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15279,8 +15213,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": null,
-      "transfersInEvent": 155,
-      "transfersOutEvent": 343,
+      "transfersInEvent": 164,
+      "transfersOutEvent": 356,
       "fixtures": [
         {
           "gw": 11,
@@ -15318,7 +15252,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.261,
+      "dataScore": -0.26,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15345,8 +15279,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 540,
-      "transfersOutEvent": 1890,
+      "transfersInEvent": 560,
+      "transfersOutEvent": 1971,
       "fixtures": [
         {
           "gw": 11,
@@ -15384,7 +15318,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.262,
+      "dataScore": -0.261,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15450,7 +15384,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.264,
+      "dataScore": -0.263,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15477,8 +15411,8 @@
       "totalPoints": 23,
       "status": "a",
       "news": null,
-      "transfersInEvent": 577,
-      "transfersOutEvent": 2107,
+      "transfersInEvent": 617,
+      "transfersOutEvent": 2206,
       "fixtures": [
         {
           "gw": 11,
@@ -15516,7 +15450,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.264,
+      "dataScore": -0.263,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15543,8 +15477,8 @@
       "totalPoints": 33,
       "status": "a",
       "news": null,
-      "transfersInEvent": 3826,
-      "transfersOutEvent": 24186,
+      "transfersInEvent": 4095,
+      "transfersOutEvent": 25006,
       "fixtures": [
         {
           "gw": 11,
@@ -15582,7 +15516,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.269,
+      "dataScore": -0.268,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15609,8 +15543,8 @@
       "totalPoints": 11,
       "status": "a",
       "news": null,
-      "transfersInEvent": 246,
-      "transfersOutEvent": 1107,
+      "transfersInEvent": 256,
+      "transfersOutEvent": 1161,
       "fixtures": [
         {
           "gw": 11,
@@ -15648,7 +15582,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.271,
+      "dataScore": -0.27,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15675,8 +15609,8 @@
       "totalPoints": 21,
       "status": "a",
       "news": null,
-      "transfersInEvent": 108,
-      "transfersOutEvent": 255,
+      "transfersInEvent": 114,
+      "transfersOutEvent": 260,
       "fixtures": [
         {
           "gw": 11,
@@ -15714,7 +15648,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.279,
+      "dataScore": -0.278,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15741,8 +15675,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 992,
-      "transfersOutEvent": 7156,
+      "transfersInEvent": 1054,
+      "transfersOutEvent": 7401,
       "fixtures": [
         {
           "gw": 11,
@@ -15780,7 +15714,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.286,
+      "dataScore": -0.285,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15807,8 +15741,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 362,
-      "transfersOutEvent": 456,
+      "transfersInEvent": 376,
+      "transfersOutEvent": 478,
       "fixtures": [
         {
           "gw": 11,
@@ -15846,7 +15780,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.29,
+      "dataScore": -0.289,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15873,8 +15807,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1021,
-      "transfersOutEvent": 769,
+      "transfersInEvent": 1089,
+      "transfersOutEvent": 804,
       "fixtures": [
         {
           "gw": 11,
@@ -15912,7 +15846,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.296,
+      "dataScore": -0.295,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -15939,8 +15873,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 693,
-      "transfersOutEvent": 1213,
+      "transfersInEvent": 740,
+      "transfersOutEvent": 1266,
       "fixtures": [
         {
           "gw": 11,
@@ -15978,7 +15912,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.313,
+      "dataScore": -0.312,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16005,8 +15939,8 @@
       "totalPoints": 28,
       "status": "a",
       "news": null,
-      "transfersInEvent": 334,
-      "transfersOutEvent": 1047,
+      "transfersInEvent": 349,
+      "transfersOutEvent": 1096,
       "fixtures": [
         {
           "gw": 11,
@@ -16044,7 +15978,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.314,
+      "dataScore": -0.313,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16071,8 +16005,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 279,
-      "transfersOutEvent": 1288,
+      "transfersInEvent": 293,
+      "transfersOutEvent": 1351,
       "fixtures": [
         {
           "gw": 11,
@@ -16110,7 +16044,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.324,
+      "dataScore": -0.323,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16137,8 +16071,8 @@
       "totalPoints": 30,
       "status": "a",
       "news": null,
-      "transfersInEvent": 785,
-      "transfersOutEvent": 1943,
+      "transfersInEvent": 806,
+      "transfersOutEvent": 2024,
       "fixtures": [
         {
           "gw": 11,
@@ -16176,7 +16110,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.326,
+      "dataScore": -0.325,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16203,8 +16137,8 @@
       "totalPoints": 31,
       "status": "a",
       "news": null,
-      "transfersInEvent": 531,
-      "transfersOutEvent": 178,
+      "transfersInEvent": 565,
+      "transfersOutEvent": 192,
       "fixtures": [
         {
           "gw": 11,
@@ -16242,7 +16176,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.334,
+      "dataScore": -0.333,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16269,8 +16203,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 654,
-      "transfersOutEvent": 3869,
+      "transfersInEvent": 686,
+      "transfersOutEvent": 4038,
       "fixtures": [
         {
           "gw": 11,
@@ -16308,7 +16242,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.34,
+      "dataScore": -0.339,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16335,8 +16269,8 @@
       "totalPoints": 11,
       "status": "d",
       "news": "Foot injury - 75% chance of playing",
-      "transfersInEvent": 100,
-      "transfersOutEvent": 3729,
+      "transfersInEvent": 103,
+      "transfersOutEvent": 3906,
       "fixtures": [
         {
           "gw": 11,
@@ -16374,7 +16308,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.344,
+      "dataScore": -0.343,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16401,8 +16335,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 100,
-      "transfersOutEvent": 135,
+      "transfersInEvent": 108,
+      "transfersOutEvent": 146,
       "fixtures": [
         {
           "gw": 11,
@@ -16440,7 +16374,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.345,
+      "dataScore": -0.344,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16459,7 +16393,7 @@
       "teamName": "Man Utd",
       "position": "DEF",
       "price": 4.6,
-      "ownership": 5.1,
+      "ownership": 5,
       "epNext": 0.8,
       "predictedPoints": 0.77,
       "pointsSource": "model",
@@ -16467,8 +16401,8 @@
       "totalPoints": 16,
       "status": "d",
       "news": "Back injury - 75% chance of playing",
-      "transfersInEvent": 930,
-      "transfersOutEvent": 19665,
+      "transfersInEvent": 945,
+      "transfersOutEvent": 21444,
       "fixtures": [
         {
           "gw": 11,
@@ -16506,7 +16440,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.346,
+      "dataScore": -0.345,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16533,8 +16467,8 @@
       "totalPoints": 32,
       "status": "a",
       "news": null,
-      "transfersInEvent": 334,
-      "transfersOutEvent": 1922,
+      "transfersInEvent": 366,
+      "transfersOutEvent": 2032,
       "fixtures": [
         {
           "gw": 11,
@@ -16572,7 +16506,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.347,
+      "dataScore": -0.346,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16599,8 +16533,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 6250,
-      "transfersOutEvent": 3749,
+      "transfersInEvent": 6536,
+      "transfersOutEvent": 3905,
       "fixtures": [
         {
           "gw": 11,
@@ -16638,7 +16572,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.348,
+      "dataScore": -0.347,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16665,8 +16599,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 113,
-      "transfersOutEvent": 109,
+      "transfersInEvent": 118,
+      "transfersOutEvent": 116,
       "fixtures": [
         {
           "gw": 11,
@@ -16704,7 +16638,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.355,
+      "dataScore": -0.354,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16731,8 +16665,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 365,
-      "transfersOutEvent": 4020,
+      "transfersInEvent": 386,
+      "transfersOutEvent": 4150,
       "fixtures": [
         {
           "gw": 11,
@@ -16770,7 +16704,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.364,
+      "dataScore": -0.363,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16798,7 +16732,7 @@
       "status": "a",
       "news": null,
       "transfersInEvent": 18,
-      "transfersOutEvent": 49,
+      "transfersOutEvent": 53,
       "fixtures": [
         {
           "gw": 11,
@@ -16836,7 +16770,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.37,
+      "dataScore": -0.368,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16863,8 +16797,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 52,
-      "transfersOutEvent": 217,
+      "transfersInEvent": 55,
+      "transfersOutEvent": 229,
       "fixtures": [
         {
           "gw": 11,
@@ -16902,7 +16836,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.375,
+      "dataScore": -0.374,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16929,8 +16863,8 @@
       "totalPoints": 18,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1462,
-      "transfersOutEvent": 2039,
+      "transfersInEvent": 1551,
+      "transfersOutEvent": 2129,
       "fixtures": [
         {
           "gw": 11,
@@ -16968,7 +16902,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.378,
+      "dataScore": -0.377,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -16995,8 +16929,8 @@
       "totalPoints": 23,
       "status": "d",
       "news": "Ankle injury - 75% chance of playing",
-      "transfersInEvent": 1426,
-      "transfersOutEvent": 1629,
+      "transfersInEvent": 1446,
+      "transfersOutEvent": 1784,
       "fixtures": [
         {
           "gw": 11,
@@ -17034,7 +16968,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.391,
+      "dataScore": -0.39,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17061,8 +16995,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1824,
-      "transfersOutEvent": 2487,
+      "transfersInEvent": 1909,
+      "transfersOutEvent": 2594,
       "fixtures": [
         {
           "gw": 11,
@@ -17100,12 +17034,78 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.399,
+      "dataScore": -0.398,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
       "isTemplate": false,
       "flagged": null,
+      "owned": false,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
+      "id": 639,
+      "name": "Andrés",
+      "fullName": "José María Andrés Baixauli",
+      "team": "BHA",
+      "teamName": "Brighton",
+      "position": "MID",
+      "price": 5.5,
+      "ownership": 0.1,
+      "epNext": 0.9,
+      "predictedPoints": 0.9,
+      "pointsSource": "ep_next",
+      "form": 1.2,
+      "totalPoints": 20,
+      "status": "d",
+      "news": "Hip injury - 75% chance of playing",
+      "transfersInEvent": 205,
+      "transfersOutEvent": 468,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "HUL",
+          "home": false,
+          "difficulty": 2
+        },
+        {
+          "gw": 12,
+          "opponent": "NEW",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 13,
+          "opponent": "BOU",
+          "home": false,
+          "difficulty": 4
+        },
+        {
+          "gw": 14,
+          "opponent": "NFO",
+          "home": false,
+          "difficulty": 2
+        },
+        {
+          "gw": 15,
+          "opponent": "EVE",
+          "home": true,
+          "difficulty": 3
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "current-form",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": -0.407,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": true,
       "owned": false,
       "isCaptain": false,
       "isViceCaptain": false,
@@ -17127,8 +17127,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 44,
-      "transfersOutEvent": 378,
+      "transfersInEvent": 50,
+      "transfersOutEvent": 391,
       "fixtures": [
         {
           "gw": 11,
@@ -17166,7 +17166,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.418,
+      "dataScore": -0.417,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17193,8 +17193,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 17,
-      "transfersOutEvent": 75,
+      "transfersInEvent": 21,
+      "transfersOutEvent": 77,
       "fixtures": [
         {
           "gw": 11,
@@ -17232,7 +17232,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.42,
+      "dataScore": -0.419,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17251,7 +17251,7 @@
       "teamName": "Chelsea",
       "position": "GKP",
       "price": 4.9,
-      "ownership": 3.1,
+      "ownership": 3,
       "epNext": 1.5,
       "predictedPoints": 1.5,
       "pointsSource": "ep_next",
@@ -17259,8 +17259,8 @@
       "totalPoints": 20,
       "status": "d",
       "news": "Head injury - 75% chance of playing",
-      "transfersInEvent": 495,
-      "transfersOutEvent": 7043,
+      "transfersInEvent": 534,
+      "transfersOutEvent": 7404,
       "fixtures": [
         {
           "gw": 11,
@@ -17298,7 +17298,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.422,
+      "dataScore": -0.421,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17325,8 +17325,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": null,
-      "transfersInEvent": 35,
-      "transfersOutEvent": 173,
+      "transfersInEvent": 37,
+      "transfersOutEvent": 187,
       "fixtures": [
         {
           "gw": 11,
@@ -17364,7 +17364,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.426,
+      "dataScore": -0.425,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17391,8 +17391,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 368,
-      "transfersOutEvent": 2315,
+      "transfersInEvent": 386,
+      "transfersOutEvent": 2429,
       "fixtures": [
         {
           "gw": 11,
@@ -17430,7 +17430,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.427,
+      "dataScore": -0.425,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17457,8 +17457,8 @@
       "totalPoints": 28,
       "status": "d",
       "news": "Hamstring injury - 75% chance of playing",
-      "transfersInEvent": 98,
-      "transfersOutEvent": 796,
+      "transfersInEvent": 99,
+      "transfersOutEvent": 831,
       "fixtures": [
         {
           "gw": 11,
@@ -17496,7 +17496,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.428,
+      "dataScore": -0.427,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17523,8 +17523,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": null,
-      "transfersInEvent": 455,
-      "transfersOutEvent": 399,
+      "transfersInEvent": 480,
+      "transfersOutEvent": 410,
       "fixtures": [
         {
           "gw": 11,
@@ -17562,7 +17562,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.433,
+      "dataScore": -0.432,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17589,8 +17589,8 @@
       "totalPoints": 10,
       "status": "a",
       "news": null,
-      "transfersInEvent": 764,
-      "transfersOutEvent": 753,
+      "transfersInEvent": 827,
+      "transfersOutEvent": 795,
       "fixtures": [
         {
           "gw": 11,
@@ -17628,7 +17628,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.433,
+      "dataScore": -0.432,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17655,8 +17655,8 @@
       "totalPoints": 24,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1035,
-      "transfersOutEvent": 24616,
+      "transfersInEvent": 1090,
+      "transfersOutEvent": 25591,
       "fixtures": [
         {
           "gw": 11,
@@ -17694,7 +17694,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.45,
+      "dataScore": -0.449,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17721,8 +17721,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 75,
-      "transfersOutEvent": 61,
+      "transfersInEvent": 80,
+      "transfersOutEvent": 63,
       "fixtures": [
         {
           "gw": 11,
@@ -17760,7 +17760,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.461,
+      "dataScore": -0.46,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17787,8 +17787,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 1083,
-      "transfersOutEvent": 2381,
+      "transfersInEvent": 1140,
+      "transfersOutEvent": 2471,
       "fixtures": [
         {
           "gw": 11,
@@ -17826,7 +17826,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.464,
+      "dataScore": -0.463,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17853,8 +17853,8 @@
       "totalPoints": 16,
       "status": "a",
       "news": null,
-      "transfersInEvent": 54,
-      "transfersOutEvent": 152,
+      "transfersInEvent": 58,
+      "transfersOutEvent": 159,
       "fixtures": [
         {
           "gw": 11,
@@ -17892,7 +17892,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.466,
+      "dataScore": -0.465,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17919,8 +17919,8 @@
       "totalPoints": 25,
       "status": "a",
       "news": null,
-      "transfersInEvent": 68,
-      "transfersOutEvent": 320,
+      "transfersInEvent": 73,
+      "transfersOutEvent": 334,
       "fixtures": [
         {
           "gw": 11,
@@ -17958,7 +17958,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.47,
+      "dataScore": -0.469,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -17985,8 +17985,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 91,
-      "transfersOutEvent": 385,
+      "transfersInEvent": 95,
+      "transfersOutEvent": 398,
       "fixtures": [
         {
           "gw": 11,
@@ -18024,7 +18024,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.485,
+      "dataScore": -0.484,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18051,8 +18051,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 75,
-      "transfersOutEvent": 66,
+      "transfersInEvent": 82,
+      "transfersOutEvent": 70,
       "fixtures": [
         {
           "gw": 11,
@@ -18090,7 +18090,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.496,
+      "dataScore": -0.495,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18117,8 +18117,8 @@
       "totalPoints": 19,
       "status": "a",
       "news": null,
-      "transfersInEvent": 177,
-      "transfersOutEvent": 474,
+      "transfersInEvent": 184,
+      "transfersOutEvent": 491,
       "fixtures": [
         {
           "gw": 11,
@@ -18156,7 +18156,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.499,
+      "dataScore": -0.498,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18183,8 +18183,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 294,
-      "transfersOutEvent": 756,
+      "transfersInEvent": 304,
+      "transfersOutEvent": 795,
       "fixtures": [
         {
           "gw": 11,
@@ -18222,7 +18222,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.511,
+      "dataScore": -0.51,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18249,8 +18249,8 @@
       "totalPoints": 12,
       "status": "a",
       "news": null,
-      "transfersInEvent": 102,
-      "transfersOutEvent": 809,
+      "transfersInEvent": 107,
+      "transfersOutEvent": 837,
       "fixtures": [
         {
           "gw": 11,
@@ -18288,7 +18288,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.512,
+      "dataScore": -0.51,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18315,8 +18315,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 29,
-      "transfersOutEvent": 141,
+      "transfersInEvent": 30,
+      "transfersOutEvent": 146,
       "fixtures": [
         {
           "gw": 11,
@@ -18354,7 +18354,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.516,
+      "dataScore": -0.515,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18381,8 +18381,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 410,
-      "transfersOutEvent": 215,
+      "transfersInEvent": 438,
+      "transfersOutEvent": 231,
       "fixtures": [
         {
           "gw": 11,
@@ -18420,7 +18420,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.518,
+      "dataScore": -0.516,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18447,8 +18447,8 @@
       "totalPoints": 22,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2230,
-      "transfersOutEvent": 6750,
+      "transfersInEvent": 2314,
+      "transfersOutEvent": 7071,
       "fixtures": [
         {
           "gw": 11,
@@ -18486,7 +18486,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.525,
+      "dataScore": -0.524,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18513,8 +18513,8 @@
       "totalPoints": 32,
       "status": "a",
       "news": null,
-      "transfersInEvent": 835,
-      "transfersOutEvent": 16188,
+      "transfersInEvent": 890,
+      "transfersOutEvent": 16930,
       "fixtures": [
         {
           "gw": 11,
@@ -18552,7 +18552,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.534,
+      "dataScore": -0.533,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18579,8 +18579,8 @@
       "totalPoints": 15,
       "status": "a",
       "news": null,
-      "transfersInEvent": 79,
-      "transfersOutEvent": 105,
+      "transfersInEvent": 81,
+      "transfersOutEvent": 112,
       "fixtures": [
         {
           "gw": 11,
@@ -18618,7 +18618,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.543,
+      "dataScore": -0.541,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18645,8 +18645,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": null,
-      "transfersInEvent": 835,
-      "transfersOutEvent": 484,
+      "transfersInEvent": 909,
+      "transfersOutEvent": 512,
       "fixtures": [
         {
           "gw": 11,
@@ -18684,7 +18684,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.563,
+      "dataScore": -0.562,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18711,8 +18711,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": null,
-      "transfersInEvent": 2876,
-      "transfersOutEvent": 1579,
+      "transfersInEvent": 3037,
+      "transfersOutEvent": 1649,
       "fixtures": [
         {
           "gw": 11,
@@ -18750,73 +18750,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.57,
-      "expertScore": 0,
-      "quadrant": "ignore",
-      "aheadOfCurve": false,
-      "isTemplate": false,
-      "flagged": null,
-      "owned": false,
-      "isCaptain": false,
-      "isViceCaptain": false,
-      "inStartingXI": false
-    },
-    {
-      "id": 136,
-      "name": "Welbeck",
-      "fullName": "Danny Welbeck",
-      "team": "CHE",
-      "teamName": "Chelsea",
-      "position": "FWD",
-      "price": 5.8,
-      "ownership": 0.7,
-      "epNext": 1,
-      "predictedPoints": 1,
-      "pointsSource": "ep_next",
-      "form": 1,
-      "totalPoints": 9,
-      "status": "a",
-      "news": null,
-      "transfersInEvent": 944,
-      "transfersOutEvent": 2892,
-      "fixtures": [
-        {
-          "gw": 11,
-          "opponent": "LEE",
-          "home": true,
-          "difficulty": 3
-        },
-        {
-          "gw": 12,
-          "opponent": "NFO",
-          "home": false,
-          "difficulty": 2
-        },
-        {
-          "gw": 13,
-          "opponent": "CRY",
-          "home": true,
-          "difficulty": 2
-        },
-        {
-          "gw": 14,
-          "opponent": "LIV",
-          "home": true,
-          "difficulty": 4
-        },
-        {
-          "gw": 15,
-          "opponent": "MCI",
-          "home": false,
-          "difficulty": 5
-        }
-      ],
-      "blanks": 0,
-      "underlyingSource": "understat",
-      "captainCalls": 0,
-      "channelsCovering": 0,
-      "opinions": [],
-      "dataScore": -0.578,
+      "dataScore": -0.569,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18835,7 +18769,7 @@
       "teamName": "Man City",
       "position": "DEF",
       "price": 5.6,
-      "ownership": 22.6,
+      "ownership": 22.5,
       "epNext": 0.6,
       "predictedPoints": 1.16,
       "pointsSource": "model",
@@ -18843,8 +18777,8 @@
       "totalPoints": 44,
       "status": "d",
       "news": "Unspecified injury - 75% chance of playing",
-      "transfersInEvent": 3290,
-      "transfersOutEvent": 293162,
+      "transfersInEvent": 3364,
+      "transfersOutEvent": 303187,
       "fixtures": [
         {
           "gw": 11,
@@ -18882,13 +18816,79 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.578,
+      "dataScore": -0.576,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
       "isTemplate": false,
       "flagged": true,
       "owned": true,
+      "isCaptain": false,
+      "isViceCaptain": false,
+      "inStartingXI": false
+    },
+    {
+      "id": 136,
+      "name": "Welbeck",
+      "fullName": "Danny Welbeck",
+      "team": "CHE",
+      "teamName": "Chelsea",
+      "position": "FWD",
+      "price": 5.8,
+      "ownership": 0.7,
+      "epNext": 1,
+      "predictedPoints": 1,
+      "pointsSource": "ep_next",
+      "form": 1,
+      "totalPoints": 9,
+      "status": "a",
+      "news": null,
+      "transfersInEvent": 1009,
+      "transfersOutEvent": 3031,
+      "fixtures": [
+        {
+          "gw": 11,
+          "opponent": "LEE",
+          "home": true,
+          "difficulty": 3
+        },
+        {
+          "gw": 12,
+          "opponent": "NFO",
+          "home": false,
+          "difficulty": 2
+        },
+        {
+          "gw": 13,
+          "opponent": "CRY",
+          "home": true,
+          "difficulty": 2
+        },
+        {
+          "gw": 14,
+          "opponent": "LIV",
+          "home": true,
+          "difficulty": 4
+        },
+        {
+          "gw": 15,
+          "opponent": "MCI",
+          "home": false,
+          "difficulty": 5
+        }
+      ],
+      "blanks": 0,
+      "underlyingSource": "understat",
+      "captainCalls": 0,
+      "channelsCovering": 0,
+      "opinions": [],
+      "dataScore": -0.577,
+      "expertScore": 0,
+      "quadrant": "ignore",
+      "aheadOfCurve": false,
+      "isTemplate": false,
+      "flagged": null,
+      "owned": false,
       "isCaptain": false,
       "isViceCaptain": false,
       "inStartingXI": false
@@ -18909,8 +18909,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 113,
-      "transfersOutEvent": 309,
+      "transfersInEvent": 116,
+      "transfersOutEvent": 317,
       "fixtures": [
         {
           "gw": 11,
@@ -18948,7 +18948,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.585,
+      "dataScore": -0.584,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -18975,8 +18975,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 842,
-      "transfersOutEvent": 329,
+      "transfersInEvent": 871,
+      "transfersOutEvent": 344,
       "fixtures": [
         {
           "gw": 11,
@@ -19014,7 +19014,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.61,
+      "dataScore": -0.609,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19041,8 +19041,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": null,
-      "transfersInEvent": 143,
-      "transfersOutEvent": 192,
+      "transfersInEvent": 150,
+      "transfersOutEvent": 204,
       "fixtures": [
         {
           "gw": 11,
@@ -19080,7 +19080,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.614,
+      "dataScore": -0.613,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19107,8 +19107,8 @@
       "totalPoints": 4,
       "status": "a",
       "news": null,
-      "transfersInEvent": 234,
-      "transfersOutEvent": 280,
+      "transfersInEvent": 244,
+      "transfersOutEvent": 294,
       "fixtures": [
         {
           "gw": 11,
@@ -19146,7 +19146,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.626,
+      "dataScore": -0.625,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19173,8 +19173,8 @@
       "totalPoints": 9,
       "status": "a",
       "news": null,
-      "transfersInEvent": 42,
-      "transfersOutEvent": 124,
+      "transfersInEvent": 48,
+      "transfersOutEvent": 130,
       "fixtures": [
         {
           "gw": 11,
@@ -19212,7 +19212,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.654,
+      "dataScore": -0.653,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19239,8 +19239,8 @@
       "totalPoints": 14,
       "status": "a",
       "news": null,
-      "transfersInEvent": 56,
-      "transfersOutEvent": 342,
+      "transfersInEvent": 58,
+      "transfersOutEvent": 359,
       "fixtures": [
         {
           "gw": 11,
@@ -19278,7 +19278,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.658,
+      "dataScore": -0.657,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19305,7 +19305,7 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 24,
+      "transfersInEvent": 25,
       "transfersOutEvent": 23,
       "fixtures": [
         {
@@ -19344,7 +19344,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.735,
+      "dataScore": -0.734,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19371,8 +19371,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": null,
-      "transfersInEvent": 47,
-      "transfersOutEvent": 48,
+      "transfersInEvent": 50,
+      "transfersOutEvent": 53,
       "fixtures": [
         {
           "gw": 11,
@@ -19410,7 +19410,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.744,
+      "dataScore": -0.743,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19437,8 +19437,8 @@
       "totalPoints": 13,
       "status": "a",
       "news": null,
-      "transfersInEvent": 212,
-      "transfersOutEvent": 1658,
+      "transfersInEvent": 227,
+      "transfersOutEvent": 1727,
       "fixtures": [
         {
           "gw": 11,
@@ -19476,7 +19476,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.777,
+      "dataScore": -0.775,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19503,8 +19503,8 @@
       "totalPoints": 8,
       "status": "a",
       "news": null,
-      "transfersInEvent": 560,
-      "transfersOutEvent": 2408,
+      "transfersInEvent": 591,
+      "transfersOutEvent": 2517,
       "fixtures": [
         {
           "gw": 11,
@@ -19542,7 +19542,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.804,
+      "dataScore": -0.803,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19569,8 +19569,8 @@
       "totalPoints": 3,
       "status": "a",
       "news": null,
-      "transfersInEvent": 817,
-      "transfersOutEvent": 2099,
+      "transfersInEvent": 857,
+      "transfersOutEvent": 2210,
       "fixtures": [
         {
           "gw": 11,
@@ -19608,7 +19608,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.866,
+      "dataScore": -0.864,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19635,8 +19635,8 @@
       "totalPoints": 5,
       "status": "a",
       "news": null,
-      "transfersInEvent": 336,
-      "transfersOutEvent": 1010,
+      "transfersInEvent": 356,
+      "transfersOutEvent": 1048,
       "fixtures": [
         {
           "gw": 11,
@@ -19674,7 +19674,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.872,
+      "dataScore": -0.871,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19701,8 +19701,8 @@
       "totalPoints": 6,
       "status": "a",
       "news": null,
-      "transfersInEvent": 971,
-      "transfersOutEvent": 774,
+      "transfersInEvent": 1016,
+      "transfersOutEvent": 802,
       "fixtures": [
         {
           "gw": 11,
@@ -19740,7 +19740,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.897,
+      "dataScore": -0.896,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19767,8 +19767,8 @@
       "totalPoints": 7,
       "status": "a",
       "news": null,
-      "transfersInEvent": 72,
-      "transfersOutEvent": 126,
+      "transfersInEvent": 80,
+      "transfersOutEvent": 133,
       "fixtures": [
         {
           "gw": 11,
@@ -19806,7 +19806,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": -0.906,
+      "dataScore": -0.905,
       "expertScore": 0,
       "quadrant": "ignore",
       "aheadOfCurve": false,
@@ -19829,7 +19829,7 @@
         "teamName": "Spurs",
         "position": "DEF",
         "price": 5.1,
-        "ownership": 14.7,
+        "ownership": 14.8,
         "epNext": 7.5,
         "predictedPoints": 5.17,
         "pointsSource": "model",
@@ -19837,8 +19837,8 @@
         "totalPoints": 57,
         "status": "a",
         "news": null,
-        "transfersInEvent": 179515,
-        "transfersOutEvent": 6950,
+        "transfersInEvent": 186695,
+        "transfersOutEvent": 7330,
         "fixtures": [
           {
             "gw": 11,
@@ -19903,8 +19903,8 @@
         "totalPoints": 70,
         "status": "a",
         "news": null,
-        "transfersInEvent": 109232,
-        "transfersOutEvent": 12751,
+        "transfersInEvent": 114429,
+        "transfersOutEvent": 13169,
         "fixtures": [
           {
             "gw": 11,
@@ -19969,8 +19969,8 @@
         "totalPoints": 70,
         "status": "a",
         "news": null,
-        "transfersInEvent": 17735,
-        "transfersOutEvent": 44158,
+        "transfersInEvent": 18636,
+        "transfersOutEvent": 45666,
         "fixtures": [
           {
             "gw": 11,
@@ -20008,7 +20008,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 1.196,
+        "dataScore": 1.197,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -20027,7 +20027,7 @@
         "teamName": "Bournemouth",
         "position": "FWD",
         "price": 6.5,
-        "ownership": 23.8,
+        "ownership": 23.9,
         "epNext": 9,
         "predictedPoints": 4,
         "pointsSource": "model",
@@ -20035,8 +20035,8 @@
         "totalPoints": 61,
         "status": "a",
         "news": null,
-        "transfersInEvent": 215864,
-        "transfersOutEvent": 15662,
+        "transfersInEvent": 225950,
+        "transfersOutEvent": 16352,
         "fixtures": [
           {
             "gw": 11,
@@ -20101,8 +20101,8 @@
         "totalPoints": 52,
         "status": "a",
         "news": null,
-        "transfersInEvent": 65618,
-        "transfersOutEvent": 29073,
+        "transfersInEvent": 69053,
+        "transfersOutEvent": 30206,
         "fixtures": [
           {
             "gw": 11,
@@ -20140,7 +20140,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.726,
+        "dataScore": 0.727,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -20167,8 +20167,8 @@
         "totalPoints": 47,
         "status": "a",
         "news": null,
-        "transfersInEvent": 32281,
-        "transfersOutEvent": 44350,
+        "transfersInEvent": 33735,
+        "transfersOutEvent": 46548,
         "fixtures": [
           {
             "gw": 11,
@@ -20206,7 +20206,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.614,
+        "dataScore": 0.615,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -20233,8 +20233,8 @@
         "totalPoints": 46,
         "status": "a",
         "news": null,
-        "transfersInEvent": 9306,
-        "transfersOutEvent": 72792,
+        "transfersInEvent": 9781,
+        "transfersOutEvent": 75455,
         "fixtures": [
           {
             "gw": 11,
@@ -20272,7 +20272,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.587,
+        "dataScore": 0.588,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -20299,8 +20299,8 @@
         "totalPoints": 39,
         "status": "a",
         "news": null,
-        "transfersInEvent": 9256,
-        "transfersOutEvent": 19770,
+        "transfersInEvent": 9669,
+        "transfersOutEvent": 20812,
         "fixtures": [
           {
             "gw": 11,
@@ -20338,7 +20338,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.538,
+        "dataScore": 0.539,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -20357,7 +20357,7 @@
         "teamName": "Arsenal",
         "position": "GKP",
         "price": 6.2,
-        "ownership": 47.5,
+        "ownership": 47.6,
         "epNext": 6.8,
         "predictedPoints": 3.11,
         "pointsSource": "model",
@@ -20365,8 +20365,8 @@
         "totalPoints": 60,
         "status": "a",
         "news": null,
-        "transfersInEvent": 47681,
-        "transfersOutEvent": 12223,
+        "transfersInEvent": 49771,
+        "transfersOutEvent": 12918,
         "fixtures": [
           {
             "gw": 11,
@@ -20404,7 +20404,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.248,
+        "dataScore": 0.249,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -20431,8 +20431,8 @@
         "totalPoints": 38,
         "status": "a",
         "news": null,
-        "transfersInEvent": 3112,
-        "transfersOutEvent": 17217,
+        "transfersInEvent": 3269,
+        "transfersOutEvent": 17907,
         "fixtures": [
           {
             "gw": 11,
@@ -20470,7 +20470,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 0.192,
+        "dataScore": 0.193,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -20497,8 +20497,8 @@
         "totalPoints": 22,
         "status": "a",
         "news": null,
-        "transfersInEvent": 1866,
-        "transfersOutEvent": 61858,
+        "transfersInEvent": 1952,
+        "transfersOutEvent": 64257,
         "fixtures": [
           {
             "gw": 11,
@@ -20536,7 +20536,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.22,
+        "dataScore": -0.219,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -20557,7 +20557,7 @@
         "teamName": "Brighton",
         "position": "DEF",
         "price": 5.5,
-        "ownership": 47.8,
+        "ownership": 47.9,
         "epNext": 5.5,
         "predictedPoints": 5.5,
         "pointsSource": "ep_next",
@@ -20565,8 +20565,8 @@
         "totalPoints": 75,
         "status": "a",
         "news": null,
-        "transfersInEvent": 153997,
-        "transfersOutEvent": 7976,
+        "transfersInEvent": 160726,
+        "transfersOutEvent": 8552,
         "fixtures": [
           {
             "gw": 11,
@@ -20631,8 +20631,8 @@
         "totalPoints": 40,
         "status": "a",
         "news": null,
-        "transfersInEvent": 22395,
-        "transfersOutEvent": 9522,
+        "transfersInEvent": 23463,
+        "transfersOutEvent": 10046,
         "fixtures": [
           {
             "gw": 11,
@@ -20697,8 +20697,8 @@
         "totalPoints": 25,
         "status": "a",
         "news": null,
-        "transfersInEvent": 2526,
-        "transfersOutEvent": 14755,
+        "transfersInEvent": 2677,
+        "transfersOutEvent": 15296,
         "fixtures": [
           {
             "gw": 11,
@@ -20736,7 +20736,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.068,
+        "dataScore": -0.067,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -20755,7 +20755,7 @@
         "teamName": "Man City",
         "position": "DEF",
         "price": 5.6,
-        "ownership": 22.6,
+        "ownership": 22.5,
         "epNext": 0.6,
         "predictedPoints": 1.16,
         "pointsSource": "model",
@@ -20763,8 +20763,8 @@
         "totalPoints": 44,
         "status": "d",
         "news": "Unspecified injury - 75% chance of playing",
-        "transfersInEvent": 3290,
-        "transfersOutEvent": 293162,
+        "transfersInEvent": 3364,
+        "transfersOutEvent": 303187,
         "fixtures": [
           {
             "gw": 11,
@@ -20802,7 +20802,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.578,
+        "dataScore": -0.576,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -20830,8 +20830,8 @@
       "totalPoints": 70,
       "status": "a",
       "news": null,
-      "transfersInEvent": 17735,
-      "transfersOutEvent": 44158,
+      "transfersInEvent": 18636,
+      "transfersOutEvent": 45666,
       "fixtures": [
         {
           "gw": 11,
@@ -20869,7 +20869,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 1.196,
+      "dataScore": 1.197,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -20896,8 +20896,8 @@
       "totalPoints": 47,
       "status": "a",
       "news": null,
-      "transfersInEvent": 32281,
-      "transfersOutEvent": 44350,
+      "transfersInEvent": 33735,
+      "transfersOutEvent": 46548,
       "fixtures": [
         {
           "gw": 11,
@@ -20935,7 +20935,7 @@
       "captainCalls": 0,
       "channelsCovering": 0,
       "opinions": [],
-      "dataScore": 0.614,
+      "dataScore": 0.615,
       "expertScore": 0,
       "quadrant": "differential",
       "aheadOfCurve": false,
@@ -20958,7 +20958,7 @@
         "teamName": "Brighton",
         "position": "DEF",
         "price": 5.3,
-        "ownership": 9.3,
+        "ownership": 9.4,
         "epNext": 7.5,
         "predictedPoints": 7.5,
         "pointsSource": "ep_next",
@@ -20966,8 +20966,8 @@
         "totalPoints": 70,
         "status": "a",
         "news": null,
-        "transfersInEvent": 157340,
-        "transfersOutEvent": 4313,
+        "transfersInEvent": 164789,
+        "transfersOutEvent": 4541,
         "fixtures": [
           {
             "gw": 11,
@@ -21005,7 +21005,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 1.798,
+        "dataScore": 1.797,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -21032,8 +21032,8 @@
         "totalPoints": 46,
         "status": "a",
         "news": null,
-        "transfersInEvent": 31151,
-        "transfersOutEvent": 7839,
+        "transfersInEvent": 32797,
+        "transfersOutEvent": 8182,
         "fixtures": [
           {
             "gw": 11,
@@ -21098,8 +21098,8 @@
         "totalPoints": 51,
         "status": "a",
         "news": null,
-        "transfersInEvent": 35359,
-        "transfersOutEvent": 5674,
+        "transfersInEvent": 37163,
+        "transfersOutEvent": 5978,
         "fixtures": [
           {
             "gw": 11,
@@ -21164,8 +21164,8 @@
         "totalPoints": 46,
         "status": "a",
         "news": null,
-        "transfersInEvent": 15048,
-        "transfersOutEvent": 4282,
+        "transfersInEvent": 16303,
+        "transfersOutEvent": 4507,
         "fixtures": [
           {
             "gw": 11,
@@ -21230,8 +21230,8 @@
         "totalPoints": 39,
         "status": "a",
         "news": null,
-        "transfersInEvent": 18319,
-        "transfersOutEvent": 3358,
+        "transfersInEvent": 19321,
+        "transfersOutEvent": 3548,
         "fixtures": [
           {
             "gw": 11,
@@ -21269,7 +21269,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 1.464,
+        "dataScore": 1.465,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -21296,8 +21296,8 @@
         "totalPoints": 44,
         "status": "a",
         "news": null,
-        "transfersInEvent": 40600,
-        "transfersOutEvent": 4814,
+        "transfersInEvent": 43733,
+        "transfersOutEvent": 5026,
         "fixtures": [
           {
             "gw": 11,
@@ -21362,8 +21362,8 @@
         "totalPoints": 56,
         "status": "a",
         "news": null,
-        "transfersInEvent": 34114,
-        "transfersOutEvent": 3882,
+        "transfersInEvent": 35556,
+        "transfersOutEvent": 4179,
         "fixtures": [
           {
             "gw": 11,
@@ -21428,8 +21428,8 @@
         "totalPoints": 41,
         "status": "a",
         "news": null,
-        "transfersInEvent": 12382,
-        "transfersOutEvent": 26279,
+        "transfersInEvent": 12990,
+        "transfersOutEvent": 27295,
         "fixtures": [
           {
             "gw": 11,
@@ -21494,8 +21494,8 @@
         "totalPoints": 28,
         "status": "a",
         "news": null,
-        "transfersInEvent": 11566,
-        "transfersOutEvent": 452,
+        "transfersInEvent": 12429,
+        "transfersOutEvent": 522,
         "fixtures": [
           {
             "gw": 11,
@@ -21560,8 +21560,8 @@
         "totalPoints": 38,
         "status": "a",
         "news": null,
-        "transfersInEvent": 4518,
-        "transfersOutEvent": 8702,
+        "transfersInEvent": 4744,
+        "transfersOutEvent": 9060,
         "fixtures": [
           {
             "gw": 11,
@@ -21626,8 +21626,8 @@
         "totalPoints": 44,
         "status": "a",
         "news": null,
-        "transfersInEvent": 4713,
-        "transfersOutEvent": 1260,
+        "transfersInEvent": 4925,
+        "transfersOutEvent": 1310,
         "fixtures": [
           {
             "gw": 11,
@@ -21684,7 +21684,7 @@
         "teamName": "Everton",
         "position": "FWD",
         "price": 5.7,
-        "ownership": 10.7,
+        "ownership": 10.8,
         "epNext": 7.2,
         "predictedPoints": 3.19,
         "pointsSource": "model",
@@ -21692,8 +21692,8 @@
         "totalPoints": 55,
         "status": "a",
         "news": null,
-        "transfersInEvent": 211118,
-        "transfersOutEvent": 11817,
+        "transfersInEvent": 215808,
+        "transfersOutEvent": 12583,
         "fixtures": [
           {
             "gw": 11,
@@ -21755,7 +21755,7 @@
         "teamName": "Aston Villa",
         "position": "FWD",
         "price": 7.1,
-        "ownership": 31.2,
+        "ownership": 31.3,
         "epNext": 8.8,
         "predictedPoints": 8.8,
         "pointsSource": "ep_next",
@@ -21763,8 +21763,8 @@
         "totalPoints": 54,
         "status": "a",
         "news": null,
-        "transfersInEvent": 313666,
-        "transfersOutEvent": 9189,
+        "transfersInEvent": 328227,
+        "transfersOutEvent": 9517,
         "fixtures": [
           {
             "gw": 11,
@@ -21821,7 +21821,7 @@
         "teamName": "Brighton",
         "position": "DEF",
         "price": 5.3,
-        "ownership": 9.3,
+        "ownership": 9.4,
         "epNext": 7.5,
         "predictedPoints": 7.5,
         "pointsSource": "ep_next",
@@ -21829,8 +21829,8 @@
         "totalPoints": 70,
         "status": "a",
         "news": null,
-        "transfersInEvent": 157340,
-        "transfersOutEvent": 4313,
+        "transfersInEvent": 164789,
+        "transfersOutEvent": 4541,
         "fixtures": [
           {
             "gw": 11,
@@ -21868,7 +21868,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": 1.798,
+        "dataScore": 1.797,
         "expertScore": 0,
         "quadrant": "differential",
         "aheadOfCurve": false,
@@ -21895,8 +21895,8 @@
         "totalPoints": 46,
         "status": "a",
         "news": null,
-        "transfersInEvent": 31151,
-        "transfersOutEvent": 7839,
+        "transfersInEvent": 32797,
+        "transfersOutEvent": 8182,
         "fixtures": [
           {
             "gw": 11,
@@ -21961,8 +21961,8 @@
         "totalPoints": 56,
         "status": "a",
         "news": null,
-        "transfersInEvent": 34114,
-        "transfersOutEvent": 3882,
+        "transfersInEvent": 35556,
+        "transfersOutEvent": 4179,
         "fixtures": [
           {
             "gw": 11,
@@ -22027,8 +22027,8 @@
         "totalPoints": 46,
         "status": "a",
         "news": null,
-        "transfersInEvent": 15048,
-        "transfersOutEvent": 4282,
+        "transfersInEvent": 16303,
+        "transfersOutEvent": 4507,
         "fixtures": [
           {
             "gw": 11,
@@ -22093,8 +22093,8 @@
         "totalPoints": 57,
         "status": "a",
         "news": null,
-        "transfersInEvent": 49366,
-        "transfersOutEvent": 14278,
+        "transfersInEvent": 51253,
+        "transfersOutEvent": 15213,
         "fixtures": [
           {
             "gw": 11,
@@ -22161,8 +22161,8 @@
         "totalPoints": 25,
         "status": "a",
         "news": null,
-        "transfersInEvent": 2526,
-        "transfersOutEvent": 14755,
+        "transfersInEvent": 2677,
+        "transfersOutEvent": 15296,
         "fixtures": [
           {
             "gw": 11,
@@ -22200,7 +22200,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.068,
+        "dataScore": -0.067,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -22227,8 +22227,8 @@
         "totalPoints": 22,
         "status": "a",
         "news": null,
-        "transfersInEvent": 1866,
-        "transfersOutEvent": 61858,
+        "transfersInEvent": 1952,
+        "transfersOutEvent": 64257,
         "fixtures": [
           {
             "gw": 11,
@@ -22266,7 +22266,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.22,
+        "dataScore": -0.219,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
@@ -22285,7 +22285,7 @@
         "teamName": "Man City",
         "position": "DEF",
         "price": 5.6,
-        "ownership": 22.6,
+        "ownership": 22.5,
         "epNext": 0.6,
         "predictedPoints": 1.16,
         "pointsSource": "model",
@@ -22293,8 +22293,8 @@
         "totalPoints": 44,
         "status": "d",
         "news": "Unspecified injury - 75% chance of playing",
-        "transfersInEvent": 3290,
-        "transfersOutEvent": 293162,
+        "transfersInEvent": 3364,
+        "transfersOutEvent": 303187,
         "fixtures": [
           {
             "gw": 11,
@@ -22332,7 +22332,7 @@
         "captainCalls": 0,
         "channelsCovering": 0,
         "opinions": [],
-        "dataScore": -0.578,
+        "dataScore": -0.576,
         "expertScore": 0,
         "quadrant": "ignore",
         "aheadOfCurve": false,
